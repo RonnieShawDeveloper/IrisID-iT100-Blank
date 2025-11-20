@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">Ajustes</string>
+
+    <!--Title-->
+    <string name="admin_login">Admin Login</string>
+    <string name="iris_recognition">Reconocimiento de iris</string>
+    <string name="biometrics">Biometría</string>
+    <string name="system_admin">Administrador del sistema</string>
+    <string name="user_management">Gestión de usuarios</string>
+    <string name="settings">Ajustes</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">Aviso</string>
+    <string name="dlgtitle_err">Error</string>
+    <string name="dlgtitle_waring">Advertencia</string>
+    <string name="dlgtitle_guide">Guía</string>
+    <string name="dlgtitle_success">Éxito</string>
+    <string name="dlgtitle_fail">Error</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="save">SALVAR</string>
+    <string name="delete">BORRAR</string>
+    <string name="update">&#160;ACTUALIZAR&#160;</string>
+    <string name="confirm">Confirmar</string>
+    <string name="yes_dialog">SÍ</string>
+    <string name="no_dialog">NO</string>
+    <string name="on">Sí</string>
+    <string name="off">No</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ID y contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">REGISTRARSE</string>
+    <string name="error_username_or_password">Nombre de usuario o contraseña incorrecta.</string>
+
+    <!-- User Management -->
+    <string name="search">Buscar</string>
+    <string name="userlist_guide">&#160;&#160;&#160;Selecciona un usuario para ver el detalle., o\nHaga clic en + para crear un nuevo usuario.</string>
+    <string name="user_id">ID de usuario</string>
+    <string name="title">Título</string>
+    <string name="first_name">Nombre de pila</string>
+    <string name="last_name">Apellido</string>
+    <string name="email_address">Dirección de correo electrónico</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="modify_bioinfo_dialog_title">Cambiar Biometría</string>
+    <string name="add_bioinfo_dialog_title">Agregar Biometría</string>
+    <string name="delete_dialog">¿Estás seguro de que quieres eliminar al usuario ?</string>
+    <string name="re_enroll">¿Estás seguro de que quieres volver a inscribir la imagen ?</string>
+    <string name="modify_bioinfo_dialog">¿Está seguro que desea cambiar Biometría?</string>
+    <string name="add_bioinfo_dialog">¿Está seguro que desea agregar Biometría?</string>
+    <string name="enroll_error_already">Usuario ya inscrito.</string>
+    <string name="enroll_error_verified">Error verificado.</string>
+    <string name="enroll_error_capture">Error en la captura del iris.</string>
+    <string name="enroll_error_empty_userid">Por favor, introduzca ID de usuario</string>
+    <string name="enroll_error_duplicate_userid">La ID de usuario ya existe </string>
+    <string name="enroll_error_space_userid">No se permiten espacios</string>
+    <string name="enroll_remove_glasses_guide">Por favor quitese las gafas y la mascarilla</string>
+
+    <string name="all">Todo</string>
+    <string name="type">Tipo</string>
+    <string name="auth_mode">Autenticación\nModo</string>
+    <string name="iris_and_face">IRIS + CARA</string>
+    <string name="iris">IRIS</string>
+    <string name="face">CARA</string>
+    <string name="select_mode">Seleccionar modo</string>
+    <string name="select_mode_error">Debe seleccionar el modo de autenticación</string>
+    <string name="roll">Tipo de cuenta</string>
+    <string name="user">Usuario</string>
+    <string name="admin">Administrador</string>
+    <string name="pw_change">Cambiar contraseña</string>
+    <string name="pw_current">Contraseña actual</string>
+    <string name="pw_new">Contraseña nueva</string>
+    <string name="pw_confirm">Confirmar contraseña</string>
+    <string name="err_pw_invalid">La contraseña actual no es válida</string>
+    <string name="err_pw_matched">La contraseña nueva y la contraseña por confirmar no coinciden</string>
+    <string name="err_pw_4digit">Contrasena debe de tner mas de 4 caracteres</string>
+    <string name="pw_changed">Se ha cambiado su contraseña</string>
+
+    <string name="user_basic_info">Infor macion Basica</string>
+    <string name="user_card_info">Informacion de tarjeta</string>
+    <string name="user_details">Detalles</string>
+    <string name="card_format">Formato de Trajeta</string>
+    <string name="card_id">Identificacion de la Tarjeta</string>
+    <string name="card_facility_code">Codigo de Instalacion</string>
+    <string name="card_wiegand_data">Codigo Weigand</string>
+    <string name="enter_card_id">Ingrese identificacion de la tarjeta</string>
+    <string name="enter_facility_code">Introducir codigo de instalacion</string>
+    <string name="enter_card_info">Entre codigo de entrada</string>
+    <string name="tap_card">Presente la tarjeta</string>
+    <string name="enroll">Registro</string>
+    <string name="card_manual">Manual</string>
+    <string name="card_number">Numero de tarjeta</string>
+    <string name="required">Requerido</string>
+    <string name="user_active">Activado</string>
+    <string name="user_inactive">Desactivado</string>
+    <string name="capture_guide">Mantenga presionado y capture datos biometricos</string>
+    <string name="select_type">Seleccionar tipo</string>
+    <string name="select_type_msg">Fvaor seleccionar tipo de biometria</string>
+    <string name="all_users">Todos los usuarios</string>
+    <string name="department">Departamento</string>
+    <string name="role">Admistrador-Operador</string>
+    <string name="privacy_agree_title">Consentimiento de privacidad</string>
+    <string name="privacy_agree_content">I understand and agree that Iris ID does not receive, and has no access to, my biometric data. I further understand and agree that my employer is solely responsible for the collection, use, disclosure, and maintenance of my biometric data and for compliance with all applicable laws regarding my biometric data.</string>
+    <string name="bio_content">Inscripcion biometrica</string>
+
+    <string name="privacy_agree_content_itmscloud">By selecting “I agree” below, I consent to the collection of my biometric information (face and iris) by this Iris ID Systems, Inc. (“Iris ID”) terminal. I further consent to the terminal disclosing templates of my iris and face to Iris ID, which may in turn re-disclose my biometric information to its vendors and affiliates, all for the purpose of employee time management, including my daily start and end times. I understand that this consent remains valid and continues to apply to my use of the Iris ID terminal and Iris ID’s receipt and re-disclosure of my biometric information until such time that notice of revocation of my consent is received by Iris ID. I further understand that Iris ID may store and use my biometric information for up to thirty (30) days after my employer notifies Iris ID that my employment has ended.</string>
+    <string name="agree">I agree</string>
+    <string name="disagree">I disagree</string>
+
+    <!-- Setting_General-->
+    <string name="general">General</string>
+    <string name="device_name">Nombre del dispositivo</string>
+    <string name="device_type">Tipo de dispositivo</string>
+    <string name="build_type">Tipo de construccion</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">Número de serie</string>
+    <string name="mac_address_ethernet">Dirección MAC Ethernet</string>
+    <string name="mac_address_wifi">Dirección MAC inalámbrica</string>
+    <string name="kernel_version">Versión del núcleo</string>
+    <string name="android_version">Versión de Android</string>
+    <string name="hardware_version">Versión del hardware</string>
+    <string name="software_version">Versión del software</string>
+    <string name="application_version">Versión de la aplicación</string>
+    <string name="general_error_devicename_empty">Por favor, ingrese el nombre del dispositivo</string>
+    <string name="general_error_devicename_too_long">Nombre de dispositivo muy largo</string>
+    <string name="reboot">Reiniciar</string>
+    <string name="reboot_dialog">¿Está seguro de que desea reiniciar el dispositivo?</string>
+    <string name="factory_reset">Restablecimiento de fábrica</string>
+    <string name="factory_reset_dialog">Esto borrará todos los datos del almacenamiento interno de su dispositivo. No puede deshacer esta acción.</string>
+    <string name="source">Fuente</string>
+    <string name="open_source_licenses">Licencias de código abierto</string>
+    <string name="system_updates">Sistema actualizado</string>
+    <string name="system_updates_dialog">Esta seguro que quieres actualizar el sistema</string>
+    <string name="system_updates_select_file">Por favor selccionar el archivo</string>
+    <string name="system_updates_copy_verify">Copia &amp; Verifica la mactualizacion del sistema</string>
+    <string name="system_updates_insert_usb">Favor insertar disco en el controlador USB</string>
+    <string name="error_not_find_usb_device">No recoconoce USB</string>
+
+    <!-- Setting_Application-->
+    <string name="application">Application</string>
+    <string name="authentication">Autenticación</string>
+    <string name="authentication_type">tipo de autenticación</string>
+    <string name="operation_mode">Modo de operación</string>
+    <string name="operation_mode_interactive">Interactivo</string>
+    <string name="operation_mode_continuous">Continuo</string>
+    <string name="app_admin_time_out">Tiempo de espera del modo de administrador</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">Resultado del intervalo de temporizador de descarte automático</string>
+    <string name="minutes">minutos</string>
+    <string name="seconds">segundos</string>
+
+    <string name="relay">rele</string>
+    <string name="delay_time">Intervalo de temporizador</string>
+    <string name="position_guide">Guia de posicionamiento</string>
+    <string name="voice_announce">Anuncio de voz</string>
+    <string name="tamper_protection">Tamper Protection</string>
+    <string name="tamper_protection_del_data">Delete User Data</string>
+    <string name="userdefine">usuario define</string>
+    <string name="file_delete_detail">Delete \'%s\' file?</string>
+    <string name="app_update">Actualiazcion de applicacion</string>
+    <string name="app_update_enter_idpw">Ingrese la actualizacion ID/PW </string>
+    <string name="app_update_fail_connect_url">No puedo conectarme a URL</string>
+    <string name="app_update_fail_file_error">Hay un problem con la descarga</string>
+    <string name="app_update_fail_file_install">Error de instalacion en la aplicacion </string>
+    <string name="app_update_fail_url_empty">favor de entra URL</string>
+    <string name="enroll_guide">Guia de precaucion de inscripcion</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">Modo</string>
+    <string name="admin_login_type">Tipo de inicio de sesion de administrador </string>
+    <string name="authentication_mode">Modo de autenticacion</string>
+    <string name="authentication_mode_individual">Individual</string>
+    <string name="authentication_mode_device">Dispositivo</string>
+
+    <string name="mask_detect">Detector de mascara</string>
+    <string name="mask_access">Control de Acceso</string>
+    <string name="mask_voice_guide">Guia de voz</string>
+    <string name="mask_text_guide">Guia de Texto</string>
+
+    <string name="qr_recog">QR Recognition</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">Countermeasure</string>
+    <string name="counter_measure_eye">Iris</string>
+    <string name="counter_measure_face">Cara</string>
+    <string name="counter_measure_lens">Lente</string>
+
+    <string name="save_audit_image">Save Audit Face Image</string>
+    <string name="saving_mode">Power Saving</string>
+    <string name="saving_screen_timeout">Screen Timeout</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">Pantalla</string>
+    <string name="sound">Sonido</string>
+    <string name="display_sound">Pantalla y brillo</string>
+    <string name="language">Idioma</string>
+    <string name="brightness">Brillo</string>
+    <string name="auto_adjust">Auto ajuste</string>
+    <string name="volume">Volumen</string>
+    <string name="keyboard_manage">Administrar teclados</string>
+    <string name="keyboard_and_inpumethod">Teclado y amp.; métodos de entrada</string>
+    <string name="keyboard_android">Teclado de Android (AOSP)</string>
+    <string name="keyboard_google_korean">Entrada de Google en coreano</string>
+    <string name="sound_touch">Ukipen-soinuak</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">Papel pintado</string>
+    <string name="movies">Películas</string>
+    <string name="images">Imágenes</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">Fecha y hora</string>
+    <string name="time_zone">Zona horaria</string>
+    <string name="time_server">Servidor NTP</string>
+    <string name="auto_date_time">Fecha y hora automáticas</string>
+    <string name="use_24hour_format">Usar formato de 24 horas</string>
+
+    <!-- Setting_Network -->
+    <string name="network">Red</string>
+    <string name="ip_settings">Configuraciones IP</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Estático</string>
+    <string name="ip_address">Dirección IP</string>
+    <string name="subnet_mask">Máscara de subred</string>
+    <string name="prefix_length">Longitud del prefijo (rango: 1–31)</string>
+    <string name="default_gateway">Puerta de enlace predeterminada</string>
+    <string name="dns1">DNS primario</string>
+    <string name="dns2">DNS secundario</string>
+    <string name="network_error_ipaddress">No se pudo obtener la dirección IP.</string>
+    <string name="network_error_connect">No hay conexión a Internet. \nCompruebe la conexión de red (cables, módem y enrutador) </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="conn_ethernet_title">Conectar Ethernet</string>
+    <string name="conn_ethernet_desc">Esta seguro que quiere actualizar el sistema</string>
+    <string name="conn_wifi_title">Conectra WI-FI</string>
+    <string name="conn_wifi_desc">Esta seguro que quiere conectarse a wifi, el sistema se desconectara de ethernet</string>
+
+    <string name="wait_progress_text">Espera...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">Activación</string>
+    <string name="activate">Activar</string>
+    <string name="deactivate">Desactivar</string>
+    <string name="deactivating">desactivando...</string>
+    <string name="activation_method">Método de activación</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">Autónomo</string>
+    <string name="activation_itms_mode">Modo</string>
+    <string name="activation_itms_mode_auto">Automático</string>
+    <string name="activation_itms_mode_manual">Manual</string>
+    <string name="activation_find">Encontrar iTMS</string>
+    <string name="activation_checkin">Comprobar iTMS</string>
+    <string name="sitekey">Clave del sitio</string>
+    <string name="apikey">Clave API</string>
+    <string name="device_url">URL del dispositivo</string>
+    <string name="activate_error_empty_sitekey">Por favor, introduzca la contraseña para SiteKey </string>
+    <string name="activate_error_not_find">No se puede encontrar la dirección de ITMS</string>
+    <string name="passphrase_site_hint">Frase de contraseña para SiteKey</string>
+    <string name="passphrase_api_hint">Frase de contraseña para API Key</string>
+    <string name="deactivate_dialog">¿Está seguro de que desea desactivar este dispositivo? Si desactiva el dispositivo, perderá todos los datos almacenados en este dispositivo de forma permanente.</string>
+
+    <string name="pw_change1">Cambiar contraseña</string>
+    <string name="pw_current1">Contraseña actual</string>
+    <string name="pw_new1">Contraseña nueva</string>
+    <string name="pw_confirm1">Confirmar contraseña</string>
+
+    <string name="result_duration">Duración del resultado</string>
+    <string name="admin_time_out">Tiempo de espera del modo administrador</string>
+
+    <string name="am">a. m.</string>
+    <string name="pm">p. m.</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">Dispositivo Externo</string>
+    <string name="thermal_camera">Camara termal</string>
+    <string name="card_reader">Lector de Tarjeta</string>
+    <string name="error_card_reader_not_find">No puedo encontar el dispositivo lector de tarjetas</string>
+    <string name="temperature_unit">Unidad de Temperatura</string>
+    <string name="threshold_value">Valor Umbral</string>
+    <string name="temperature_alarm">Alarma de temperatura</string>
+    <string name="access_control">Control de acceso</string>
+    <string name="thermal_compensation">Compensacion de temperatura</string>
+    <string name="error_thermal_not_find">No encuentro camara termal</string>
+    <string name="error_input_value">verificar</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">Identificada</string>
+    <!--  <string name="liveness_eye_fail">Liveness Detection Failure</string> -->
+    <!--  <string name="liveness_eye_detect_fail">Identification Failed</string>  from v2.05.11 -->
+    <string name="liveness_eye_detect_fail">Fallo de dteccion de vida</string>
+    <string name="capture_fail_fake_eye">Fallo de dteccion de vida</string>
+    <!--  <string name="capture_fail_liveness_eye">Liveness detected</string> -->
+    <!--  <string name="capture_fail_fake_eye">Fake eye detected</string> -->
+    <!--     <string name="capture_fail_fake_eye">Identification Failed</string> from v2.05.11 -->
+    <string name="capture_fail">Captura fallida</string>
+    <string name="capture_fail_timeout">Tiempo de captura agotado</string>
+    <string name="capture_fail_inactive_user">Acceso no concedido</string>
+    <string name="capture_fail_wrong_auth_mode">Comprobar el modo de autenticacion</string>
+    <string name="capture_fail_identify">Identificacio fallida</string>
+    <string name="go_right">Mover a la derecha</string>
+    <string name="go_left">Mover a la izquierda</string>
+    <string name="go_up">Mover arriba</string>
+    <string name="go_down">Mover abajo</string>
+    <string name="go_forward">Adelantar</string>
+    <string name="go_backward">Retroceder</string>
+
+    <string name="card_verified_wait_bio">Tarjeta verificada</string>
+    <string name="card_fail_verified">Tarjeta NO verificada</string>
+    <string name="card_fail_mismatch">Bio y tarjetas no coinciden</string>
+    <string name="card_fail_timeout">Tiempo de espera de tarjeta fuera</string>
+    <string name="bio_fail_timeout">Teimpo de espera de Bio fuera</string>
+    <string name="capture_closer_camera">Acerquese a la camara</string>
+    <string name="capture_for_audit_image">Capturing audit image</string>
+
+    <string name="recog_success_0">Identificada</string>
+    <string name="recog_success_card_verified_11091006">Verificada</string>
+    <string name="recog_success_access_granted_11091036">Acceso permitido</string>
+    <string name="recog_fail_fake_eye_detected_11071010">Fallo de dteccion de vida</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">Fallo de dteccion de vida</string>
+    <string name="recog_fail_inactive_user_11091003">Acceso no concedido</string>
+    <string name="recog_fail_card_not_verified_11091007">Fallo en verificacion</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">Fallo en verificacion</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">Fallo en verificacion</string>
+    <string name="recog_fail_wait_card_timeout_11091012">Tiempo de espera de tarjeta fuera</string>
+    <string name="recog_fail_policy_not_granted_11091023">Acceso no concedido</string>
+    <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+    <string name="recog_fail_access_not_granted_11091037">Acceso no concedido</string>
+
+    <string name="recog_fail_wear_mask">Favord de usra mascarilla</string>
+    <string name="recog_fail_temperature_high">Temperatura alta</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">Configuracion de contra sena del administrador</string>
+    <string name="init_password_guide">Por favor, introduzca la contrasena a contincuacion y haga clic en aceptar</string>
+    <string name="init_password_guide2">Please set a password below and click "OK".\nBefore you can change any settings, you need to login with a password.</string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">Contrasena</string>
+    <string name="init_password_confirm">Confirm contrasena</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">Seguro</string>
+    <string name="toast_usb_mounted">Dispositivo USB reconocido</string>
+    <string name="toast_admin_login_error">Credenciales incorrectas o reconocimeineto fallido</string>
+    <string name="toast_file_download_start">Descargando</string>
+    <string name="toast_file_download_finish">Descarga exitosa</string>
+    <string name="toast_file_download_check">Validando el archivo descargado</string>
+    <string name="toast_file_validate_fail">Fallo de validacion</string>
+    <string name="toast_file_installing">Instalando</string>
+    <string name="toast_file_updating">Actualizando</string>
+    <string name="toast_port_missed">Numero de puerto faltante</string>
+    <string name="toast_thermal_connected">Dispositivo termico conectado</string>
+    <string name="toast_cannot_find_external">No puedo encontrar dispositivo externo</string>
+
+    <string-array name="language_option">
+        <item>Inglés</item>
+        <item>Coreano</item>
+        <item>Francés</item>
+        <item>Chino</item>
+        <item>Japoneses</item>
+        <item>Alemán</item>
+        <item>Español</item>
+        <item>Italiano</item>
+    </string-array>
+</resources>

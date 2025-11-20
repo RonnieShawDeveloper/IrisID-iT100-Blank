@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/generalOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_general"/>
+
+            <TextView
+                android:id="@+id/general_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/ListviewTextStyle"
+                android:text="@string/general" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/applicationOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_application"
+                android:tint="#80CBC4"/>
+
+            <TextView
+                android:id="@+id/application_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/ListviewTextStyle"
+                android:text="@string/application" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/modeOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_mode_36dp"
+                android:tint="#80CBC4"/>
+
+            <TextView
+                android:id="@+id/mode_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                style="@style/ListviewTextStyle"
+                android:text="@string/mode" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+       <LinearLayout
+            android:id="@+id/displayOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_display" />
+
+            <TextView
+                android:id="@+id/display_bright_txt"
+                style="@style/ListviewTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="@string/display_sound" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/wallpaperOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_wallpaper" />
+
+            <TextView
+                android:id="@+id/wallpaper_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/wallpaper"
+                style="@style/ListviewTextStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/datetimeOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_datetime" />
+
+            <TextView
+                android:id="@+id/date_time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/date_time"
+                style="@style/ListviewTextStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/networkOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_icon_network" />
+
+            <TextView
+                android:id="@+id/network_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/network"
+                style="@style/ListviewTextStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+        <LinearLayout
+            android:id="@+id/externalOption"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/round_usb_black_36dp"
+                android:tint="@color/settingOptionIcon"/>
+
+            <TextView
+                android:id="@+id/external_device_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/external_device"
+                style="@style/ListviewTextStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/activation_Option"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_icon_activiation"
+                android:tint="@color/settingOptionIcon"/>
+
+            <TextView
+                android:id="@+id/activation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/activation"
+                style="@style/ListviewTextStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="#444444" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/setting_box_margin"
+    android:paddingRight="@dimen/setting_box_margin"
+    android:background="@color/settingBackground">
+
+    <!-- Card Reader on/off -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/setting_box"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/setting_box_padding"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/card_reader"
+                style="@style/SettingNextTextStyle"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_card_type"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            style="@style/SettingTextStyle"
+            android:textColor="@color/disableText"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:id="@+id/linear_card_reader"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/setting_box_padding"
+            android:padding="@dimen/setting_box_padding"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txt_card_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/setting_box_margin"
+                android:layout_marginBottom="2dp"
+                android:text="@string/off"
+                style="@style/SettingTextStyle"
+                android:textColor="@color/disableText"/>
+
+            <Switch
+                android:id="@+id/sch_card_reader"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:switchPadding="5dp"
+                android:switchMinWidth="52dp"
+                android:thumbTint="@color/switch_thumb_selector"
+                android:trackTint="@color/switch_track_selector"
+                android:gravity="end"
+                android:enabled="true"
+                android:checked="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Thermal camera on/off -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear_thermal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/setting_box_margin"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/setting_box_selector">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/setting_box_padding"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thermal_camera"
+                        style="@style/SettingNextTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                    android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                    android:background="@color/userMgrDivider"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/setting_box_padding"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/txt_thermal_onoff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/setting_box_margin"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="end"
+                        android:text="@string/off"
+                        style="@style/SettingTextStyle"
+                        android:textColor="@color/settingTextSelect"/>
+                    <Switch
+                        android:id="@+id/sch_thermal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:switchPadding="5dp"
+                        android:switchMinWidth="52dp"
+                        android:thumbTint="@color/switch_thumb_selector"
+                        android:trackTint="@color/switch_track_selector"
+                        android:gravity="end"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Thermal camera detail setting -->
+            <LinearLayout
+                android:id="@+id/linear_thermal_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/setting_box_margin"
+                android:layout_marginTop="4dp"
+                android:paddingStart="@dimen/setting_box_margin"
+                android:background="@drawable/setting_box">
+
+                <!-- Temperature Unit -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/temperature_unit"
+                            style="@style/SettingSubTextStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_thermal_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_marginEnd="@dimen/setting_box_padding"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txt_thermal_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/temperature_c_unit"
+                            style="@style/SettingNextTextStyle"
+                            android:textSize="20sp"
+                            android:textColor="@color/settingTextSelect"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Temperature value -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/threshold_value"
+                                style="@style/SettingSubTextStyle" />
+                            <TextView
+                                android:id="@+id/txt_threshold_limit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  (15 - 50)"
+                                style="@style/SettingSubTextStyle"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_thermal_threshold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_marginEnd="@dimen/setting_box_padding"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/txt_temp_threshold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="38"
+                            android:maxLength="6"
+                            style="@style/SettingNextTextStyle"
+                            android:textSize="20sp"
+                            android:textColor="@color/settingTextSelect"/>
+<!--
+                        <TextView
+                            android:id="@+id/txt_temp_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="bottom"
+                            android:text="@string/temperature_c_unit"
+                            style="@style/SettingSubTextStyle"
+                            android:textColor="@color/settingTextSelect"/>
+                            -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Sensor Correction -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/thermal_correction"
+                                style="@style/SettingSubTextStyle" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  (-20 - +20)"
+                                style="@style/SettingSubTextStyle"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_thermal_correction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/setting_box_margin"
+                        android:layout_marginEnd="@dimen/setting_box_padding"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/txt_thermal_correction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:maxLength="6"
+                            style="@style/SettingNextTextStyle"
+                            android:textSize="20sp"
+                            android:textColor="@color/settingTextSelect"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Temperature alarm -->
+                <LinearLayout
+                    android:id="@+id/linear_temp_alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/setting_box_margin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/temperature_alarm"
+                            style="@style/SettingSubTextStyle"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/setting_box_padding"
+                        android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                        android:gravity="center_vertical">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/ck_temp_alarm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="true"
+                            android:checked="false"
+                            android:theme="@style/Theme.AppCompat"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Access Control -->
+                <LinearLayout
+                    android:id="@+id/linear_temp_access"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/setting_box_margin"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/access_control"
+                            style="@style/SettingSubTextStyle"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/setting_box_padding"
+                        android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                        android:gravity="center_vertical">
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/ck_access_control"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="true"
+                            android:checked="false"
+                            android:theme="@style/Theme.AppCompat"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bb2B2B2C"
+            android:gravity="center"
+            android:clickable="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateDuration="1000"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

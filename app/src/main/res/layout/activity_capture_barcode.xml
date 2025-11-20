@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:background="#2B8892"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/camera_line_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/frame_qr_gray"
+        android:visibility="visible"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/img_qr_bg"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/qr_bg"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/img_qr_line"
+            android:layout_marginTop="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr_orange"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="544dp"
+        android:layout_centerInParent="true">
+
+        <com.irisid.user.it100_sample.Common.ui.BorderTextView
+            android:id="@+id/txt_guide"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:text="@string/qr_capture_guide"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:lineSpacingExtra="8dp"
+            app:textStroke="true"
+            app:textStrokeWidth="3"
+            app:textStrokeColor="#5a5a5a"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_capture_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:layout_toRightOf="@id/camera_line_img"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/img_capture_state"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/qr_code_scanner_48"
+            android:tint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/result_img"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/icon_identified_success"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="390dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:visibility="gone"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/panel_title_notext"/>
+
+</RelativeLayout>

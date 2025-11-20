@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:bottom="0px"
+        android:left="0px"
+        android:right="1px"
+        android:top="1px"
+        >
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1px"
+                android:color="@android:color/transparent" />
+            <padding android:left="@dimen/setting_box_padding"
+                android:top="@dimen/setting_box_padding_narrow"
+                android:right="@dimen/setting_box_padding"
+                android:bottom="@dimen/setting_box_padding_narrow"/>
+            <solid android:color="@color/captureSuccessText" />
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+
+</layer-list>

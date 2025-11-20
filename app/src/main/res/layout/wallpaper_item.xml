@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="220dp"
+        android:layout_height="125dp"
+        android:scaleType="centerCrop"
+        android:src="#222222"/>
+
+    <ImageView
+        android:id="@+id/movie_icon_img_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@drawable/round_add_circle_outline_black_18"
+        android:backgroundTint="#99ffffff"/>
+
+    <ImageView
+        android:id="@+id/movie_icon_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="85dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_icon_movie"/>
+
+    <ImageView
+        android:id="@+id/movie_box_img"
+        android:layout_width="220dp"
+        android:layout_height="125dp"
+        android:visibility="gone"
+        android:background="@drawable/movie_box"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+
+    <item android:drawable="@drawable/arrow_u_00" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_01" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_02" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_03" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_04" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_05" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_06" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_07" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_08" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_09" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_10" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_11" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_12" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_13" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_14" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_15" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_16" android:duration="50"/>
+    <item android:drawable="@drawable/arrow_u_17" android:duration="50"/>
+
+</animation-list>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <LinearLayout
+        android:id="@+id/re_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#222222"
+        android:padding="@dimen/setting_box_margin"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_ethernet"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                style="@style/SettingSubTextStyle"
+                android:text="@string/ethernet"
+                android:textSize="18sp"
+                android:textColor="@color/btn_text_network_type"
+                android:enabled="true"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:background="@drawable/btn_networktype_left"/>
+            <LinearLayout
+                android:id="@+id/linear_touch_left"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_wifi"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                style="@style/SettingSubTextStyle"
+                android:text="@string/wifi"
+                android:textSize="18sp"
+                android:textColor="@color/btn_text_network_type"
+                android:enabled="false"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:background="@drawable/btn_networktype_right"/>
+            <LinearLayout
+                android:id="@+id/linear_touch_right"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_1"/>
+
+</RelativeLayout>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingBackground"
+    android:fitsSystemWindows="false"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/settingBackground">
+
+            <LinearLayout
+                android:id="@+id/linear_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:background="@drawable/setting_box">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device_name"
+                    style="@style/SettingTextStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/textField_device_name"
+                            android:layout_width="540dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:gravity="center_vertical"
+                            app:hintEnabled="false"
+                            app:counterEnabled="false"
+                            app:counterMaxLength="30"
+                            app:counterTextAppearance="@style/TextInputCounterStyle"
+                            app:errorEnabled="false"
+                            app:errorTextAppearance="@style/MyErrorText">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/edit_device_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:inputType="textNoSuggestions"
+                                android:singleLine="true"
+                                android:paddingLeft="10dp"
+                                android:paddingBottom="15dp"
+                                android:focusable="false"
+                                android:text="dsdf"
+                                style="@style/ClearEditTextStyle"
+                                android:textSize="20dp"
+                                android:imeOptions="actionDone"/>
+
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/setting_box_margin"
+                        android:background="@drawable/btn_save_selector"
+                        android:textAllCaps="false"
+                        android:text="@string/save"
+                        style="@style/ButtonTextStyle"
+                        android:textSize="14dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/linear_device_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:background="@drawable/setting_box"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/setting_box_padding"
+                    android:paddingRight="@dimen/setting_box_padding"
+                    android:paddingLeft="@dimen/setting_box_padding">
+
+                    <LinearLayout
+                        android:id="@+id/linear_device_info1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/layout_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            layout="@layout/panel_deviceinfo_item"/>
+
+                        <include
+                            android:id="@+id/layout_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item"/>
+
+                        <include
+                            android:id="@+id/layout_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item"/>
+
+                        <include
+                            android:id="@+id/layout_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_device_info2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/layout_21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            layout="@layout/panel_deviceinfo_item" />
+
+                        <include
+                            android:id="@+id/layout_22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item" />
+
+                        <include
+                            android:id="@+id/layout_23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item"
+                            android:visibility="visible"/>
+
+                        <include
+                            android:id="@+id/layout_24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            layout="@layout/panel_deviceinfo_item"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_appver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/setting_box_margin"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:paddingEnd="@dimen/setting_box_padding"
+                    android:layout_gravity="bottom|end"
+                    android:textColor="@color/muteText"
+                    android:textSize="18sp"
+                    android:text="v1.0.1"/>
+            </FrameLayout>
+
+            <!-- Send Log to UDP Server -->
+            <LinearLayout
+                android:id="@+id/linear_sendlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:layout_marginRight="@dimen/setting_box_margin"
+                android:layout_marginTop="@dimen/setting_box_margin"
+                android:paddingTop="@dimen/setting_box_padding"
+                android:paddingBottom="@dimen/setting_box_margin_narrow"
+                android:paddingEnd="@dimen/setting_box_margin_narrow"
+                android:paddingStart="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:background="@drawable/setting_box_selector"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/white"
+                    android:textSize="20px"
+                    android:text="Send Log to UDP Server"/>
+
+                <!-- Input IP -->
+                <LinearLayout
+                    android:id="@+id/linear_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/setting_box_margin_narrow"
+                    android:padding="@dimen/setting_box_padding_narrow"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text= "IP : Port"
+                            style="@style/SettingTextStyle"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/ip_address_edt"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPhonetic"
+                                android:maxLength="20"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:hint="IP Address"
+                                android:textColor="@color/settingTextSubNormal"
+                                android:theme="@style/Theme.AppCompat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/NetworkEditTextStyle"
+                                android:text=" : "
+                                android:textColor="@color/settingTextSubNormal"/>
+
+                            <EditText
+                                android:id="@+id/port_edt"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:minWidth="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:gravity="center"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="6"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:hint="Port"
+                                android:textColor="@color/settingTextSubNormal"
+                                android:theme="@style/Theme.AppCompat" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/log_level_spin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/setting_box_padding"
+                        android:paddingStart="@dimen/setting_box_padding_narrow"
+                        android:theme="@style/Theme.AppCompat"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                    </android.support.v7.widget.AppCompatSpinner>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <Button
+                            android:id="@+id/btn_start_stop"
+                            style="@style/ButtonTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/setting_box_padding"
+                            android:paddingRight="@dimen/setting_box_padding"
+                            android:background="@drawable/btn_save_selector"
+                            android:text="start"
+                            android:textAllCaps="true"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_ethernet_proxy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/setting_box_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20px"
+                    android:text="Ethernet Proxy Setting"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:layout_marginRight="@dimen/setting_box_margin"
+                android:layout_marginBottom="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/setting_box_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20px"
+                    android:text="@string/system_updates"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_reboot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:layout_marginRight="@dimen/setting_box_margin"
+                android:layout_marginBottom="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/setting_box_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20px"
+                    android:text="@string/reboot"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_factory_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:layout_marginRight="@dimen/setting_box_margin"
+                android:layout_marginBottom="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/setting_box_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20px"
+                    android:text="@string/factory_reset"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        layout="@layout/panel_save_cacel"/>
+
+</FrameLayout>

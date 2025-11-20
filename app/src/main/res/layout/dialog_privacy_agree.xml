@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/setting_box_padding"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_card_line">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/privacy_agree_title"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text= "@string/privacy_agree_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_padding"
+        android:text= "@string/bio_content"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_box_padding_narrow"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ch_face"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/face"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:enabled="false"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimary"/>
+
+        <CheckBox
+            android:id="@+id/ch_iris"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iris"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:enabled="false"
+            android:checked="true"
+            android:buttonTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin_narrow"
+        android:layout_marginBottom="0dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txt_privacy_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="16dp"
+            android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_privacy_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="16dp"
+            android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</LinearLayout>

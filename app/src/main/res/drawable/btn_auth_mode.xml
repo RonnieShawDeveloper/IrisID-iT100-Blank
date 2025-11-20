@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape   android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="#41631B"  android:width="2px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape   android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="#548123"  android:width="2px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape   android:shape="rectangle">
+            <solid android:color="@color/signinTextDisable"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="@color/signinTextDisable"  android:width="2px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</selector>
+
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape   android:shape="rectangle">
+            <solid android:color="#41631B"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="#dddddd"  android:width="1px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape   android:shape="rectangle">
+            <solid android:color="#548123"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="#AAAAAA"  android:width="1px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape   android:shape="rectangle">
+            <solid android:color="@color/signinTextDisable"/>
+            <padding android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp"/>
+            <stroke android:color="@color/signinTextDisable"  android:width="1px"/>
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</selector>
+-->

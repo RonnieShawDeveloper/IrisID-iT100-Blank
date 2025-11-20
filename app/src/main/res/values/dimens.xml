@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="setting_box_padding">24dp</dimen>
+    <dimen name="setting_box_padding_narrow">12dp</dimen>
+    <dimen name="setting_box_margin">16dp</dimen>
+    <dimen name="setting_box_margin_narrow">8dp</dimen>
+    <dimen name="setting_radio_padding">10dp</dimen>
+</resources>

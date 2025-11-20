@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Site key is made from the passphrase for Site key. It is used as a secret key when iT100 encrypts Face template  and Iris templates for the users. If you use the same passphrase for Site key (therefore the same Site key) within several iT100 devices, you can share templates over devices."
+        style="@style/TextInputHintStyle"
+        android:textSize="16px"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

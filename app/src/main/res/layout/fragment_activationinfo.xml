@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingBackground"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true">
+
+    <!-- Deactivate layout -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/setting_box_margin"
+        layout="@layout/panel_deactivate_layout2"/>
+
+    <!-- Activate layout -->
+    <ScrollView
+        android:id="@+id/scroll_active"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/settingBackground">
+
+
+            <!-- Activation Method -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:background="@drawable/setting_box">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activation_method"
+                    style="@style/SettingTextStyle"/>
+
+                <RadioGroup
+                    android:id="@+id/activation_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/setting_box_margin"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/activation_itms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activation_method_itms"
+                        android:paddingStart="10dp"
+                        style="@style/ListviewTextStyle"
+                        android:theme="@style/Theme.AppCompat"
+                        android:checked="true"/>
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/activation_itms_cloud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:text="@string/activation_method_itms_cloud"
+                        android:paddingStart="10dp"
+                        style="@style/ListviewTextStyle"
+                        android:theme="@style/Theme.AppCompat" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/activation_alone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="100dp"
+                        android:text="@string/activation_method_standalone"
+                        android:paddingStart="10dp"
+                        style="@style/ListviewTextStyle"
+                        android:theme="@style/Theme.AppCompat" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <!-- iTMS Method -->
+            <LinearLayout
+                android:id="@+id/linear_itms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <!-- Mode -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:padding="@dimen/setting_box_padding"
+                    android:orientation="vertical"
+                    android:background="@drawable/setting_box">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activation_itms_mode"
+                        style="@style/SettingTextStyle"/>
+
+                    <RadioGroup
+                        android:id="@+id/activation_mode_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/setting_box_margin"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/activation_auto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activation_itms_mode_auto"
+                            android:paddingStart="10dp"
+                            style="@style/ListviewTextStyle"
+                            android:theme="@style/Theme.AppCompat"
+                            android:checked="true"/>
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/activation_manual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:text="@string/activation_itms_mode_manual"
+                            android:paddingStart="10dp"
+                            style="@style/ListviewTextStyle"
+                            android:theme="@style/Theme.AppCompat"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+                <!-- Input IP -->
+                <LinearLayout
+                    android:id="@+id/linear_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:layout_marginTop="@dimen/setting_box_margin"
+                    android:padding="@dimen/setting_box_padding"
+                    android:orientation="horizontal"
+                    android:background="@drawable/setting_box"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ip_address"
+                            style="@style/SettingTextStyle"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/ip_address_edt"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPhonetic"
+                                android:maxLength="20"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text="192.168.0.135"
+                                android:theme="@style/Theme.AppCompat" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/NetworkEditTextStyle"
+                                android:text=" : "
+                                android:textColor="@color/white"/>
+
+                            <EditText
+                                android:id="@+id/port_edt"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPhonetic"
+                                android:maxLength="6"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text="5001"
+                                android:theme="@style/Theme.AppCompat" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <Button
+                            android:id="@+id/btn_check"
+                            style="@style/ButtonTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/setting_box_padding"
+                            android:paddingRight="@dimen/setting_box_padding"
+                            android:background="@drawable/btn_save_selector"
+                            android:text="@string/activation_checkin"
+                            android:textAllCaps="false"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Find iTMS button -->
+                <LinearLayout
+                    android:id="@+id/linear_find_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/btn_find_iTMS"
+                        style="@style/ButtonTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/setting_box_padding"
+                        android:paddingRight="@dimen/setting_box_padding"
+                        android:background="@drawable/btn_save_selector"
+                        android:textAllCaps="false"
+                        android:text="@string/activation_find" />
+
+                </LinearLayout>
+                <!-- Result Text -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/result_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        tools:text = "result text.."/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Standlone Method -->
+            <LinearLayout
+                android:id="@+id/linear_standlone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:layout_marginRight="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:background="@drawable/setting_box"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+<!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+                    <ImageView
+                        android:id="@+id/img_qr2"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="32dp"
+                        android:layout_marginTop="32dp"/>
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                                </LinearLayout>
+                -->
+
+
+                    <!-- passphrase for site key -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textField_sitekey"
+                        android:layout_width="400dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center_vertical"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/password_toggle_drawable"
+                        app:passwordToggleTint="@color/white"
+                        app:counterEnabled="false"
+                        app:counterMaxLength="32"
+                        app:counterTextAppearance="@style/TextInputCounterStyle"
+                        app:hintTextAppearance="@style/TextInputHintStyle"
+                        android:hint="@string/passphrase_site_hint"
+                        android:textColorHint="@android:color/darker_gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/sitekey_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:maxLength="32"
+                            style="@style/ClearEditTextStyle"
+                            android:textSize="18px"
+                            android:imeOptions="actionNext"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- passphrase for api key -->
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textField_apikey"
+                        android:layout_width="400dp"
+                        android:layout_height="90dp"
+                        android:gravity="center_vertical"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleDrawable="@drawable/password_toggle_drawable"
+                        app:passwordToggleTint="@color/white"
+                        app:counterEnabled="false"
+                        app:counterMaxLength="32"
+                        app:counterTextAppearance="@style/TextInputCounterStyle"
+                        app:hintTextAppearance="@style/TextInputHintStyle"
+                        android:hint="@string/passphrase_api_hint"
+                        android:textColorHint="@android:color/darker_gray">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/apikey_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:maxLength="32"
+                            style="@style/ClearEditTextStyle"
+                            android:textSize="18px"
+                            android:imeOptions="actionDone"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!-- Activate button -->
+                    <LinearLayout
+                        android:id="@+id/linear_activate_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btn_activate"
+                            style="@style/ButtonTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/setting_box_padding"
+                            android:paddingRight="@dimen/setting_box_padding"
+                            android:background="@drawable/btn_save_selector"
+                            android:textAllCaps="false"
+                            android:text="@string/activate" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            <!-- iTMS Cloud Method -->
+            <LinearLayout
+                android:id="@+id/linear_itms_cloud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <!-- Enter code -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:padding="@dimen/setting_box_padding"
+                    android:orientation="vertical"
+                    android:background="@drawable/setting_box">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activation_itms_cloud_code"
+                        style="@style/SettingTextStyle"/>
+
+                    <RadioGroup
+                        android:id="@+id/activation_code_radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/setting_box_margin"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/activation_code_qr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activation_itms_cloud_code_qr"
+                            android:paddingStart="10dp"
+                            style="@style/ListviewTextStyle"
+                            android:theme="@style/Theme.AppCompat"
+                            android:checked="true"/>
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/activation_code_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="100dp"
+                            android:text="@string/activation_itms_cloud_code_text"
+                            android:paddingStart="10dp"
+                            style="@style/ListviewTextStyle"
+                            android:theme="@style/Theme.AppCompat"/>
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/setting_box_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_qr_code"
+                            android:layout_width="68dp"
+                            android:layout_height="68dp"
+                            android:src="@drawable/qr_code_scanner"
+                            android:tint="@color/white"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/setting_box_padding"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/activation_itms_cloud_checkin_code"
+                                style="@style/SettingTextStyle"/>
+
+                            <EditText
+                                android:id="@+id/edit_code"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLength="20"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:theme="@style/Theme.AppCompat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/activation_itms_cloud_address"
+                                style="@style/SettingTextStyle"/>
+
+                            <EditText
+                                android:id="@+id/edit_ITMSCloudAddr"
+                                style="@style/NetworkEditTextStyle"
+                                android:layout_width="300dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/network_edt_selector"
+                                android:imeOptions="actionDone"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text="https://itms.irisid.com"
+                                android:theme="@style/Theme.AppCompat" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|end">
+                            <Button
+                                android:id="@+id/btn_check_cloud"
+                                style="@style/ButtonTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/setting_box_padding"
+                                android:paddingRight="@dimen/setting_box_padding"
+                                android:background="@drawable/btn_save_selector"
+                                android:text="@string/activation_checkin"
+                                android:textAllCaps="false"
+                                android:visibility="visible"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!-- Result Text -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/result_txt_cloud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        tools:text = "result text.."/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

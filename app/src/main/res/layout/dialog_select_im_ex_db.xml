@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_import"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:paddingStart="@dimen/setting_box_padding"
+        android:gravity="center_vertical"
+        android:text="@string/db_import_from_usb"
+        android:textSize="20sp"
+        android:textColor="#333333"/>
+
+    <TextView
+        android:id="@+id/txt_export"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="@dimen/setting_box_padding"
+        android:paddingEnd="@dimen/setting_box_padding"
+        android:gravity="center_vertical"
+        android:text="@string/db_export_to_usb"
+        android:textColor="#333333"
+        android:textSize="20sp"/>
+
+</LinearLayout>

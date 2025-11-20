@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_샘플</string>
+    <string name="action_settings">설정</string>
+
+    <!--Title-->
+    <string name="admin_login">관리자 로그인</string>
+    <string name="iris_recognition">홍채 인식</string>
+    <string name="biometrics">생체 인식</string>
+    <string name="system_admin">시스템 관리</string>
+    <string name="user_management">사용자 관리</string>
+    <string name="settings">설정</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">알림</string>
+    <string name="dlgtitle_err">오류</string>
+    <string name="dlgtitle_waring">경고</string>
+    <string name="dlgtitle_guide">안내</string>
+    <string name="dlgtitle_success">성공</string>
+    <string name="dlgtitle_fail">실패</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="save">저장</string>
+    <string name="delete">삭제</string>
+    <string name="update">갱신</string>
+    <string name="confirm">확인</string>
+    <string name="yes_dialog">네</string>
+    <string name="no_dialog">아니오</string>
+    <string name="done">완료</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="on">사용</string>
+    <string name="off">사용 안함</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">아이디 및 비밀번호</string>
+    <string name="username">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="sign_in">로그인</string>
+    <string name="error_username_or_password">사용자 이름 또는 암호가 올바르지 않습니다.</string>
+    <string name="error_login_attempt">로그인 가능 횟수를 조과하셨습니다.\n%d분 후에 다시 시도해주세요</string>
+
+    <!-- User Management -->
+    <string name="search">검색</string>
+    <string name="userlist_guide">&#160;&#160;&#160;세부 정보를 보려면 사용자를 선택하고,\n새로운 사용자를 등록하려면 + 를 누르세요.</string>
+    <string name="user_id">사용자 아이디</string>
+    <string name="title">직함</string>
+    <string name="first_name">이름</string>
+    <string name="last_name">성</string>
+    <string name="email_address">이메일 주소</string>
+    <string name="phone_number">전화번호</string>
+    <string name="modify_bioinfo_dialog_title">생체 인식 변경</string>
+    <string name="add_bioinfo_dialog_title">생체 인식 추가</string>
+    <string name="delete_dialog">사용자를 삭제 하시겠습니까 ?</string>
+    <string name="re_enroll">이미지를 다시 등록 하시겠습니까 ?</string>
+    <string name="modify_bioinfo_dialog">생체 인식 변경을 계속하시겠습니까?</string>
+    <string name="add_bioinfo_dialog">생체 인식 추가를 계속하시겠습니까?</string>
+    <string name="enroll_error_already">사용자가 이미 등록되었습니다.</string>
+    <string name="enroll_error_verified">검증 실패.</string>
+    <string name="enroll_error_capture">홍채 캡처 실패.</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">사용자 ID를 입력하십시오</string>
+    <string name="enroll_error_duplicate_userid">사용자 ID가 이미 존재합니다</string>
+    <string name="enroll_remove_glasses_guide">안경과 마스크를 벗고\n 등록해주세요</string>
+    <!-- <string name="enroll_remove_glasses_guide">안경이나 마스크를 벗고\n 등록해주세요</string> ~v2.02.10 -->
+
+    <string name="all">모두</string>
+    <string name="type">유형</string>
+    <string name="auth_mode">인증 모드</string>
+    <string name="iris_and_face">홍채 + 얼굴</string>
+    <string name="iris">홍채</string>
+    <string name="face">얼굴</string>
+    <string name="select_mode">모드 선택</string>
+    <string name="select_mode_error">인증 모드를 선택해야 합니다</string>
+    <string name="roll">계정 유형</string>
+    <string name="user">사용자</string>
+    <string name="admin">관리자</string>
+    <string name="pw_change">암호 변경</string>
+    <string name="pw_current">현재 암호</string>
+    <string name="pw_new">새 암호</string>
+    <string name="pw_confirm">암호 확인</string>
+    <string name="err_pw_invalid">암호가 잘못되었습니다</string>
+    <string name="err_pw_matched">입력한 암호가 서로 일치하지 않습니다</string>
+    <string name="err_pw_4digit">암호는 최소 4자리 이상이어야 합니다.</string>
+    <string name="pw_changed">암호가 변경 됨</string>
+
+    <string name="user_basic_info">기본 정보</string>
+    <string name="user_card_info">카드 정보</string>
+    <string name="user_details">상세 정보</string>
+    <string name="card_format">카드 형식</string>
+    <string name="card_id">카드 ID</string>
+    <string name="card_facility_code">Facility 코드</string>
+    <string name="card_wiegand_data">Wiegand 데이터</string>
+    <string name="enter_card_id">카드 ID를 입력하세요</string>
+    <string name="enter_facility_code">Facility 코드를 입력하세요</string>
+    <string name="enter_card_info">카드 정보를 입력하세요</string>
+    <string name="tap_card">카드를 인식시켜주세요</string>
+
+    <string name="enroll">등록</string>
+    <string name="card_manual">수동입력</string>
+    <string name="card_number">카드번호</string>
+    <string name="required">*필수입력</string>
+    <string name="user_active">활성화</string>
+    <string name="user_inactive">비활성화</string>
+    <string name="capture_guide">길게 눌러서\n생체정보 등록</string>
+    <string name="select_type">종류 선택</string>
+    <string name="select_type_msg">생체 종류를 선택 해주세요</string>
+    <string name="all_users">전체 사용자 </string>
+    <string name="department">부서</string>
+    <string name="privacy_agree_title">개인 정보보호 동의</string>
+    <string name="privacy_agree_content">본인은 Iris ID가 생체인식정보(홍채, 얼굴)를 본인 여부 등 신분 확인을 위하여 전자적 방법으로 활용하며, 별도로 접근하여 사용하지 않음을 이해하고 동의합니다. 또한 본인은 운영자가 생체인식정보의 수집, 사용, 공개 및 유지 보수와 본인의 생체인식정보에 관한 모든 적용 법률의 준수에 전적으로 책임이 있다는 것을 이해하고 동의합니다.</string>
+    <string name="bio_content">생체인식정보 </string>
+
+    <!-- Setting_General-->
+    <string name="general">일반</string>
+    <string name="device_name">단말기 이름</string>
+    <string name="device_type">단말기 종류</string>
+    <string name="build_type">빌드 유형</string>
+    <string name="tribeca">트리베카</string>
+    <string name="serial_num">시리얼 번호</string>
+    <string name="mac_address_ethernet">이더넷 MAC 주소</string>
+    <string name="mac_address_wifi">무선 MAC 주소</string>
+    <string name="kernel_version">커널 버전</string>
+    <string name="android_version">안드로이드 버전</string>
+    <string name="hardware_version">하드웨어 버전</string>
+    <string name="software_version">소프트웨어 버전</string>
+    <string name="application_version">어플리케이션 버전</string>
+    <string name="general_error_devicename_empty">단말기 이름을 입력하십시오</string>
+    <string name="general_error_devicename_too_long">단말기 이름이 너무 깁니다</string>
+    <string name="reboot">재부팅</string>
+    <string name="reboot_dialog">단말기 재부팅을 계속하시겠습니까?</string>
+    <string name="factory_reset">공장 초기화</string>
+    <string name="factory_reset_dialog">이 작업을 수행하면 내부 저장소의 모든 데이터가 삭제됩니다.\n이 작업은 되돌릴 수 없습니다!</string>
+    <string name="source">소스</string>
+    <string name="open_source_licenses">오픈 소스 라이센스</string>
+    <string name="system_updates">시스템 업데이트</string>
+    <string name="error_not_find_usb_device">USB 장치를 찾을 수 없습니다</string>
+
+
+    <!-- Setting_Application-->
+    <string name="application">어플리케이션</string>
+    <string name="authentication">인증</string>
+    <string name="authentication_type">인증 유형</string>
+    <string name="operation_mode">작동 모드</string>
+    <string name="operation_mode_interactive">선택형</string>
+    <string name="operation_mode_continuous">연속형</string>
+    <string name="app_admin_time_out">관리자 모드 시간 설정</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">결과창 타이머</string>
+    <string name="minutes">분</string>
+    <string name="seconds">초</string>
+
+    <string name="relay">릴레이</string>
+    <string name="delay_time">타이머 간격</string>
+
+    <string name="position_guide">캡쳐위치 안내</string>
+    <string name="voice_announce">음성 안내</string>
+    <string name="userdefine">사용자 정의</string>
+    <string name="app_update">앱 업데이트</string>
+    <string name="app_update_enter_idpw">앱 업데이트를 위해 ID/PW를 입력하세요.</string>
+    <string name="app_update_fail_connect_url">해당 URL을 열 수 없습니다.</string>
+    <string name="app_update_fail_file_error">다운로드 된 파일에 오류가 있습니다.</string>
+    <string name="app_update_fail_file_install">어플리케이션 설치 오류</string>
+    <string name="app_update_fail_url_empty">URL을 입력하세요.</string>
+    <string name="enroll_guide">등록 유의사항 안내</string>
+
+    <string name="file_delete_detail">\'%s\' 파일을 삭제하시겠습니까?</string>
+    <string name="import_export">파일 가져오기/내보내기</string>
+    <string name="transaction_log">출입 로그</string>
+    <string name="user_db">사용자 DB</string>
+    <string name="used">사용중</string>
+    <string name="db_import_from_usb">USB로부터 가져오기</string>
+    <string name="db_export_to_usb">USB로 내보내기</string>
+
+    <string name="error_not_find_db_file">DB 파일을 찾을수 없습니다</string>
+    <string name="export_db_ing">DB 내보내는 중...</string>
+    <string name="import_db_ing">DB 가져오는 중...</string>
+    <string name="import_db_success">DB 가져오기가 완료되었습니다\n기기를 재실행 합니다.</string>
+    <string name="export_db_success">DB 내보내기가 완료되었습니다</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">모드</string>
+    <string name="admin_login_type">관리자 로그인 유형</string>
+    <string name="authentication_mode">인증 모드</string>
+    <string name="authentication_mode_individual">개인</string>
+    <string name="authentication_mode_device">장치</string>
+
+    <string name="mask_detect">마스크 감지</string>
+    <string name="mask_access">마스크 미착용시 출입제한</string>
+    <string name="mask_voice_guide">안내 멘트 사용</string>
+    <string name="mask_text_guide">안내 문구 사용</string>
+
+    <string name="qr_recog">QR 인식</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">Countermeasure</string>
+    <string name="counter_measure_eye">홍채</string>
+    <string name="counter_measure_face">얼굴</string>
+    <string name="counter_measure_lens">렌즈</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">디스플레이</string>
+    <string name="sound">음량</string>
+    <string name="display_sound">디스플레이 &amp; 음량</string>
+    <string name="language">언어</string>
+    <string name="brightness">밝기</string>
+    <string name="auto_adjust">자동 조정</string>
+    <string name="volume">음량</string>
+    <string name="keyboard_manage">키보드 관리</string>
+    <string name="keyboard_and_inpumethod">키보드 및 입력 모드</string>
+    <string name="keyboard_android">Android 키보드(AOSP)</string>
+    <string name="keyboard_google_korean">Google 한글 키보드</string>
+    <string name="sound_touch">터치음</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">배경화면</string>
+    <string name="movies">동영상</string>
+    <string name="images">이미지</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">날짜 및 시간</string>
+    <string name="time_zone">시간대</string>
+    <string name="time_server">NTP 서버</string>
+    <string name="auto_date_time">자동 날짜 및 시간</string>
+    <string name="use_24hour_format">24시간 형식 사용</string>
+
+    <!-- Setting_Network -->
+    <string name="network">네트워크</string>
+    <string name="ip_settings">IP 설정</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Static</string>
+    <string name="ip_address">IP 주소</string>
+    <string name="subnet_mask">서브넷 마스크</string>
+    <string name="prefix_length">Prefix 길이 (범위: 1–31)</string>
+    <string name="default_gateway">기본 게이트웨이</string>
+    <string name="dns1">주 DNS</string>
+    <string name="dns2">보조 DNS</string>
+    <string name="network_error_ipaddress">IP 주소를 얻지 못했습니다.</string>
+    <string name="network_error_connect">인터넷에 연결되어 있지 않습니다. \n네트워크 연결(케이블, 모뎀, 라우터)을 확인하세요 </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">이더넷</string>
+    <string name="conn_ethernet_title">이더넷 연결</string>
+    <string name="conn_ethernet_desc">이더넷으로 연결 하시겠습니까? 연결된 Wi-Fi는 해제 됩니다.</string>
+    <string name="conn_wifi_title">Wi-Fi 연결</string>
+    <string name="conn_wifi_desc">Wi-Fi로 연결 하시겠습니까? 연결된 이더넷은 해제 됩니다.</string>
+    <string name="wait_progress_text">잠시 기다려 주세요...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">활성화</string>
+    <string name="activate">활성화</string>
+    <string name="deactivate">비활성화</string>
+    <string name="deactivating">비활성화하는 중...</string>
+    <string name="activation_method">활성화 방식</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">독립형</string>
+    <string name="activation_itms_mode">모드</string>
+    <string name="activation_itms_mode_auto">자동</string>
+    <string name="activation_itms_mode_manual">수동</string>
+    <string name="activation_find">iTMS 찾기</string>
+    <string name="activation_checkin">Check in iTMS</string>
+    <string name="sitekey">사이트 키</string>
+    <string name="apikey">API 키</string>
+    <string name="device_url">장치 URL</string>
+    <string name="activate_error_empty_sitekey">사이트 키용 암호를 입력하세요 </string>
+    <string name="activate_error_not_find">ITMS 주소를 찾을 수 없음</string>
+    <string name="passphrase_site_hint">사이트 키용 암호</string>
+    <string name="passphrase_api_hint">API 키용 암호</string>
+    <string name="deactivate_dialog">이 장치를 비활성화하시겠습니까? 비활성화할 경우 모든 데이터가 함께 지워집니다.</string>
+
+    <string name="pw_change1">암호 변경</string>
+    <string name="pw_current1">현재 암호</string>
+    <string name="pw_new1">새 암호</string>
+    <string name="pw_confirm1">암호 확인</string>
+
+    <string name="result_duration">결과창 지속 시간</string>
+    <string name="admin_time_out">관리자 모드 시간 제한</string>
+
+    <string name="am">오전</string>
+    <string name="pm">오후</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">외부장치</string>
+    <string name="thermal_camera">열화상 카메라</string>
+    <string name="card_reader">카드 리더</string>
+    <string name="error_card_reader_not_find">카드리더 기기를 찾을 수 없습니다</string>
+    <string name="temperature_unit">온도 단위</string>
+    <string name="threshold_value">기준 온도</string>
+    <string name="temperature_alarm">온도 알람</string>
+    <string name="access_control">출입 제어</string>
+    <string name="thermal_compensation">온도 보상</string>
+    <string name="error_thermal_not_find">열화상 센서가 감지되지 않았습니다</string>
+    <string name="error_input_value">값을 다시 확인하세요</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">인증되었습니다</string>
+    <!--<string name="liveness_eye_fail">가짜 생체정보입니다</string>
+    <string name="capture_fail_liveness_eye">가짜 생체정보입니다</string>-->
+    <!-- from v2.05.11 <string name="liveness_eye_detect_fail">사용자 인증실패</string>
+    <string name="capture_fail_fake_eye">사용자 인증실패</string> -->
+    <string name="liveness_eye_detect_fail">가짜 생체정보입니다</string>
+    <string name="capture_fail_fake_eye">가짜 생체정보입니다</string>
+    <string name="capture_fail">생체인증 실패</string>
+    <string name="capture_fail_timeout">인증시간 초과</string>
+    <string name="capture_fail_inactive_user">허가되지 않습니다</string>
+    <string name="capture_fail_wrong_auth_mode">인증모드를 확인하세요</string>
+    <string name="capture_fail_identify">사용자 인증실패</string>
+
+    <string name="go_right">오른쪽으로 이동</string>
+    <string name="go_left">왼쪽으로 이동</string>
+    <string name="go_up">위로 이동</string>
+    <string name="go_down">아래로 이동</string>
+    <string name="go_forward">앞으로 오세요</string>
+    <string name="go_backward">뒤로 물러나세요</string>
+
+    <string name="card_verified_wait_bio">카드가 확인되었습니다</string>
+    <string name="card_fail_verified">카드가 유효하지 않습니다</string>
+    <string name="card_fail_mismatch">생체정보와 카드 불일치</string>
+    <string name="card_fail_timeout">카드인식 시간 초과</string>
+    <string name="bio_fail_timeout">생체인식 시간 초과</string>
+    <string name="capture_closer_camera">카메라 쪽으로 이동 해주세요</string>
+    <string name="capture_for_audit_image">기록용 캡쳐 진행중</string>
+    <string name="wait_checking_permission">권한 확인중</string>
+
+    <string name="recog_success_0">인증되었습니다</string>
+    <string name="recog_success_card_verified_11091006">승인되었습니다</string>
+    <string name="recog_success_access_granted_11091036">허가되었습니다</string>
+    <string name="recog_fail_fake_eye_detected_11071010">생체인증 실패</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">생체인증 실패</string>
+    <string name="recog_fail_inactive_user_11091003">허가되지 않습니다</string>
+    <string name="recog_fail_card_not_verified_11091007">승인되지 않습니다</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">승인되지 않습니다</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">승인되지 않습니다</string>
+    <string name="recog_fail_wait_card_timeout_11091012">카드인식 시간 초과</string>
+    <string name="recog_fail_policy_not_granted_11091023">허가되지 않습니다</string>
+    <string name="recog_fail_pacs_timeout_11091014">시간 초과</string>
+    <string name="recog_fail_access_not_granted_11091037">허가되지 않습니다</string>
+
+    <string name="recog_fail_wear_mask">마스크를 착용해주세요</string>
+    <string name="recog_fail_temperature_high">온도가 높습니다</string>
+
+    <!-- Capture IDIS -->
+    <string name="qr_authenticate_success">QR 코드가 정상적으로\n인증되었습니다</string>
+    <string name="qr_capture_guide">화면에 표시된 측정 위치에\nQR 코드를 인식시켜주세요</string>
+    <string name="move_capture_point">화면에 표시된 측정 위치로\n이동해주세요</string>
+    <string name="welcome_msg">고객님, 환영합니다</string>
+    <string name="wear_mask">마스크를 착용해주십시오</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">초기 비밀번호를 설정해주세요</string>
+    <string name="init_password_guide">비밀번호를 설정하고 확인 버튼을 누르세요 </string>
+    <string name="init_password_empty_guide">비밀번호 설정을 원하지 않으시면 입력창을 비우고 확인 버튼을 누르세요</string>
+    <string name="init_password_new">비밀번호</string>
+    <string name="init_password_confirm">비밀번호 확인</string>
+
+    <string-array name="language_option">
+        <item>영어</item>
+        <item>한국어</item>
+        <item>프랑스어</item>
+        <item>중국어</item>
+        <item>일본어</item>
+        <item>독일어</item>
+        <item>스페인어</item>
+        <item>이탈리아어</item>
+    </string-array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <LinearLayout
+        android:id="@+id/re_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#222222"
+        android:padding="@dimen/setting_box_margin"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_ethernet"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                style="@style/SettingSubTextStyle"
+                android:text="@string/ethernet"
+                android:textSize="18sp"
+                android:textColor="@color/btn_text_network_type"
+                android:enabled="true"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:background="@drawable/btn_networktype_right"/>
+            <LinearLayout
+                android:id="@+id/linear_touch_left"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_wifi"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                style="@style/SettingSubTextStyle"
+                android:text="@string/wifi"
+                android:textSize="18sp"
+                android:textColor="@color/btn_text_network_type"
+                android:enabled="false"
+                android:textAllCaps="false"
+                android:clickable="true"
+                android:background="@drawable/btn_networktype_left"/>
+            <LinearLayout
+                android:id="@+id/linear_touch_right"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"/>
+        </FrameLayout>
+<!--
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/segment_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            segmentedgroup:sc_border_width="2dp"
+            segmentedgroup:sc_corner_radius="10dp"
+            segmentedgroup:sc_tint_color="@color/colorPrimary"
+            segmentedgroup:sc_checked_text_color="@color/white">
+
+            <RadioButton
+                android:id="@+id/button21"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ethernet"
+                android:textSize="18sp"
+                style="@style/RadioButton"
+                android:paddingTop="@dimen/setting_radio_padding"
+                android:paddingBottom="@dimen/setting_radio_padding"/>
+
+            <RadioButton
+                android:id="@+id/button22"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Wifi"
+                android:textSize="18sp"
+                style="@style/RadioButton"
+                android:paddingTop="@dimen/setting_radio_padding"
+                android:paddingBottom="@dimen/setting_radio_padding"/>
+        </info.hoang8f.android.segmented.SegmentedGroup>
+-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_1"/>
+        <!--
+    <fragment
+        android:name="com.irisid.user.it100_sample.Settings.TabEthernetFragment"
+        android:id="@+id/fragment_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_1"/>
+-->
+</RelativeLayout>

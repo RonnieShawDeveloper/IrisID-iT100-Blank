@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="620dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/setting_box_padding"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/dialog_card_line">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingTop="@dimen/setting_box_padding_narrow"
+        android:paddingBottom="@dimen/setting_box_padding_narrow"
+        android:text="@string/enroll_remove_glasses_guide"
+        android:textColor="@color/black"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="normal"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginRight="@dimen/setting_box_padding"
+            android:src= "@drawable/mask_off"/>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src= "@drawable/glasses_off"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin_narrow"
+        android:layout_marginBottom="@dimen/setting_box_margin_narrow"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/txt_guide_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="16dp"
+            android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+            android:text="@string/ok"
+            android:textColor="#FA5E00"
+            android:textSize="24dp"/>
+    </LinearLayout>
+</LinearLayout>

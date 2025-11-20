@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/setting_box_padding"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/dialog_card_line">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/setting_box_margin"
+        android:layout_marginEnd="@dimen/setting_box_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/card_format"
+            android:layout_marginStart="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_totalbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="@dimen/setting_box_padding_narrow"
+                style="@style/CardEditTextStyle"
+                android:background="@drawable/cardinfo_box_line"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/card_id"
+            android:layout_marginTop="@dimen/setting_box_padding"
+            android:layout_marginStart="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_cardid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_card_id"
+                android:padding="@dimen/setting_box_padding_narrow"
+                style="@style/CardEditTextStyle"
+                android:background="@drawable/cardinfo_box_line"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_fcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/card_facility_code"
+            android:layout_marginTop="@dimen/setting_box_padding"
+            android:layout_marginStart="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_fcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_facility_code"
+                android:padding="@dimen/setting_box_padding_narrow"
+                style="@style/CardEditTextStyle"
+                android:background="@drawable/cardinfo_box_line"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/card_wiegand_data"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_wdata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding_narrow"
+                style="@style/CardEditTextStyle"
+                android:background="@drawable/cardinfo_box_line"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:paddingTop="@dimen/setting_box_padding"
+        android:paddingBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/ButtonTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/ButtonTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginEnd="@dimen/setting_box_margin"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

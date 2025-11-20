@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Title-->
+    <string name="admin_login">Admin Login</string>
+    <string name="iris_recognition">Iris Recognition</string>
+    <string name="biometrics">Biometrics</string>
+    <string name="system_admin">System Admin</string>
+    <string name="user_management">User Management</string>
+    <string name="settings">Settings</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">Notice</string>
+    <string name="dlgtitle_err">Error</string>
+    <string name="dlgtitle_waring">Warning</string>
+    <string name="dlgtitle_guide">Guide</string>
+    <string name="dlgtitle_success">Success</string>
+    <string name="dlgtitle_fail">Fail</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="yes_dialog">YES</string>
+    <string name="no_dialog">NO</string>
+    <string name="done">Done</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ID &amp; Password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="error_username_or_password">Username or Password is incorrect.</string>
+    <string name="error_login_attempt">Login limit exceeded.\nPlease try again in %d minutes</string>
+
+    <!-- User Management -->
+    <string name="search">Search</string>
+    <string name="userlist_guide">&#160;&#160;&#160;Select a user to see detail, or\nclick on + to create a new user.</string>
+    <string name="user_id">User ID</string>
+    <string name="title">Title</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email_address">Email address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="modify_bioinfo_dialog_title">Change Biometrics</string>
+    <string name="add_bioinfo_dialog_title">Add Biometrics</string>
+    <string name="delete_dialog">Are you sure you want to delete the user ?</string>
+    <string name="re_enroll">Are you sure you want to re-enroll the image ?</string>
+    <string name="modify_bioinfo_dialog">Are you sure you want to change Biometrics?</string>
+    <string name="add_bioinfo_dialog">Are you sure you want to add Biometrics?</string>
+    <string name="enroll_error_already" tools:ignore="MissingTranslation">User already enrolled.</string>
+    <string name="enroll_error_verified" tools:ignore="MissingTranslation"> Verified fail.</string>
+    <string name="enroll_error_capture" tools:ignore="MissingTranslation"> Capture fail.</string>
+    <string name="enroll_error_capture_iris" tools:ignore="MissingTranslation"> Capture iris fail.</string>
+    <string name="enroll_error_capture_face" tools:ignore="MissingTranslation"> Capture face fail.</string>
+    <string name="error_occluded_eyes" tools:ignore="MissingTranslation">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid" tools:ignore="MissingTranslation">Please enter User ID </string>
+    <string name="enroll_error_duplicate_userid" tools:ignore="MissingTranslation">User ID already exists </string>
+    <string name="enroll_error_space_userid" tools:ignore="MissingTranslation">Spaces are not allowed</string>
+    <string name="enroll_remove_glasses_guide">Please remove \nyour glasses and face mask</string>
+    <!-- <string name="enroll_remove_glasses_guide">Please remove \nyour glasses or face mask</string>  ~v2.02.10 -->
+
+
+    <string name="all">All</string>
+    <string name="type" tools:ignore="MissingTranslation">Type</string>
+    <string name="auth_mode">Authentication\nMode</string>
+    <string name="iris_and_face" tools:ignore="MissingTranslation">IRIS + FACE</string>
+    <string name="iris" tools:ignore="MissingTranslation">IRIS</string>
+    <string name="face" tools:ignore="MissingTranslation">FACE</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="select_mode_error">You need to select authentication mode</string>
+    <string name="roll" tools:ignore="MissingTranslation">Account Type</string>
+    <string name="user" tools:ignore="MissingTranslation">User</string>
+    <string name="admin" tools:ignore="MissingTranslation">Admin</string>
+    <string name="pw_change">Change Password</string>
+    <string name="pw_current">Current Password</string>
+    <string name="pw_new">New Password</string>
+    <string name="pw_confirm">Confirm Password</string>
+    <string name="err_pw_invalid">Incorrect password</string>
+    <string name="err_pw_matched">New and Confirm password did not match</string>
+    <string name="err_pw_4digit" tools:ignore="MissingTranslation">Password must be more than 4 characters</string>
+    <string name="pw_changed">Password changed</string>
+
+    <string name="user_basic_info">Basic Info</string>
+    <string name="user_card_info">Card Info</string>
+    <string name="user_details">Details</string>
+    <string name="card_format">Card Format</string>
+    <string name="card_id">Card ID</string>
+    <string name="card_facility_code">Facility Code</string>
+    <string name="card_wiegand_data">Wiegand Data</string>
+    <string name="enter_card_id">Enter Card ID</string>
+    <string name="enter_facility_code">Enter Facility Code</string>
+    <string name="enter_card_info">Enter Card Info</string>
+    <string name="tap_card">Tap the card</string>
+    <string name="enroll">Enrollment</string>
+    <string name="card_manual">Manual</string>
+    <string name="card_number">Card Number</string>
+    <string name="required">*Required</string>
+    <string name="user_active">Active</string>
+    <string name="user_inactive">Inactive</string>
+    <string name="capture_guide">Long press and \n capture biometrics</string>
+    <string name="select_type">Select Type</string>
+    <string name="select_type_msg">Please select biometrics type</string>
+    <string name="all_users">All users </string>
+    <string name="department">Department</string>
+    <string name="role">Role</string>
+    <string name="privacy_agree_title">Privacy Consent</string>
+    <string name="privacy_agree_content">I understand and agree that Iris ID does not receive, and has no access to, my biometric data. I further understand and agree that my employer is solely responsible for the collection, use, disclosure, and maintenance of my biometric data and for compliance with all applicable laws regarding my biometric data.</string>
+    <string name="bio_content">Biometric Enrollment</string>
+
+    <string name="privacy_agree_content_itmscloud">By selecting “I agree” below, I consent to the collection of my biometric information (face and iris) by this Iris ID Systems, Inc. (“Iris ID”) terminal. I further consent to the terminal disclosing templates of my iris and face to Iris ID, which may in turn re-disclose my biometric information to its vendors and affiliates, all for the purpose of employee time management, including my daily start and end times. I understand that this consent remains valid and continues to apply to my use of the Iris ID terminal and Iris ID’s receipt and re-disclosure of my biometric information until such time that notice of revocation of my consent is received by Iris ID. I further understand that Iris ID may store and use my biometric information for up to thirty (30) days after my employer notifies Iris ID that my employment has ended.</string>
+    <string name="agree" tools:ignore="MissingTranslation">I agree</string>
+    <string name="disagree" tools:ignore="MissingTranslation">I disagree</string>
+
+    <!-- Setting_General-->
+    <string name="general">General</string>
+    <string name="device_name">Device Name</string>
+    <string name="device_type">Device Type</string>
+    <string name="build_type">Build Type</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">Serial Number</string>
+    <string name="mac_address_ethernet">Ethernet MAC Address</string>
+    <string name="mac_address_wifi">Wireless MAC Address</string>
+    <string name="kernel_version">Kernel Version</string>
+    <string name="android_version">Android Version</string>
+    <string name="hardware_version">Hardware Version</string>
+    <string name="software_version">Software Version</string>
+    <string name="application_version">Application Version</string>
+    <string name="general_error_devicename_empty">Please enter device name </string>
+    <string name="general_error_devicename_too_long">Device name is too long</string>
+    <string name="reboot">Reboot</string>
+    <string name="reboot_dialog">Are you sure you want to reboot device?</string>
+    <string name="factory_reset">Factory Reset</string>
+    <string name="factory_reset_dialog">This will erase all data from your device\'s internal storage.\nYou can\'t undo this action!</string>
+    <string name="source">Source</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="system_updates">System updates</string>
+    <string name="system_updates_dialog">Are you sure you want to update system?</string>
+    <string name="system_updates_select_file">Please select *.ipk file</string>
+    <string name="system_updates_copy_verify">Copying &amp; verifying system update file...</string>
+    <string name="system_updates_insert_usb">Please insert a disk into USB driver</string>
+    <string name="error_not_find_usb_device">USB device not recognized</string>
+
+    <string name="import_export">Import/Export</string>
+    <string name="transaction_log">Transaction Log</string>
+    <string name="user_db">User DB</string>
+    <string name="used">Used</string>
+    <string name="db_import_from_usb">Import from USB storage</string>
+    <string name="db_export_to_usb">Export to USB storage</string>
+    <string name="error_not_find_db_file">Can\'t find the DB file</string>
+    <string name="export_db_ing">Export DB...</string>
+    <string name="import_db_ing">Import DB...</string>
+    <string name="import_db_success">Import has been successfully completed.\nDevice will reboot soon</string>
+    <string name="export_db_success">Export has been successfully completed.</string>
+
+    <!-- Setting_Application-->
+    <string name="application">Application</string>
+    <string name="authentication">Authentication</string>
+    <string name="authentication_type">Authentication Type</string>
+    <string name="operation_mode">Operation Mode</string>
+    <string name="operation_mode_interactive">Interactive</string>
+    <string name="operation_mode_continuous">Continuous</string>
+    <string name="app_admin_time_out">Administrator Mode Timeout</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">Result Auto-dismiss Timer Interval</string> <!-- Recognition Result Duration -->
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+
+    <string name="relay">Relay</string>
+    <string name="delay_time">Timer Interval</string>
+    <string name="door_status_monitoring">Door Status Monitoring</string>
+    <string name="door_status_monitoring_forced_open">Forced Open</string>
+    <string name="door_status_monitoring_not_open">Not Opened</string>
+    <string name="door_status_monitoring_held_open">Held Open</string>
+    <string name="position_guide">Position Guide</string>
+    <string name="voice_announce">Voice Announce</string>
+    <string name="tamper_protection">Tamper Protection</string>
+    <string name="tamper_protection_del_data">Delete User Data</string>
+    <string name="userdefine">User Define</string>
+    <string name="file_delete_detail">Delete \'%s\' file?</string>
+    <string name="app_update">App Update</string>
+    <string name="app_update_enter_idpw">Enter the ID/PW for App update</string>
+    <string name="app_update_fail_connect_url">Can\'t connect the URL</string>
+    <string name="app_update_fail_file_error">There is a problem with the downloaded file</string>
+    <string name="app_update_fail_file_install">App Install error</string>
+    <string name="app_update_fail_url_empty">Please enter a URL</string>
+    <string name="enroll_guide">Enrollment Precaution Guide</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">Mode</string>
+    <string name="admin_login_type">Admin Login Type</string>
+    <string name="authentication_mode">Authentication Mode</string>
+    <string name="authentication_mode_individual">Individual</string>
+    <string name="authentication_mode_device">Device</string>
+
+    <string name="mask_detect">Mask Detect</string>
+    <string name="mask_access">Access Control</string>
+    <string name="mask_voice_guide">Voice Guide</string>
+    <string name="mask_text_guide">Text Guide</string>
+
+    <string name="qr_recog">QR Recognition</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">Countermeasure</string>
+    <string name="counter_measure_eye">Iris</string>
+    <string name="counter_measure_face">Face</string>
+    <string name="counter_measure_lens">Lens</string>
+
+    <string name="save_audit_image">Save Audit Face Image</string>
+    <string name="saving_mode">Power Saving</string>
+    <string name="saving_screen_timeout">Screen Timeout</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">Display</string>
+    <string name="sound">Sound</string>
+    <string name="display_sound">Display &amp; Sound</string>
+    <string name="language">Language</string>
+    <string name="brightness">Brightness</string>
+    <string name="auto_adjust">Auto adjust</string>
+    <string name="volume">Volume</string>
+    <string name="keyboard_manage">Manage keyboards</string>
+    <string name="keyboard_and_inpumethod">Keyboard &amp; Input Methods</string>
+    <string name="keyboard_android">Android Keyboard(AOSP)</string>
+    <string name="keyboard_google_korean">Google Korean Input</string>
+    <string name="sound_touch">Touch Sounds</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">Wallpaper</string>
+    <string name="movies">Movies</string>
+    <string name="images">Images</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">Date &amp; Time</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="time_server">NTP Server</string>
+    <string name="auto_date_time">Automatic date and time</string>
+    <string name="use_24hour_format">Use 24-hour format</string>
+
+    <!-- Setting_Network -->
+    <string name="network">Network</string>
+    <string name="ip_settings">IP Settings</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Static</string>
+    <string name="ip_address">IP Address</string>
+    <string name="subnet_mask">Subnet Mask</string>
+    <string name="prefix_length">Prefix Length (Range: 1–31)</string>
+    <string name="default_gateway">Default Gateway</string>
+    <string name="dns1">Primary DNS</string>
+    <string name="dns2">Secondary DNS</string>
+    <string name="network_error_ipaddress" tools:ignore="MissingTranslation"> Failed to obtain IP Address. </string>
+    <string name="network_error_connect" tools:ignore="MissingTranslation"> There is no Internet connection. \nCheck the network connection (cables, modem and router) </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="conn_ethernet_title">Connect Ethernet</string>
+    <string name="conn_ethernet_desc">Are you sure you want to connect ethernet? Connection to Wi-Fi will be disconnected.</string>
+    <string name="conn_wifi_title">Connect Wi-Fi</string>
+    <string name="conn_wifi_desc">Are you sure you want to connect Wi-Fi? Connection to ethernet will be disconnected.</string>
+    <string name="wait_progress_text">Please wait...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">Activation</string>
+    <string name="activate" tools:ignore="MissingTranslation">Activate</string>
+    <string name="deactivate" tools:ignore="MissingTranslation">Deactivate</string>
+    <string name="deactivating" tools:ignore="MissingTranslation">deactivating...</string>
+    <string name="activation_method" tools:ignore="MissingTranslation">Activation Method</string>
+    <string name="activation_method_itms" tools:ignore="MissingTranslation">iTMS</string>
+    <string name="activation_method_itms_cloud" tools:ignore="MissingTranslation">iTMS Cloud</string>
+    <string name="activation_method_standalone" tools:ignore="MissingTranslation">Standalone</string>
+    <string name="activation_itms_mode" tools:ignore="MissingTranslation">Mode</string>
+    <string name="activation_itms_mode_auto" tools:ignore="MissingTranslation">Auto</string>
+    <string name="activation_itms_mode_manual" tools:ignore="MissingTranslation">Manual</string>
+    <string name="activation_itms_cloud_code" tools:ignore="MissingTranslation">Enter Code</string>
+    <string name="activation_itms_cloud_code_qr" tools:ignore="MissingTranslation">Scan QR Code</string>
+    <string name="activation_itms_cloud_code_text" tools:ignore="MissingTranslation">Enter Text Code</string>
+    <string name="activation_itms_cloud_checkin_code" tools:ignore="MissingTranslation">Checkin Code</string>
+    <string name="activation_itms_cloud_address" tools:ignore="MissingTranslation">iTMS Cloud Address</string>
+
+    <string name="activation_find" tools:ignore="MissingTranslation">Find iTMS</string>
+    <string name="activation_checkin" tools:ignore="MissingTranslation">Check in iTMS</string>
+    <string name="sitekey">Site Key</string>
+    <string name="apikey">API Key</string>
+    <string name="device_url">Device URL</string>
+    <string name="activate_error_empty_sitekey" tools:ignore="MissingTranslation">Please enter passphrase for sitekey </string>
+    <string name="activate_error_not_find">Can\'t find ITMS address</string>
+    <string name="passphrase_site_hint">Passphrase for Site Key </string>
+    <string name="passphrase_api_hint">Passphrase for API Key</string>
+    <string name="deactivate_dialog">Are you sure you want to deactivate this device? If you deactivate the device, you will permanently lose all the data stored in this device.</string>
+
+    <string name="pw_change1" tools:ignore="MissingTranslation">Change Password</string>
+    <string name="pw_current1" tools:ignore="MissingTranslation">Current Password</string>
+    <string name="pw_new1" tools:ignore="MissingTranslation">New Password</string>
+    <string name="pw_confirm1" tools:ignore="MissingTranslation">Confirm Password</string>
+
+    <string name="popupinfo_sitekey" tools:ignore="MissingTranslation"><font color='#ffffff'>Site key </font>is made from the passphrase for Site key. It is used as a secret key when iT100 encrypts Face template  and Iris templates for the users. If you use the same passphrase for Site key (therefore the same Site key) within several iT100 devices, you can share templates over devices.</string>
+    <string name="popupinfo_apikey" tools:ignore="MissingTranslation">API key is such a password for using REST API of the iT100 device. It is recommended to use a different passphrase for API keys (therefore different API Keys) to each iT100 devices</string>
+
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">External Device</string>
+    <string name="thermal_camera">Thermal Camera</string>
+    <string name="card_reader">Card Reader</string>
+    <string name="card_read_timeout">Card Read Timeout</string>
+    <string name="error_card_reader_not_find">Can\'t find card reader device</string>
+    <string name="temperature_unit">Temperature Unit</string>
+    <string name="temperature_c_unit" tools:ignore="MissingTranslation">℃</string>
+    <string name="temperature_f_unit" tools:ignore="MissingTranslation">℉</string>
+    <string name="threshold_value">Threshold Value</string>
+    <string name="temperature_alarm">Temperature Alarm</string>
+    <string name="access_control">Access Control</string>
+    <string name="sensor_correction" tools:ignore="MissingTranslation">Sensor Correction (1.00 - 1.20)</string>
+    <string name="thermal_correction" tools:ignore="MissingTranslation">Temperature Correction</string>
+    <string name="thermal_compensation">Temperature Compensation</string>
+    <string name="error_thermal_not_find">Can\'t find thermal camera device</string>
+    <string name="error_input_value">Check the value again</string>
+    
+    <!-- Capture -->
+    <string name="capture_identify">Identified</string>
+  <!--  <string name="liveness_eye_fail">Liveness Detection Failure</string> -->
+<!--  <string name="liveness_eye_detect_fail">Identification Failed</string>  from v2.05.11 -->
+    <string name="liveness_eye_detect_fail">Liveness Detection Failure</string>
+    <string name="capture_fail_fake_eye">Liveness Detection Failure</string>
+    <!--  <string name="capture_fail_liveness_eye">Liveness detected</string> -->
+  <!--  <string name="capture_fail_fake_eye">Fake eye detected</string> -->
+    <!--     <string name="capture_fail_fake_eye">Identification Failed</string> from v2.05.11 -->
+    <string name="capture_fail">Capture failed</string>
+    <string name="capture_fail_timeout">Capture timed out</string>
+    <string name="capture_fail_inactive_user">Access not granted</string>
+    <string name="capture_fail_wrong_auth_mode">Check the auth mode</string>
+    <string name="capture_fail_identify">Identification Failed</string>
+    <string name="go_right">Move right</string>
+    <string name="go_left">Move left</string>
+    <string name="go_up">Move up</string>
+    <string name="go_down">Move down</string>
+    <string name="go_forward">Move forward</string>
+    <string name="go_backward">Move backward</string>
+
+    <string name="card_verified_wait_bio">Card is verified</string>
+    <string name="card_fail_verified">Card is not verified</string>
+    <string name="card_fail_mismatch">Bio and card mismatched</string>
+    <string name="card_fail_timeout">Card timed out</string>
+    <string name="bio_fail_timeout">Capture Bio timed out</string>
+    <string name="capture_closer_camera">Closer to the camera</string>
+    <string name="capture_for_audit_image">Capturing audit image</string>
+    <string name="wait_checking_permission">Checking permissions</string>
+
+    <string name="recog_success_0">Identified</string>
+    <string name="recog_success_card_verified_11091006">Verified</string>
+    <string name="recog_success_access_granted_11091036">Access Granted</string>
+    <string name="recog_fail_fake_eye_detected_11071010">Liveness Detection Failed</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">Liveness Detection Failed</string>
+    <string name="recog_fail_inactive_user_11091003">Access Not Granted</string>
+    <string name="recog_fail_card_not_verified_11091007">Verification Failed</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">Verification Failed</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">Verification Failed</string>
+    <string name="recog_fail_wait_card_timeout_11091012">Card Timed Out</string>
+    <string name="recog_fail_policy_not_granted_11091023">Access Not Granted</string>
+       <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+       <string name="recog_fail_access_not_granted_11091037">Access Not Granted</string>
+    <string name="recog_fail_wear_mask">Please wear a face mask.</string>
+    <string name="recog_fail_temperature_high">High Temperature</string>
+
+    <!-- Capture IDIS -->
+    <string name="qr_authenticate_success">The QR code has been successfully authenticated</string>
+    <string name="qr_capture_guide">Please recognize the QR code to the camera</string>
+    <string name="move_capture_point">Center your face in the guide box</string>
+    <string name="welcome_msg">Welcome</string>
+    <string name="wear_mask">Please wear a face mask</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">Admin Password Setting</string>
+    <string name="init_password_guide">Please set a password below and click "OK". </string>
+    <string name="init_password_guide2">Please set a password below and click "OK".\nBefore you can change any settings, you need to login with a password.</string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">Password</string>
+    <string name="init_password_confirm">Confirm Password</string>
+
+    <!-- Scan QR code -->
+    <string name="qr_scan_guide">Please scan the QR code to the camera</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">Saved</string>
+    <string name="toast_usb_mounted">USB device recognized</string>
+    <string name="toast_admin_login_error">Wrong credentials or failed authorization</string>
+    <string name="toast_file_download_start">Downloading...</string>
+    <string name="toast_file_download_finish">Downloading success</string>
+    <string name="toast_file_download_check">Validating downloaded file</string>
+    <string name="toast_file_validate_fail">Validation failure</string>
+    <string name="toast_file_installing">Installing...</string>
+    <string name="toast_file_updating">Updating...</string>
+    <string name="toast_port_missed">Missing port number</string>
+    <string name="toast_thermal_connected">Thermal device connected</string>
+    <string name="toast_cannot_find_external">Can\'t find external device</string>
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+    <string-array name="language_option2">
+        <item>English</item>
+        <item>한국어</item>
+        <item>Türkçe</item>
+        <item>العربية</item>
+        <item>中文 (繁體)</item>
+        <item>中文 (简体)</item>
+        <item>日本語</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+        <item>italiano</item>
+        <item>Português</item>
+
+    </string-array>
+    <string-array name="time_zone_option">
+        <item>New York GMT-04:00</item>
+        <item>Seoul GMT+09:00</item>
+    </string-array>
+
+    <!-- timezone 85 items -->
+    <string-array name="time_zone_id">
+        <item>GMT</item>
+        <item>Pacific/Majuro</item>
+        <item>Pacific/Midway</item>
+        <item>Pacific/Honolulu</item>
+        <item>America/Anchorage</item>
+        <item>America/Los_Angeles</item>
+        <item>America/Tijuana</item>
+        <item>America/Phoenix</item>
+        <item>America/Chihuahua</item>
+        <item>America/Denver</item>
+        <item>America/Costa_Rica</item>
+        <item>America/Chicago</item>
+        <item>America/Mexico_City</item>
+        <item>America/Regina</item>
+        <item>America/Bogota</item>
+        <item>America/New_York</item>
+        <item>America/Caracas</item>
+        <item>America/Barbados</item>
+        <item>America/Halifax</item>
+        <item>America/Manaus</item>
+        <item>America/Santiago</item>
+        <item>America/St_Johns</item>
+        <item>America/Sao_Paulo</item>
+        <item>America/Argentina/Buenos_Aires</item>
+        <item>America/Godthab</item>
+        <item>America/Montevideo</item>
+        <item>Atlantic/South_Georgia</item>
+        <item>Atlantic/Azores</item>
+        <item>Atlantic/Cape_Verde</item>
+        <item>Africa/Casablanca</item>
+        <item>Europe/London</item>
+        <item>Europe/Amsterdam</item>
+        <item>Europe/Belgrade</item>
+        <item>Europe/Brussels</item>
+        <item>Europe/Sarajevo</item>
+        <item>Africa/Windhoek </item>
+        <item>Africa/Brazzaville</item>
+        <item>Asia/Amman</item>
+        <item>Europe/Athens</item>
+        <item>Asia/Beirut</item>
+        <item>Africa/Cairo</item>
+        <item>Europe/Helsinki</item>
+        <item>Asia/Jerusalem</item>
+        <item>Europe/Minsk</item>
+        <item>Africa/Harare</item>
+        <item>Asia/Baghdad</item>
+        <item>Europe/Moscow</item>
+        <item>Asia/Kuwait</item>
+        <item>Africa/Nairobi</item>
+        <item>Asia/Tehran</item>
+        <item>Asia/Baku</item>
+        <item>Asia/Tbilisi</item>
+        <item>Asia/Yerevan</item>
+        <item>Asia/Dubai</item>
+        <item>Asia/Kabul</item>
+        <item>Asia/Karachi</item>
+        <item>Asia/Oral</item>
+        <item>Asia/Yekaterinburg</item>
+        <item>Asia/Calcutta</item>
+        <item>Asia/Colombo</item>
+        <item>Asia/Katmandu</item>
+        <item>Asia/Almaty</item>
+        <item>Asia/Rangoon</item>
+        <item>Asia/Krasnoyarsk</item>
+        <item>Asia/Bangkok</item>
+        <item>Asia/Jakarta</item>
+        <item>Asia/Shanghai</item>
+        <item>Asia/Hong_Kong</item>
+        <item>Asia/Irkutsk</item>
+        <item>Asia/Kuala_Lumpur</item>
+        <item>Australia/Perth</item>
+        <item>Asia/Taipei</item>
+        <item>Asia/Seoul</item>
+        <item>Asia/Tokyo</item>
+        <item>Asia/Yakutsk</item>
+        <item>Australia/Adelaide</item>
+        <item>Australia/Darwin</item>
+        <item>Australia/Brisbane</item>
+        <item>Australia/Hobart</item>
+        <item>Australia/Sydney</item>
+        <item>Asia/Vladivostok</item>
+        <item>Pacific/Guam</item>
+        <item>Asia/Magadan</item>
+        <item>Pacific/Auckland</item>
+        <item>Pacific/Fiji</item>
+        <item>Pacific/Tongatapu</item>
+    </string-array>
+
+    <string-array name="time_zone_displayname">
+        <item>(GMT+00:00) GMT</item>
+        <item>(GMT+12:00) Majuro</item>
+        <item>(GMT-11:00) Midway</item>
+        <item>(GMT-10:00) Honolulu</item>
+        <item>(GMT-09:00) Anchorage</item>
+        <item>(GMT-08:00) Los Angeles</item>
+        <item>(GMT-08:00) Tijuana</item>
+        <item>(GMT-07:00) Phoenix</item>
+        <item>(GMT-07:00) Chihuahua</item>
+        <item>(GMT-07:00) Denver</item>
+        <item>(GMT-06:00) Costa Rica</item>
+        <item>(GMT-06:00) Chicago</item>
+        <item>(GMT-06:00) Mexico City</item>
+        <item>(GMT-06:00) Regina</item>
+        <item>(GMT-05:00) Bogota</item>
+        <item>(GMT-05:00) New York</item>
+        <item>(GMT-04:00) Caracas</item>
+        <item>(GMT-04:00) Barbados</item>
+        <item>(GMT-04:00) Halifax</item>
+        <item>(GMT-04:00) Manaus</item>
+        <item>(GMT-04:00) Santiago</item>
+        <item>(GMT-03:30) St. John’s</item>
+        <item>(GMT-03:00) Sao Paulo</item>
+        <item>(GMT-03:00) Buenos Aires</item>
+        <item>(GMT-03:00) Nuuk</item>
+        <item>(GMT-03:00) Montevideo</item>
+        <item>(GMT-02:00) South Georgia</item>
+        <item>(GMT-01:00) Azores</item>
+        <item>(GMT-01:00) Cape Verde</item>
+        <item>(GMT+00:00) Casablanca</item>
+        <item>(GMT+00:00) London</item>
+        <item>(GMT+01:00) Amsterdam</item>
+        <item>(GMT+01:00) Belgrade</item>
+        <item>(GMT+01:00) Brussels</item>
+        <item>(GMT+01:00) Sarajevo</item>
+        <item>(GMT+01:00) Windhoek</item>
+        <item>(GMT+01:00) Brazzaville</item>
+        <item>(GMT+02:00) Amman</item>
+        <item>(GMT+02:00) Athens</item>
+        <item>(GMT+02:00) Beirut</item>
+        <item>(GMT+02:00) Cairo</item>
+        <item>(GMT+02:00) Helsinki</item>
+        <item>(GMT+02:00) Jerusalem</item>
+        <item>(GMT+03:00) Minsk</item>
+        <item>(GMT+02:00) Harare</item>
+        <item>(GMT+03:00) Baghdad</item>
+        <item>(GMT+03:00) Moscow</item>
+        <item>(GMT+03:00) Kuwait</item>
+        <item>(GMT+03:00) Nairobi</item>
+        <item>(GMT+03:30) Tehran</item>
+        <item>(GMT+04:00) Baku</item>
+        <item>(GMT+04:00) Tbilisi</item>
+        <item>(GMT+04:00) Yerevan</item>
+        <item>(GMT+04:00) Dubai</item>
+        <item>(GMT+04:30) Kabul</item>
+        <item>(GMT+05:00) Karachi</item>
+        <item>(GMT+05:00) Oral</item>
+        <item>(GMT+05:00) Yekaterinburg</item>
+        <item>(GMT+05:30) Kolkata</item>
+        <item>(GMT+05:30) Colombo</item>
+        <item>(GMT+05:45) Kathmandu</item>
+        <item>(GMT+06:00) Almaty</item>
+        <item>(GMT+06:30) Rangoon</item>
+        <item>(GMT+07:00) Krasnoyarsk</item>
+        <item>(GMT+07:00) Bangkok</item>
+        <item>(GMT+07:00) Jakarta</item>
+        <item>(GMT+08:00) Shanghai</item>
+        <item>(GMT+08:00) Hong Kong</item>
+        <item>(GMT+08:00) Irkutsk</item>
+        <item>(GMT+08:00) Kuala Lumpur</item>
+        <item>(GMT+08:00) Perth</item>
+        <item>(GMT+08:00) Taipei</item>
+        <item>(GMT+09:00) Seoul</item>
+        <item>(GMT+09:00) Tokyo</item>
+        <item>(GMT+09:00) Yakutsk</item>
+        <item>(GMT+09:30) Adelaide</item>
+        <item>(GMT+09:30) Darwin</item>
+        <item>(GMT+10:00) Brisbane</item>
+        <item>(GMT+10:00) Hobart</item>
+        <item>(GMT+10:00) Sydney</item>
+        <item>(GMT+10:00) Vladivostok</item>
+        <item>(GMT+10:00) Guam</item>
+        <item>(GMT+11:00) Magadan</item>
+        <item>(GMT+12:00) Auckland</item>
+        <item>(GMT+12:00) Fiji</item>
+        <item>(GMT+13:00) Tongatapu</item>
+    </string-array>
+
+    <string-array name="user_type">
+        <item>Super Administrator</item>
+        <item>Administrator</item>
+        <item>Manager</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="temperature_type">
+        <item>@string/temperature_c_unit</item>
+        <item>@string/temperature_f_unit</item>
+    </string-array>
+
+    <!-- preference setting key -->
+    <string name="prefer_name_setting" tools:ignore="MissingTranslation">settings</string>
+    <string name="prefer_name_wallpaper_path" tools:ignore="MissingTranslation">wallpaper_path</string>
+
+    <string name="prefer_key_volume" tools:ignore="MissingTranslation">volume</string>
+    <string name="prefer_key_brightness" tools:ignore="MissingTranslation">brightness</string>
+
+    <string name="prefer_key_device_name" tools:ignore="MissingTranslation">device_name</string>
+    <string name="prefer_key_device_type" tools:ignore="MissingTranslation">device_type</string>
+    <string name="prefer_key_mac_addr" tools:ignore="MissingTranslation">mac_addr</string>
+    <string name="prefer_key_ver_hw" tools:ignore="MissingTranslation">hw_ver</string>
+    <string name="prefer_key_ver_app" tools:ignore="MissingTranslation">app_ver</string>
+    <string name="prefer_key_ver_android" tools:ignore="MissingTranslation">android_ver</string>
+    <string name="prefer_key_ver_kernel" tools:ignore="MissingTranslation">kernel_ver</string>
+    <string name="prefer_key_serial_num" tools:ignore="MissingTranslation">serial_num</string>
+
+    <string name="prefer_key_recog_mode" tools:ignore="MissingTranslation">recog_mode</string>
+    <string name="prefer_key_admin_login_type" tools:ignore="MissingTranslation">admin_login_type</string>
+    <string name="prefer_key_time_out" tools:ignore="MissingTranslation">time_out</string>
+    <string name="prefer_key_time_out_admin" tools:ignore="MissingTranslation">admin_time_out</string>
+    <string name="prefer_key_relay_on" tools:ignore="MissingTranslation">relay_on</string>
+    <string name="prefer_key_relay_time_out" tools:ignore="MissingTranslation">relay_time_out</string>
+    <string name="prefer_key_tamper_protection" tools:ignore="MissingTranslation">tamper_protection</string>
+    <string name="prefer_key_tamper_protection_delete_data" tools:ignore="MissingTranslation">tamper_protection_delete_data</string>
+    <string name="prefer_key_position_guide" tools:ignore="MissingTranslation">position_guide</string>
+    <string name="prefer_key_voice_guide" tools:ignore="MissingTranslation">voice_announce</string>
+    <string name="prefer_key_app_url" tools:ignore="MissingTranslation">app_url</string>
+    <string name="prefer_key_auth_mode" tools:ignore="MissingTranslation">auth_mode</string>
+    <string name="prefer_key_device_auth_mode" tools:ignore="MissingTranslation">device_auth_mode</string>
+    <string name="prefer_key_enroll_guide" tools:ignore="MissingTranslation">enroll_guide</string>
+
+    <string name="prefer_key_auto_date_time" tools:ignore="MissingTranslation">auto_date_time</string>
+    <string name="prefer_key_time_12_24" tools:ignore="MissingTranslation">time_12_24</string>
+    <string name="prefer_key_timezone_int" tools:ignore="MissingTranslation">time_zone_int</string>
+    <string name="prefer_key_ntp_server_name" tools:ignore="MissingTranslation">ntp_server_name</string>
+    <string name="prefer_key_default_ntp_server_name" tools:ignore="MissingTranslation">time.google.com</string>
+
+    <string name="prefer_key_network_type" tools:ignore="MissingTranslation">network_type</string>
+    <string name="prefer_key_ip_settings_type" tools:ignore="MissingTranslation">ip_settings_type</string>
+    <string name="prefer_key_ip_addr" tools:ignore="MissingTranslation">ip_address</string>
+    <string name="prefer_key_default_gateway" tools:ignore="MissingTranslation">default_gateway</string>
+    <string name="prefer_key_dns1" tools:ignore="MissingTranslation">dns1</string>
+    <string name="prefer_key_dns2" tools:ignore="MissingTranslation">dns2</string>
+    <string name="prefer_key_prefix_len" tools:ignore="MissingTranslation">prefix_length</string>
+
+    <string name="prefer_key_activate_state" tools:ignore="MissingTranslation">activate_state</string>
+
+    <string name="prefer_key_thermal_access" tools:ignore="MissingTranslation">thermal_access</string>
+    <string name="prefer_key_thermal_alarm" tools:ignore="MissingTranslation">thermal_alarm</string>
+    <string name="prefer_key_thermal_mode" tools:ignore="MissingTranslation">thermal_mode</string>
+    <string name="prefer_key_thermal_threshold" tools:ignore="MissingTranslation">thermal_threshold</string>
+    <string name="prefer_key_thermal_unit" tools:ignore="MissingTranslation">thermal_unit</string>
+    <string name="prefer_key_thermal_correction" tools:ignore="MissingTranslation">thermal_correction</string>
+
+    <string name="prefer_key_video_filepath" tools:ignore="MissingTranslation">videoClickFilePath</string>
+    <string name="prefer_key_image_filepath" tools:ignore="MissingTranslation">ImageClickFilePath</string>
+
+    <string name="prefer_key_debug_mode" tools:ignore="MissingTranslation">debug_mode</string>
+
+    <string name="prefer_key_cardreader_mode" tools:ignore="MissingTranslation">card_reader_mode</string>
+
+    <string name="prefer_key_mask_mode" tools:ignore="MissingTranslation">mask_mode</string>
+    <string name="prefer_key_mask_access" tools:ignore="MissingTranslation">mask_access</string>
+    <string name="prefer_key_mask_text_guide" tools:ignore="MissingTranslation">mask_text_guide</string>
+    <string name="prefer_key_mask_voice_guide" tools:ignore="MissingTranslation">mask_voide_guide</string>
+    <string name="prefer_key_qr_mode" tools:ignore="MissingTranslation">qr_mode</string>
+    <string name="prefer_key_qr_only" tools:ignore="MissingTranslation">qr_only</string>
+    <string name="prefer_key_qr_log" tools:ignore="MissingTranslation">qr_log</string>
+    <string name="prefer_key_counter_face" tools:ignore="MissingTranslation">countermeasure_face</string>
+    <string name="prefer_key_counter_iris" tools:ignore="MissingTranslation">countermeasure_iris</string>
+    <string name="prefer_key_init_pw" tools:ignore="MissingTranslation">init_password</string>
+    <string name="prefer_key_save_audit_type" tools:ignore="MissingTranslation">save_audit_type</string>
+    <string name="prefer_key_saving_mode" tools:ignore="MissingTranslation">saving_mode</string>
+    <string name="prefer_key_screen_time_out" tools:ignore="MissingTranslation">screen_time_out</string>
+
+    <string name="prefer_key_log_udp_ip" tools:ignore="MissingTranslation">log_udp_ip</string>
+    <string name="prefer_key_log_udp_port" tools:ignore="MissingTranslation">log_udp_port</string>
+    <string name="prefer_key_log_level" tools:ignore="MissingTranslation">log_level</string>
+    <string name="prefer_key_log_start_server" tools:ignore="MissingTranslation">log_start_server</string>
+
+    <string name="prefer_key_user_audio_welcome" tools:ignore="MissingTranslation">user_audio_welcome</string>
+    <string name="prefer_key_user_audio_recog_success" tools:ignore="MissingTranslation">user_audio_recog_success</string>
+    <string name="prefer_key_user_audio_recog_fail" tools:ignore="MissingTranslation">user_audio_recog_fail</string>
+    <string name="prefer_key_user_audio_userdefine" tools:ignore="MissingTranslation">user_audio_userdefine</string>
+
+    <string name="prefer_key_login_error_count">login_error_count</string>
+    <string name="prefer_key_login_error_time">login_error_time</string>
+    <string name="init_admin_pw">1234</string>
+    <string name="it100_app_update_url">your app update url</string>
+</resources>

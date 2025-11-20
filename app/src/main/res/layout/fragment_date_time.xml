@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingBackground"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:id="@+id/network_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/settingBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/setting_box_margin"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical"
+                android:background="@drawable/setting_box">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/linear_timezone"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/time_zone_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time_zone"
+                            style="@style/SettingTextStyle"/>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/time_zone_spin"
+                            android:layout_width="305dp"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="10dp"
+                            android:theme="@style/Theme.AppCompat"
+                            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                        </android.support.v7.widget.AppCompatSpinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_timeformat"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/time_format_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            style="@style/SettingTextStyle"/>
+
+                        <android.support.v7.widget.AppCompatCheckBox
+                            android:id="@+id/ch_24format"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/setting_box_margin"
+                            android:text="@string/use_24hour_format"
+                            android:textColor="@android:color/darker_gray"
+                            android:paddingStart="10dp"
+                            style="@style/ListviewTextStyle"
+                            android:theme="@style/Theme.AppCompat"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_box_margin"
+                    android:layout_marginRight="@dimen/setting_box_margin"
+                    android:background="@drawable/setting_box"
+                    android:padding="@dimen/setting_box_padding"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="0dp">
+
+                        <!-- Left hand Layout (Date Time display) -->
+                        <RelativeLayout
+                            android:id="@+id/all_layout"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+
+                            <Button
+                                android:id="@+id/date_btn"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                style="@style/SettingTextStyle"
+                                android:background="@drawable/date_box_line"
+                                android:text="Date"/>
+
+                            <Button
+                                android:id="@+id/time_btn"
+                                android:layout_width="150dp"
+                                android:layout_toEndOf="@id/date_btn"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/time_box_line"
+                                style="@style/SettingTextStyle"
+                                android:text="Time"/>
+
+                            <RelativeLayout
+                                android:id="@+id/date_layout"
+                                android:layout_below="@+id/date_btn"
+                                android:background="@drawable/date_time_box_line"
+                                android:gravity="center_horizontal"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content">
+
+                                <DatePicker
+                                    android:id="@+id/date_picker"
+                                    android:datePickerMode="spinner"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    style="@style/MyDatePickerSpinnerStyle">
+                                </DatePicker>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/time_layout"
+                                android:layout_below="@+id/date_btn"
+                                android:gravity="center_horizontal"
+                                android:background="@drawable/date_time_box_line"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content">
+
+                                <TimePicker
+                                    android:id="@+id/time_picker"
+                                    android:timePickerMode="spinner"
+                                    style="@style/MyTimePickerSpinnerStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                </TimePicker>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <!-- Right hand Layout (NTP server setting) -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/time_server"
+                                style="@style/SettingTextStyle" />
+
+                            <!-- NTP Server Editbox layout -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical">
+
+                                <EditText
+                                    android:id="@+id/ntp_name_edt"
+                                    style="@style/ListviewTextStyle"
+                                    android:layout_width="300dp"
+                                    android:layout_height="wrap_content"
+                                    android:minWidth="20dp"
+                                    android:background="@drawable/network_edt_selector"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textNoSuggestions"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingBottom="10dp"
+                                    android:singleLine="true"
+                                    android:focusable="false"
+                                    android:text="Guro"
+                                    android:theme="@style/Theme.AppCompat" />
+                                <LinearLayout
+                                    android:id="@+id/linear_error"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="10dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    android:visibility="gone">
+                                    <TextView
+                                        android:id="@+id/txt_error"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Please enter Network Time server "
+                                        style="@style/MyErrorText"/>
+
+                                    <ImageView
+                                        android:id="@+id/error_icon_img"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:visibility="visible"
+                                        android:background="@drawable/ic_error_warning"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.AppCompatCheckBox
+                                android:id="@+id/auto_date_time_check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/setting_box_margin"
+                                android:text="@string/auto_date_time"
+                                android:textColor="@android:color/darker_gray"
+                                android:paddingStart="10dp"
+                                style="@style/ListviewTextStyle"
+                                android:theme="@style/Theme.AppCompat"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Save/Cacel button layout-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:paddingTop="0dp"
+                    android:orientation="vertical"
+                    android:gravity="bottom">
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        layout="@layout/panel_save_cacel"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

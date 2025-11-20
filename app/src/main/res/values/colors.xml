@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorControlActivation">#D81B60</color>
+    <color name="date_time_divider">#FF888888</color>
+    <color name="date_time_text">#FFFFFFFF</color>
+
+    <color name="colorBackground">#00000080</color>
+
+    <color name="settingTitleBackground">#384248</color>
+    <color name="settingBackground">#222222</color>
+    <color name="settingBoxBackground">#444444</color>
+    <color name="settingBoxLine">#2B2B2C</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/userMgrDivider</color>
+
+    <color name="settingTextNormal">#ffffff</color>
+    <color name="settingTextSubNormal">#dddddd</color>
+    <color name="settingTextSelect">#03DAC6</color>
+
+    <color name="settingOptionIcon">#80CBC4</color>
+    <color name="settingAuthMode">#84cbc4</color>
+
+   <!-- <color name="settingTextSelect">#80CBC4</color> -->
+
+    <color name="userMgrDivider">#444444</color>
+
+    <color name="captureResultBg">#c8000000</color>
+    <color name="captureSuccessText">#87E023</color>
+    <color name="captureSuccessText2">#aac9f19f</color>
+    <color name="captureFailText">#f44336</color>
+    <color name="captureResultDatetime">@color/muteText</color>
+    <color name="captureIDText">#dddddd</color>
+
+    <color name="signinTextDisable">#2E2C2C</color>
+
+    <color name="muteText">#959595</color>
+    <color name="disableText">#FF888888</color>
+    <color name="errorText">#f44336</color>
+
+    <color name="dialogTitle">#e0ffffff</color>
+    <color name="dialogMessage">#99ffffff</color>
+
+    <color name="buttonTextDisable">#666666</color>
+    <color name="buttonTextDisableAlpha">#33ffffff</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+</resources>

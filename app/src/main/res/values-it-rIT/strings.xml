@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">impostazioni</string>
+
+    <!--Title-->
+    <string name="admin_login">Accesso amministratore</string>
+    <string name="iris_recognition">Iris Recognition</string>
+    <string name="biometrics">Biometrico</string>
+    <string name="system_admin">Amministratore di sistema</string>
+    <string name="user_management">Gestione utenti</string>
+    <string name="settings">impostazioni</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">Avviso</string>
+    <string name="dlgtitle_err">Errore</string>
+    <string name="dlgtitle_waring">Attenzione</string>
+    <string name="dlgtitle_guide">Guida</string>
+    <string name="dlgtitle_success">Operazione riuscita</string>
+    <string name="dlgtitle_fail">Operazione non riuscita</string>
+    <string name="ok">ok</string>
+    <string name="cancel">ANNULLA</string>
+    <string name="save">SALVARE</string>
+    <string name="delete">ELIMINA</string>
+    <string name="update">&#160;AGGIORNARE&#160;</string>
+    <string name="confirm">Patvirtinti</string>
+    <string name="yes_dialog">SÌ</string>
+    <string name="no_dialog">NO</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ID e password</string>
+    <string name="username">Nome utente</string>
+    <string name="password">Parola d\'ordine</string>
+    <string name="sign_in">REGISTRATI</string>
+    <string name="error_username_or_password">Nome utente o password non sono corretti.</string>
+
+    <!-- User Management -->
+    <string name="search">Ricerca</string>
+    <string name="userlist_guide">&#160;&#160;&#160;Seleziona un utente per vedere i dettagli, o\nclicca su + per creare un nuovo utente.</string>
+    <string name="user_id">ID utente</string>
+    <string name="title">Titolo</string>
+    <string name="first_name">nome di battesimo</string>
+    <string name="last_name">Cognome</string>
+    <string name="email_address">Indirizzo email</string>
+    <string name="phone_number">Numero di telefono</string>
+    <string name="modify_bioinfo_dialog_title">Modifica biometria</string>
+    <string name="add_bioinfo_dialog_title">Aggiungi biometria</string>
+    <string name="delete_dialog">Sei sicuro ?</string>
+    <string name="re_enroll">Sei sicuro di voler registrare nuovamente immagine ?</string>
+    <string name="modify_bioinfo_dialog">Sei sicuro di volere modificare la biometria?</string>
+    <string name="add_bioinfo_dialog">Sei sicuro di volere aggiungere la biometria?</string>
+    <string name="enroll_error_already">Utente già iscritto.</string>
+    <string name="enroll_error_verified">Errore di verifica.</string>
+    <string name="enroll_error_capture">Errore di cattura dell\'iride.</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">Inserisci ID utente</string>
+    <string name="enroll_error_duplicate_userid">L\'ID utente esiste già</string>
+    <string name="all">tutto</string>
+    <string name="type">Tipo</string>
+    <string name="auth_mode">Modalità di autenticazione</string>
+    <string name="iris_and_face">IRIDE + VISO</string>
+    <string name="iris">IRIDE</string>
+    <string name="face">VISO</string>
+    <string name="select_mode">Seleziona modalità</string>
+    <string name="select_mode_error">Seleziona la modalità di autenticazione</string>
+    <string name="roll">Tipo di account</string>
+    <string name="user">Utente</string>
+    <string name="admin">Amministratore</string>
+    <string name="pw_change">Modifica password</string>
+    <string name="pw_current">Password attuale</string>
+    <string name="pw_new">Nuova password</string>
+    <string name="pw_confirm">Conferma la password</string>
+    <string name="err_pw_invalid">La password attuale non è valida</string>
+    <string name="err_pw_matched">Nuova password e Conferma password non corrispondono</string>
+    <string name="err_pw_4digit">Password must be 4 or more digits</string>
+    <string name="pw_changed">Password modificata</string>
+
+    <string name="enroll">Iscrizione</string>
+    <string name="card_manual">Manuale</string>
+
+    <!-- Setting_General-->
+    <string name="general">Generale</string>
+    <string name="device_name">Nome del dispositivo</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">Numero di serie</string>
+    <string name="mac_address_ethernet">Indirizzo MAC Ethernet</string>
+    <string name="mac_address_wifi">Indirizzo MAC wireless</string>
+    <string name="kernel_version">Versione kernel</string>
+    <string name="android_version">Versione Android</string>
+    <string name="hardware_version">Versione hardware</string>
+    <string name="software_version">Versione software</string>
+    <string name="application_version">Versione dell\'applicazione</string>
+    <string name="general_error_devicename_empty">Inserisci il nome del dispositivo</string>
+    <string name="reboot">Riavvio</string>
+    <string name="reboot_dialog">Sei sicuro di volere riavviare il dispositivo?</string>
+    <string name="factory_reset">Ripristino delle impostazioni predefinite</string>
+    <string name="factory_reset_dialog">Questa operazione cancellerà tutti i dati dalla memoria interna del dispositivo e non sarà possibile annullarla.</string>
+
+    <!-- Setting_Application-->
+    <string name="application">Applicazione</string>
+    <string name="authentication">Autenticazione</string>
+    <string name="authentication_type">Tipo di autenticazione</string>
+    <string name="operation_mode">Modalità operativa</string>
+    <string name="operation_mode_interactive">Interattivo</string>
+    <string name="operation_mode_continuous">Continuo</string>
+    <string name="app_admin_time_out">Timeout modalità amministratore</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">Intervallo timer per rifiutare i risultati</string>
+    <string name="minutes">minuti</string>
+    <string name="seconds">secondo</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">Display</string>
+    <string name="sound">Suono</string>
+    <string name="display_sound">Display e suono</string>
+    <string name="language">linguaggio</string>
+    <string name="brightness">Luminosità</string>
+    <string name="auto_adjust">Automatico</string>
+    <string name="volume">Volume</string>
+    <string name="keyboard_manage">Gestisci tastiere</string>
+    <string name="keyboard_and_inpumethod">Tastiera &amp; Metodi di input</string>
+    <string name="keyboard_android">Tastiera Android (AOSP)</string>
+    <string name="keyboard_google_korean">Input in coreano su Google</string>
+    <string name="sound_touch">Lietimo garsai</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">Sfondo</string>
+    <string name="movies">Film</string>
+    <string name="images">immagini</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">Appuntamento</string>
+    <string name="time_zone">Fuso orario</string>
+    <string name="time_server">Server NTP</string>
+    <string name="auto_date_time">Data e ora automatiche</string>
+    <string name="use_24hour_format">Usa formato 24 ore</string>
+
+    <!-- Setting_Source-->
+    <string name="source">fonte</string>
+    <string name="open_source_licenses">Licenze open source</string>
+
+    <!-- Setting_Network -->
+    <string name="network">Rete</string>
+    <string name="ip_settings">Impostazioni IP</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Statico</string>
+    <string name="ip_address">Indirizzo IP</string>
+    <string name="subnet_mask">Maschera di sottorete</string>
+    <string name="prefix_length">Lunghezza del prefisso \n(intervallo: da 1 a 31)</string>
+    <string name="default_gateway">Gateway predefinito</string>
+    <string name="dns1">DNS primario</string>
+    <string name="dns2">DNS secondario</string>
+    <string name="network_error_ipaddress">Impossibile ottenere l\'indirizzo IP.</string>
+    <string name="network_error_connect">Nessuna connessione a Internet. \nControlla il collegamento di rete (cavi, modem e router) </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="wait_progress_text">Attendere prego…</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">Attivazione</string>
+    <string name="activate">Attiva</string>
+    <string name="deactivate">Disattiva</string>
+    <string name="deactivating">disattivazione in corso…</string>
+    <string name="activation_method">Metodo di attivazione</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">Autonomo</string>
+    <string name="activation_itms_mode">Modalità</string>
+    <string name="activation_itms_mode_auto">Automatica</string>
+    <string name="activation_itms_mode_manual">Manuale</string>
+    <string name="activation_find">Cerca iTMS</string>
+    <string name="activation_checkin">Archivia iTMS</string>
+    <string name="sitekey">Chiave sito</string>
+    <string name="apikey">Chiave API</string>
+    <string name="device_url">URL dispositivo</string>
+    <string name="activate_error_empty_sitekey">Inserisci la passphrase per la chiave del sito </string>
+    <string name="activate_error_not_find">Non è possibile trovare l\'indirizzo ITMS</string>
+    <string name="passphrase_site_hint">Passphrase per la chiave sito</string>
+    <string name="passphrase_api_hint">Passphrase per la chiave API</string>
+    <string name="deactivate_dialog">Sei sicuro di volere disattivare il dispositivo? Se disattivi il dispositivo, tutti i dati memorizzati verranno persi definitivamente.</string>
+
+    <string name="pw_change1">Modifica password</string>
+    <string name="pw_current1">Password attuale</string>
+    <string name="pw_new1">Nuova password</string>
+    <string name="pw_confirm1">Conferma la password</string>
+
+    <string name="result_duration">Risultato Durata</string>
+    <string name="admin_time_out">Modalità amministratore Time Out</string>
+
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+    <string-array name="language_option">
+        <item>Inglese</item>
+        <item>coreano</item>
+        <item>francese</item>
+        <item>Cinese</item>
+        <item>giapponese</item>
+        <item>tedesco</item>
+        <item>spagnolo</item>
+        <item>italiano</item>
+    </string-array>
+</resources>

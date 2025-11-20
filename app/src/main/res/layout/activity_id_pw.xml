@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="false"
+    android:animateLayoutChanges="true">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/linear_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="64dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.irisid.user.it100_sample.Common.ui.ClearableEditText
+                android:id="@+id/id_edt"
+                android:layout_width="405dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:text=""
+                android:maxLength="40"
+                android:theme="@style/Theme.AppCompat"
+                style="@style/EditTextStyle"
+                android:hint="@string/username"
+                />
+
+            <com.irisid.user.it100_sample.Common.ui.PasswordToggleEditText
+                android:id="@+id/pw_edt"
+                android:layout_width="405dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:paddingBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:theme="@style/Theme.AppCompat"
+                android:inputType="textNoSuggestions|textPassword"
+                android:maxLength="40"
+                style="@style/EditTextStyle"
+                android:hint="@string/password" />
+
+            <LinearLayout
+                android:id="@+id/linear_error"
+                android:layout_width="405dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/error_username_or_password"
+                    style="@style/MyErrorText"/>
+
+                <ImageView
+                    android:id="@+id/error_icon_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@drawable/ic_error_warning"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/sign_in_btn"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                style="@style/SignInTextStyle"
+                android:text="@string/sign_in"
+                android:gravity="center"
+                android:background="@drawable/btn_signin_selector" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/left_hide_img"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="290dp"
+        android:layout_gravity="left"/>
+
+    <ImageView
+        android:id="@+id/right_hide_img"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="290dp"
+        android:layout_gravity="right"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/panel_title_notext"/>
+
+</FrameLayout>

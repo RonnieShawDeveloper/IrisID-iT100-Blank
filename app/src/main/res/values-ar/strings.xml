@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">الإعدادات</string>
+
+    <!--Title-->
+    <string name="admin_login">تسجيل دخول المسؤول</string>
+    <string name="iris_recognition">التعرف على بصمة القزحية</string>
+    <string name="biometrics">المقاييس الحيوية</string>
+    <string name="system_admin">مسؤول النظام</string>
+    <string name="user_management">إدارة المستخدم</string>
+    <string name="settings">الإعدادات</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">إشعار</string>
+    <string name="dlgtitle_err">خطأ</string>
+    <string name="dlgtitle_waring">تحذير</string>
+    <string name="dlgtitle_guide">دليل</string>
+    <string name="dlgtitle_success">نجاح</string>
+    <string name="dlgtitle_fail">فشل</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="delete">حذف</string>
+    <string name="update">تحديث</string>
+    <string name="confirm">تأكيد</string>
+    <string name="yes_dialog">نعم</string>
+    <string name="no_dialog">لا</string>
+    <string name="on">تشغي</string>
+    <string name="off">إيقا</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">معرّف &amp;؛ كلمة المرور</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="error_username_or_password">اسم المستخدم أو كلمة المرور غير صحيحة</string>
+
+    <!-- User Management -->
+    <string name="search">بحث</string>
+    <string name="userlist_guide">اختر مستخدمًا لرؤية التفاصيل أو\nانقرفوق + لإنشاء مستخدم جديد.</string>
+    <string name="user_id">معرّف المستخدم</string>
+    <string name="title">العنوان</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="email_address">عنوان البريد الإلكتروني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="modify_bioinfo_dialog_title">تغيير المقاييس الحيوية</string>
+    <string name="add_bioinfo_dialog_title">إضافة مقاييس حيوية</string>
+    <string name="delete_dialog">هل أنت متأكد من أنك ترغب في حذف المستخدم؟</string>
+    <string name="re_enroll">هل أنت متأكد من أنك ترغب في إعادة تسجيل الصورة؟</string>
+    <string name="modify_bioinfo_dialog">هل أنت متأكد من أنك ترغب في تغيير المقاييس الحيوية؟</string>
+    <string name="add_bioinfo_dialog">هل أنت متأكد من أنك ترغب في إضافة مقاييس حيوية؟</string>
+    <string name="enroll_error_already">تمت إعادة تسجيل المستخدم بالفعل.</string>
+    <string name="enroll_error_verified">فشل التحقق.</string>
+    <string name="enroll_error_capture">فشل التقاط قزحية العين.</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">يُرجى إدخال معرّف مستخدم</string>
+    <string name="enroll_error_duplicate_userid">معرّف المستخدم موجود بالفعل</string>
+    <string name="enroll_error_space_userid">لا يسمح بالمسافات</string>
+    <string name="enroll_remove_glasses_guide">يرجى إزالة النظارات وقناع الوجه</string>
+
+    <string name="all">الجميع</string>
+    <string name="type">نوع</string>
+    <string name="auth_mode">وضعالمصادقة</string>
+    <string name="iris_and_face">قزحية العين + الوجه</string>
+    <string name="iris">قزحية العين</string>
+    <string name="face">الوجه</string>
+    <string name="select_mode">اختر وضعًا</string>
+    <string name="select_mode_error">تحتاج إلى اختيار وضع المصادقة</string>
+    <string name="roll">نوع الحساب</string>
+    <string name="user">المستخدم</string>
+    <string name="admin">المسؤول</string>
+    <string name="pw_change">تغيير كلمة المرور</string>
+    <string name="pw_current">كلمة المرور الحالية</string>
+    <string name="pw_new">كلمة مرور جديدة</string>
+    <string name="pw_confirm">تأكيد كلمة المرور</string>
+    <string name="err_pw_invalid">كلمة المرور الحالية غير صالحة</string>
+    <string name="err_pw_matched">كلمة المرور الجديدة وتأكيد كلمة المرور غير متطابقين</string>
+    <string name="err_pw_4digit">يجب أن تكون كلمة المرور أكثر من 4 أحرف</string>
+    <string name="pw_changed">تغيرت كلمة المرور</string>
+
+    <string name="user_basic_info">معلومات اساسية</string>
+    <string name="user_card_info">معلومات البطاقة</string>
+    <string name="user_details">تفاصيل</string>
+    <string name="card_format">تنسيق البطاقة</string>
+    <string name="card_id">بطاقة الهوية</string>
+    <string name="card_facility_code">رمز المنشأة</string>
+    <string name="card_wiegand_data">بيانات ويجاند</string>
+    <string name="enter_card_id">أدخل معرف البطاقة</string>
+    <string name="enter_facility_code">أدخل رمز المنشأة</string>
+    <string name="enter_card_info">أدخل معلومات البطاقة</string>
+    <string name="tap_card">ضع البطاقه على القارئ</string>
+    <string name="enroll">التسجيل</string>
+    <string name="card_manual">الكتيب</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="required">*مطلوب</string>
+    <string name="user_active">فعال</string>
+    <string name="user_inactive">غير فعال</string>
+    <string name="capture_guide">اضغط لفترة طويلة ثم التقط البيانات الحيوية</string>
+    <string name="select_type">حدد النوع</string>
+    <string name="select_type_msg">الرجاء تحديد نوع البيانات الحيوية</string>
+    <string name="all_users">جميع المستخدمين</string>
+    <string name="department">قسم</string>
+    <string name="role">دور</string>
+    <string name="privacy_agree_title">موافقة الخصوصية</string>
+    <string name="privacy_agree_content">أفهم وأوافق على أن Iris ID لا تتلقى بياناتي البيومترية ولا يمكنها الوصول إليها. أفهم وأوافق أيضًا على أن صاحب العمل هو المسؤول الوحيد عن جمع بياناتي البيومترية واستخدامها والإفصاح عنها وصيانتها والامتثال لجميع القوانين المعمول بها فيما يتعلق ببياناتي البيومترية.</string>
+    <string name="bio_content">التسجيل البيومتري</string>
+
+    <!-- Setting_General-->
+    <string name="general">عام</string>
+    <string name="device_name">اسم الجهاز</string>
+    <string name="device_type">نوع الجهاز</string>
+    <string name="build_type">نوع البناء</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">الرقم التسلسلي</string>
+    <string name="mac_address_ethernet">عنوان MAC الإيثرنت</string>
+    <string name="mac_address_wifi">عنوان MAC اللاسلكي</string>
+    <string name="kernel_version">إصدار Kernel</string>
+    <string name="android_version">إصدار أندرويد</string>
+    <string name="hardware_version">إصدار الجهاز</string>
+    <string name="software_version">إصدار البرنامج</string>
+    <string name="application_version">إصدار التطبيق</string>
+    <string name="general_error_devicename_empty">يُرجى إدخال اسم الجهاز</string>
+    <string name="general_error_devicename_too_long">اسم الجهاز طويل جدًا</string>
+    <string name="reboot">إعادة تشغيل</string>
+    <string name="reboot_dialog">هل أنت متأكد من أنك ترغب في إعادة تشغيل الجهاز؟</string>
+    <string name="factory_reset">إعادة ضبط المصنع</string>
+    <string name="factory_reset_dialog">سيؤدي هذا إلى مسح جميع البيانات من وحدة التخزين الداخلية بجهازك.\nلا يمكنك التراجع عن هذا الإجراء!</string>
+    <string name="source">المصدر</string>
+    <string name="open_source_licenses">تراخيص مفتوحة المصدر</string>
+    <string name="system_updates">تحديثات النظام</string>
+    <string name="error_not_find_usb_device">لم يتم التعرف على جهاز USB</string>
+
+    <string name="import_export">Import/Export</string>
+    <string name="transaction_log">Transaction Log</string>
+    <string name="user_db">User DB</string>
+    <string name="used">Used</string>
+    <string name="db_import_from_usb">Import from USB storage</string>
+    <string name="db_export_to_usb">Export to USB storage</string>
+    <string name="error_not_find_db_file">Can\'t find the DB file</string>
+    <string name="export_db_ing">Export DB...</string>
+    <string name="import_db_ing">Import DB...</string>
+    <string name="import_db_success">Import has been successfully completed.\nDevice will reboot soon</string>
+    <string name="export_db_success">Export has been successfully completed.</string>
+
+    <string name="system_updates_dialog">هل أنت متأكد أنك تريد تحديث النظام؟</string>
+    <string name="system_updates_select_file">الرجاء تحديد ملف *.ipk</string>
+    <string name="system_updates_copy_verify">نسخ و التحقق من ملف تحديث النظام...</string>
+    <string name="system_updates_insert_usb">الرجاء إدخال القرص في برنامج تشغيل USB</string>
+
+    <!-- Setting_Application-->
+    <string name="application">التطبيق</string>
+    <string name="authentication">المصادقة</string>
+    <string name="authentication_type">نوع المصادقة</string>
+    <string name="operation_mode">وضع التشغيل</string>
+    <string name="operation_mode_interactive">تفاعلي</string>
+    <string name="operation_mode_continuous">مستمر</string>
+    <string name="app_admin_time_out">مهلة وضع المسؤول</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">الفاصل الزمني لمؤقت الفصل التلقائي للنتيجة</string> <!-- Recognition Result Duration -->
+    <string name="minutes">دقائق</string>
+    <string name="seconds">ثوان</string>
+
+    <string name="relay">ريليه</string>
+    <string name="delay_time">فاصل زمني</string>
+    <string name="position_guide">دليل الموقف</string>
+    <string name="voice_announce">إعلان صوتي</string>
+    <string name="tamper_protection">Tamper Protection</string>
+    <string name="tamper_protection_del_data">Delete User Data</string>
+    <string name="userdefine">تعريف المستخدم</string>
+    <string name="file_delete_detail">Delete \'%s\' file?</string>
+    <string name="app_update">تحديث التطبيق</string>
+    <string name="app_update_enter_idpw">أدخل معرف/كلمة المرور لتحديث التطبيق</string>
+    <string name="app_update_fail_connect_url">لا يمكن ربط عنوان URL</string>
+    <string name="app_update_fail_file_error">هناك مشكلة في الملف الذي تم تنزيله</string>
+    <string name="app_update_fail_file_install">خطأ تثبيت التطبيق</string>
+    <string name="app_update_fail_url_empty">الرجاء إدخال عنوان URL</string>
+    <string name="enroll_guide">دليل الاحتياطات عند التسجيل</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">وضع</string>
+    <string name="admin_login_type">نوع تسجيل الدخول للمسؤول</string>
+    <string name="authentication_mode">وضع المصادقة</string>
+    <string name="authentication_mode_individual">فردي</string>
+    <string name="authentication_mode_device">جهاز</string>
+
+    <string name="mask_detect">كشف القناع</string>
+    <string name="mask_access">التحكم بالوصول</string>
+    <string name="mask_voice_guide">دليل صوتي</string>
+    <string name="mask_text_guide">دليل النص</string>
+
+    <string name="qr_recog">QR Recognition</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">التدابير المضادة</string>
+    <string name="counter_measure_eye">قزحية</string>
+    <string name="counter_measure_face">وجه</string>
+    <string name="counter_measure_lens">عدسة</string>
+
+    <string name="save_audit_image">حفظ صورة وجه التدقيق</string>
+    <string name="saving_mode">Power Saving</string>
+    <string name="saving_screen_timeout">Screen Timeout</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">عرض</string>
+    <string name="sound">صوت</string>
+    <string name="display_sound">الشاشة &amp; الصوت</string>
+    <string name="language">اللغة</string>
+    <string name="brightness">السطوع</string>
+    <string name="auto_adjust">ضبط تلقائي</string>
+    <string name="volume">المستوى</string>
+    <string name="keyboard_manage">إدارة لوحات المفاتي</string>
+    <string name="keyboard_and_inpumethod">لوحة المفاتيح &amp; طرق الإدخال</string>
+    <string name="keyboard_android">لوحة مفاتيح أندرويد (مشروع أندرويد مفتوح المصدر)</string>
+    <string name="keyboard_google_korean">Google Korean Input</string>
+    <string name="sound_touch">أصوات اللمس</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">خلفية الشاشة</string>
+    <string name="movies">أفلام</string>
+    <string name="images">صور</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">تاريخ &amp; الوقت</string>
+    <string name="time_zone">المنطقة الزمنية</string>
+    <string name="time_server">خادم NTP</string>
+    <string name="auto_date_time">تاريخ ووقت تلقائي</string>
+    <string name="use_24hour_format">استخدام تنسيق ٢٤ ساع</string>
+
+    <!-- Setting_Network -->
+    <string name="network">الشبكة</string>
+    <string name="ip_settings">إعدادات IP</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">ثابت</string>
+    <string name="ip_address">عنوان IP</string>
+    <string name="subnet_mask">قناع الشبكة الفرعية</string>
+    <string name="prefix_length">طول البادئة (النطاق: 1–31)</string>
+    <string name="default_gateway">بوابة افتراضية</string>
+    <string name="dns1">DNS الأساسي</string>
+    <string name="dns2">DNS الثانوي</string>
+    <string name="network_error_ipaddress">تعذر الحصول على عنوان IP.</string>
+    <string name="network_error_connect">لا يوجد اتصال بالإنترنت. \nتحقق من اتصال الشبكة (الكابلات، والمودم، والموجه) </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">إيثرن</string>
+    <string name="conn_ethernet_title">توصيل إيثرنت</string>
+    <string name="conn_ethernet_desc">Are you sure you want to connect ethernet? Connection to Wi-Fi will be disconnected.</string>
+    <string name="conn_wifi_title">الاتصال بشبكة Wi-Fi</string>
+    <string name="conn_wifi_desc">هل أنت متأكد من أنك تريد الاتصال بشبكة wifi؟ سيتم قطع الاتصال بشبكة Ethernet.</string>
+    <string name="wait_progress_text">يرجى الانتظار...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">تنشيط</string>
+    <string name="activate">نشط</string>
+    <string name="deactivate">إلغاء تنشيط</string>
+    <string name="deactivating">جارٍ إلغاء التنشيط...</string>
+    <string name="activation_method">طريقة التنشيط</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">مستقل</string>
+    <string name="activation_itms_mode">الوضع</string>
+    <string name="activation_itms_mode_auto">تلقائي</string>
+    <string name="activation_itms_mode_manual">يدوي</string>
+    <string name="activation_find">البحث عن iTMS</string>
+    <string name="activation_checkin">تسجييل الدخول في iTMS</string>
+    <string name="sitekey">مفتاح الموقع</string>
+    <string name="apikey">مفتاح API</string>
+    <string name="device_url">عنوان URL للجهاز</string>
+    <string name="activate_error_empty_sitekey">يُرجى إدخال عبارة المرور لمفتاح الموقع </string>
+    <string name="activate_error_not_find">لا يمكن العثور على عنوان ITMS</string>
+    <string name="passphrase_site_hint">عبارة المرور لمفتاح الموقع</string>
+    <string name="passphrase_api_hint">عبارة المرور لمفتاح API</string>
+    <string name="deactivate_dialog">هل أنت متأكد من أنك ترغب في إلغاء تنشيط هذا الجهاز؟ إذا قمت بإلغاء تنشيط الجهاز، فستفقد جميع البيانات المخزنة على هذا الجهاز بشكل دائم.</string>
+
+    <string name="pw_change1">تغيير كلمة المرور</string>
+    <string name="pw_current1">كلمة المرور الحالية</string>
+    <string name="pw_new1">كلمة مرور جديدة</string>
+    <string name="pw_confirm1">تأكيد كلمة المرور</string>
+
+    <string name="am">ص</string>
+    <string name="pm">م</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">إعداد كلمة مرور المسؤول</string>
+    <string name="init_password_guide">يرجى تعيين كلمة المرور أدناه ثم انقر فوق "موافق".</string>
+    <string name="init_password_guide2">Please set a password below and click "OK".\nBefore you can change any settings, you need to login with a password.</string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">كلمة المرور</string>
+    <string name="init_password_confirm">تأكيد كلمة المرور</string>
+
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">جهاز خارجي</string>
+    <string name="thermal_camera">كاميرا حرارية</string>
+    <string name="card_reader">قارئ البطاقات</string>
+    <string name="error_card_reader_not_find">لا يمكن العثور على جهاز قارئ البطاقة</string>
+    <string name="temperature_unit">وحدة قياس درجة الحرارة</string>
+
+    <string name="threshold_value">عتبة القيمة</string>
+    <string name="temperature_alarm">إنذار درجة الحرارة</string>
+    <string name="access_control">التحكم في الوصول</string>
+
+    <string name="thermal_compensation">تعويض درجة الحرارة</string>
+    <string name="error_thermal_not_find">لا يمكن العثور على جهاز الكاميرا الحرارية</string>
+    <string name="error_input_value">التحقق من القيمة مرة أخرى</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">تم التعرف عليه</string>
+    <!--  <string name="liveness_eye_fail">Liveness Detection Failure</string> -->
+    <!--  <string name="liveness_eye_detect_fail">Identification Failed</string>  from v2.05.11 -->
+    <string name="liveness_eye_detect_fail">فشل الكشف عن الحياة</string>
+    <string name="capture_fail_fake_eye">فشل الكشف عن الحياة</string>
+    <!--  <string name="capture_fail_liveness_eye">Liveness detected</string> -->
+    <!--  <string name="capture_fail_fake_eye">Fake eye detected</string> -->
+    <!--     <string name="capture_fail_fake_eye">Identification Failed</string> from v2.05.11 -->
+    <string name="capture_fail">فشل الالتقاط</string>
+    <string name="capture_fail_timeout">انتهت مهلة الالتقاط</string>
+    <string name="capture_fail_inactive_user">لم يتم منح الوصول</string>
+    <string name="capture_fail_wrong_auth_mode">التحقق من وضع المصادقة</string>
+    <string name="capture_fail_identify">فشل التعريف</string>
+    <string name="go_right">تحرك إلى اليمين</string>
+    <string name="go_left">تحرك إلى اليسار</string>
+    <string name="go_up">تحرك للأعلى</string>
+    <string name="go_down">تحرك للأسفل</string>
+    <string name="go_forward">المضي قدما</string>
+    <string name="go_backward">التحرك للخلف</string>
+
+    <string name="card_verified_wait_bio">تم التحقق من البطاقة</string>
+    <string name="card_fail_verified">لم يتم التحقق من البطاقة</string>
+    <string name="card_fail_mismatch">عدم تطابق البيانات الحيوية والبطاقة</string>
+    <string name="card_fail_timeout">انتهت صلاحية البطاقة</string>
+    <string name="bio_fail_timeout">انتهت مهلة التقاط البيانات الحيوية</string>
+    <string name="capture_closer_camera">أقرب إلى الكاميرا</string>
+    <string name="capture_for_audit_image">Capturing audit image</string>
+
+    <string name="recog_success_0">تم التعرف عليه</string>
+    <string name="recog_success_card_verified_11091006">تم التحقق منه</string>
+    <string name="recog_success_access_granted_11091036">تم منح الوصول</string>
+    <string name="recog_fail_fake_eye_detected_11071010">فشل الكشف عن الحياة</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">فشل الكشف عن الحياة</string>
+    <string name="recog_fail_inactive_user_11091003">لم يتم منح الوصول</string>
+    <string name="recog_fail_card_not_verified_11091007">فشل التحقق</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">فشل التحقق</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">فشل التحقق</string>
+    <string name="recog_fail_wait_card_timeout_11091012">انتهت صلاحية البطاقة</string>
+    <string name="recog_fail_policy_not_granted_11091023">لم يتم منح الوصول</string>
+    <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+    <string name="recog_fail_access_not_granted_11091037">لم يتم منح الوصول</string>
+
+    <string name="recog_fail_wear_mask">يرجى ارتداء قناع الوجه</string>
+    <string name="recog_fail_temperature_high">درجة حرارة عالية</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">أنقذ</string>
+    <string name="toast_usb_mounted">تم التعرف على جهاز USB</string>
+    <string name="toast_admin_login_error">بيانات اعتماد خاطئة أو تفويض فاشل</string>
+    <string name="toast_file_download_start">جاري التحميل...</string>
+    <string name="toast_file_download_finish">تم التنزيل بنجاح</string>
+    <string name="toast_file_download_check">التحقق من صحة الملف الذي تم تنزيله</string>
+    <string name="toast_file_validate_fail">فشل التحقق</string>
+    <string name="toast_file_installing">جاري التثبيت...</string>
+    <string name="toast_file_updating">جاري التحديث...</string>
+    <string name="toast_port_missed">رقم المنفذ مفقود</string>
+    <string name="toast_thermal_connected">تم توصيل الجهاز الحراري</string>
+    <string name="toast_cannot_find_external">لا يمكن العثور على جهاز خارجي</string>
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+</resources>

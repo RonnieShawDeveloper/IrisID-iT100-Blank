@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/settingBackground">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingBackground">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/setting_box_margin"
+    >
+
+    <!-- Operation Mode Radio button layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_mode"
+            style="@style/SettingTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_mode_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/mode_interactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/operation_mode_interactive"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/mode_continuous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/operation_mode_continuous"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Admin Login Type Radio button layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_login_type"
+            style="@style/SettingTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/admin_mode_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/admin_mode_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/admin_mode_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/biometrics"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/admin_mode_idpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/id_password"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Recognition Mode Radio button layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/authentication_mode"
+            style="@style/SettingTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin_narrow"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_recog_mode_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/recog_mode_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/authentication_mode_individual"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/recog_mode_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="100dp"
+                    android:text="@string/authentication_mode_device"
+                    android:paddingStart="@dimen/setting_radio_padding"
+                    style="@style/ListviewTextStyle"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/setting_box_padding">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_iris"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_iris_selector_device"
+                        android:checked="true"
+                        android:textColor="@color/checkbox_text_selector"
+                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="@dimen/setting_box_margin_narrow"
+                        android:layout_marginRight="@dimen/setting_box_margin_narrow"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_auth_mode"
+                            android:layout_width="48dp"
+                            android:layout_height="29dp"
+                            android:background="@drawable/btn_auth_mode_s"
+                            android:padding="4dp"
+                            android:text="FUSION"
+                            android:textColor="@color/btn_text_authmode_s"
+                            android:textSize="11px" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/checkbox_face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_face_selector_device"
+                        android:checked="true"
+                        android:textColor="@color/checkbox_text_selector"
+                        android:textSize="20sp" />
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="@dimen/setting_box_margin_narrow"
+                        android:background="@color/settingBoxBackground"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="@dimen/setting_box_margin_narrow"
+                        android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_card_andor_mode"
+                            android:layout_width="48dp"
+                            android:layout_height="29dp"
+                            android:background="@drawable/btn_auth_mode_s"
+                            android:padding="4dp"
+                            android:text="OR"
+                            android:textColor="@color/btn_text_authmode_s"
+                            android:textSize="11px" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/checkbox_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@drawable/checkbox_card_selector_device"
+                        android:checked="true"
+                        android:paddingStart="10dp"
+
+                        android:textColor="@color/checkbox_text_selector"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Countermeasure setting layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/counter_measure"
+            style="@style/SettingTextStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ck_cm_eye"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:layoutDirection="rtl"
+                android:paddingStart="@dimen/setting_box_margin_narrow"
+                android:text="@string/counter_measure_eye"
+                style="@style/ListviewTextStyle"
+                android:enabled="true"
+                android:checked="false"
+                android:theme="@style/Theme.AppCompat" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ck_cm_face"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:layoutDirection="rtl"
+                android:paddingStart="@dimen/setting_box_margin_narrow"
+                android:text="@string/counter_measure_face"
+                style="@style/ListviewTextStyle"
+                android:enabled="true"
+                android:checked="false"
+                android:theme="@style/Theme.AppCompat" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/ck_cm_lens"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:layoutDirection="rtl"
+                android:paddingStart="@dimen/setting_box_margin_narrow"
+                android:text="@string/counter_measure_lens"
+                style="@style/ListviewTextStyle"
+                android:enabled="false"
+                android:checked="true"
+                android:theme="@style/Theme.AppCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Mask detect setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/linear_mask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/setting_box_selector">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mask_detect"
+                    style="@style/SettingNextTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                android:background="@color/userMgrDivider"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_mask_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/settingTextSelect"/>
+                <Switch
+                    android:id="@+id/sch_mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Mask detail setting -->
+        <LinearLayout
+            android:id="@+id/linear_mask_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box">
+
+            <!-- Mask access control -->
+            <LinearLayout
+                android:id="@+id/linear_mask_access_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mask_access"
+                        style="@style/SettingSubTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/setting_box_padding"
+                    android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/ck_mask_access"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:checked="false"
+                        android:theme="@style/Theme.AppCompat"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Mask text guide -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_margin"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mask_text_guide"
+                        style="@style/SettingSubTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/setting_box_padding"
+                    android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/ck_mask_text_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:checked="false"
+                        android:theme="@style/Theme.AppCompat"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Mask voice guide -->
+            <LinearLayout
+                android:id="@+id/linear_mask_voice_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mask_voice_guide"
+                        style="@style/SettingSubTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/setting_box_padding"
+                    android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/ck_mask_voice_guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:checked="false"
+                        android:theme="@style/Theme.AppCompat"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Audit Image setting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/setting_box_selector">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="@dimen/setting_box_padding_narrow"
+                android:paddingBottom="@dimen/setting_box_padding_narrow"
+                android:paddingLeft="@dimen/setting_box_padding"
+                android:paddingRight="@dimen/setting_box_padding"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_audit_image"
+                    style="@style/SettingNextTextStyle"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_audit_spin"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/setting_box_padding"
+                    android:layout_gravity="right"
+                    android:gravity="end">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/audit_type_spin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="end"
+                        android:theme="@style/Theme.AppCompat"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        >
+                    </android.support.v7.widget.AppCompatSpinner>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                android:background="@color/userMgrDivider"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_audit_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/settingTextSelect"/>
+                <Switch
+                    android:id="@+id/sch_audit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Power Saving mode setting-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box_selector"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_saving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saving_mode"
+                    style="@style/SettingNextTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_saving_onoff"
+                    style="@style/SettingTextStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    android:textColor="@color/settingTextSelect" />
+                <Switch
+                    android:id="@+id/sch_saving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_saving_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/setting_box_padding"
+            android:paddingBottom="@dimen/setting_box_margin_narrow"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingTop="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saving_screen_timeout"
+                    style="@style/SettingSubTextStyle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:text="  (1-1800)"
+                    style="@style/SettingSubTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_screen_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_screen_timeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="5"
+                    style="@style/SettingNextTextStyle"
+                    android:textSize="20sp"
+                    android:textColor="@color/settingTextSelect" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+                    android:gravity="bottom"
+                    android:text="@string/seconds"
+                    style="@style/SettingSubTextStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

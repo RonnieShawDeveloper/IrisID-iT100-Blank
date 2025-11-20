@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_样品</string>
+    <string name="action_settings">设置</string>
+
+    <!--Title-->
+    <string name="admin_login">管理员登录</string>
+    <string name="iris_recognition">虹膜识别</string>
+    <string name="biometrics">生物识别</string>
+    <string name="system_admin">系统管理员</string>
+    <string name="user_management">用户管理</string>
+    <string name="settings">设置</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">通知</string>
+    <string name="dlgtitle_err">错误</string>
+    <string name="dlgtitle_waring">警告</string>
+    <string name="dlgtitle_guide">指南</string>
+    <string name="dlgtitle_success">成功</string>
+    <string name="dlgtitle_fail">失败</string>
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="update">现代化</string>
+    <string name="confirm">确认</string>
+    <string name="yes_dialog">是</string>
+    <string name="no_dialog">没有</string>
+    <string name="on">开启</string>
+    <string name="off">关闭</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ID和密码</string>
+    <string name="username">用户身份</string>
+    <string name="password">密码</string>
+    <string name="sign_in">登入</string>
+    <string name="error_username_or_password">用户名或密码不正确。</string>
+    <string name="error_login_attempt">超过限制登录次数，请在 %d分钟后再试</string>
+
+    <!-- User Management -->
+    <string name="search">搜索</string>
+    <string name="userlist_guide">&#160;&#160;&#160;要查看详细信息，请选择用户\,\n按+注册新用户.</string>
+    <string name="user_id">用户身份</string>
+    <string name="title">标题</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓</string>
+    <string name="email_address">电子邮件地址</string>
+    <string name="phone_number">电话号码</string>
+    <string name="modify_bioinfo_dialog_title">更改Biometrics</string>
+    <string name="add_bioinfo_dialog_title">添加Biometrics</string>
+    <string name="delete_dialog">您确定要删除该用户吗 ？</string>
+    <string name="re_enroll">您确定要重新注册图片吗？</string>
+    <string name="modify_bioinfo_dialog">您确定要更改Biometrics吗？</string>
+    <string name="add_bioinfo_dialog">您确定要添加Biometrics吗？</string>
+    <string name="enroll_error_already">用户已登记。</string>
+    <string name="enroll_error_verified">验证失败。</string>
+    <string name="enroll_error_capture">获取iris失败。</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">请输入用户名</string>
+    <string name="enroll_error_duplicate_userid">用户名已存在</string>
+    <string name="enroll_error_space_userid">不允许使用空格</string>
+    <string name="enroll_remove_glasses_guide">请摘下眼镜和口罩</string>
+
+    <string name="all">所有</string>
+    <string name="type">类型</string>
+    <string name="auth_mode">验证模式</string>
+    <string name="iris_and_face">安卓语音识别+人脸识别</string>
+    <string name="iris">安卓语音识别</string>
+    <string name="face">人脸识别</string>
+    <string name="select_mode">选择模式</string>
+    <string name="select_mode_error">您需要选择验证模式</string>
+    <string name="roll">账户类型</string>
+    <string name="user">用户</string>
+    <string name="admin">管理员</string>
+    <string name="pw_change">修改密码</string>
+    <string name="pw_current">当前密码</string>
+    <string name="pw_new">新密码</string>
+    <string name="pw_confirm">确认密码</string>
+    <string name="err_pw_invalid">当前密码无效</string>
+    <string name="err_pw_matched">新密码与确认密码不符</string>
+    <string name="err_pw_4digit">密码必须大于4个字符</string>
+    <string name="pw_changed">密码已修改</string>
+
+    <string name="user_basic_info">基本信息</string>
+    <string name="user_card_info">卡信息</string>
+    <string name="user_details">详情</string>
+    <string name="card_format">卡格式</string>
+    <string name="card_id">卡ID</string>
+    <string name="card_facility_code">设施代码</string>
+    <string name="card_wiegand_data">韦根数据</string>
+    <string name="enter_card_id">输入卡号</string>
+    <string name="enter_facility_code">输入设备代码</string>
+    <string name="enter_card_info">输入卡信息</string>
+    <string name="tap_card">轻触卡片</string>
+    <string name="enroll">注册</string>
+    <string name="card_manual">手册</string>
+    <string name="card_number">卡号</string>
+    <string name="required">要求</string>
+    <string name="user_active">使用中</string>
+    <string name="user_inactive">非使用中</string>
+    <string name="capture_guide">长按并捕获生物特征</string>
+    <string name="select_type">选择类型</string>
+    <string name="select_type_msg">请选择生物识别类型</string>
+    <string name="all_users">所有用户</string>
+    <string name="department">部门</string>
+    <string name="role">职务</string>
+    <string name="privacy_agree_title">个人信息授权</string>
+    <string name="privacy_agree_content">我理解并同意Iris ID不接收也无法访问我的生物特征数据。我进一步理解并同意，我的雇主全权负责收集、使用、披露和维护我的生物特征数据，并遵守有关我的生物识别数据的所有适用法律。</string>
+    <string name="bio_content">生物信息录入</string>
+
+    <!-- Setting_General-->
+    <string name="general">一般</string>
+    <string name="device_name">设备名称</string>
+    <string name="device_type">设备类型</string>
+    <string name="build_type">生成类型</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">序列号</string>
+    <string name="mac_address_ethernet">以太网MAC地址</string>
+    <string name="mac_address_wifi">无线MAC地址</string>
+    <string name="kernel_version">内核版本</string>
+    <string name="android_version">安卓版本</string>
+    <string name="hardware_version">硬件版本</string>
+    <string name="software_version">软件版本</string>
+    <string name="application_version">应用版本</string>
+    <string name="general_error_devicename_empty">请输入设备名称</string>
+    <string name="general_error_devicename_too_long">设备名称过长</string>
+    <string name="reboot">重启</string>
+    <string name="reboot_dialog">您确定要重启设备吗？</string>
+    <string name="factory_reset">恢复出厂设置</string>
+    <string name="factory_reset_dialog">此操作将删除设备内存储的所有数据。\n您无法撤消此操作！</string>
+
+    <string name="system_updates">系统更新</string>
+    <string name="error_not_find_usb_device">无法识别USB设备</string>
+
+    <!-- Setting_Application-->
+    <string name="application">应用</string>
+    <string name="authentication">认证</string>
+    <string name="authentication_type">验证类型</string>
+    <string name="operation_mode">运行模式</string>
+    <string name="operation_mode_interactive">交互式</string>
+    <string name="operation_mode_continuous">连续式</string>
+    <string name="app_admin_time_out">管理员模式超时</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">结果自动消失计时器间隔</string>
+    <string name="minutes">分钟</string>
+    <string name="seconds">秒</string>
+
+    <string name="relay">继电器</string>
+    <string name="delay_time">计时器间隔</string>
+    <string name="position_guide">定位导轨</string>
+    <string name="voice_announce">语音广播</string>
+    <string name="userdefine">用户定义</string>
+    <string name="app_update">应用程序更新</string>
+    <string name="app_update_enter_idpw">输入应用程序更新的ID/PW</string>
+    <string name="app_update_fail_connect_url">无法连接URL</string>
+    <string name="app_update_fail_file_error">下载的文件有问题</string>
+    <string name="app_update_fail_file_install">应用程序安装错误</string>
+    <string name="app_update_fail_url_empty">请输入URL</string>
+    <string name="enroll_guide">注册注意事项</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">模式</string>
+    <string name="admin_login_type">管理员登录方式</string>
+    <string name="authentication_mode">验证方式</string>
+    <string name="authentication_mode_individual">个人</string>
+    <string name="authentication_mode_device">设备</string>
+    <string name="mask_detect">口罩检测</string>
+    <string name="mask_access">未佩戴口罩禁止访问</string>
+    <string name="mask_voice_guide">语音提示</string>
+    <string name="mask_text_guide">文字提示</string>
+    <string name="counter_measure">反侦侧</string>
+    <string name="counter_measure_eye">虹膜</string>
+    <string name="counter_measure_face">人脸</string>
+    <string name="counter_measure_lens">镜头</string>
+    <string name="save_audit_image">检查并保存人脸图像</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">显示</string>
+    <string name="sound">聲音</string>
+    <string name="display_sound">显示和聲音</string>
+    <string name="language">语言</string>
+    <string name="brightness">亮度</string>
+    <string name="auto_adjust">自动调整</string>
+    <string name="volume">体积</string>
+    <string name="keyboard_manage">管理键盘</string>
+    <string name="keyboard_and_inpumethod">鍵盤和輸入法</string>
+    <string name="keyboard_android">安卓键盘（AOSP）</string>
+    <string name="keyboard_google_korean">谷歌韩文输入法</string>
+    <string name="sound_touch">触摸提示音</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">墙纸</string>
+    <string name="movies">视频</string>
+    <string name="images">图片</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">日期和时间</string>
+    <string name="time_zone">时区</string>
+    <string name="time_server">NTP服务器</string>
+    <string name="auto_date_time">自动更新时间和日期</string>
+    <string name="use_24hour_format">使用 24 小时制</string>
+
+    <!-- Setting_Source-->
+    <string name="source">资源</string>
+    <string name="open_source_licenses">开源许可证</string>
+
+    <!-- Setting_Network -->
+    <string name="network">网络</string>
+    <string name="ip_settings">IP设置</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">静态</string>
+    <string name="ip_address">IP地址</string>
+    <string name="subnet_mask">子网掩码</string>
+    <string name="prefix_length">前缀长度（范围：1-31)</string>
+    <string name="default_gateway">默认网关</string>
+    <string name="dns1">首选DNS</string>
+    <string name="dns2">备用DNS</string>
+    <string name="network_error_ipaddress">获取IP地址失败。</string>
+    <string name="network_error_connect">无互联网连接。\n检查网络连接状况（网线、调制解调器及路由器）</string>
+    <string name="wifi">WLAN</string>
+    <string name="ethernet">有线网络</string>
+    <string name="conn_ethernet_title">连接以太网</string>
+    <string name="conn_ethernet_desc">确定要连接以太网吗？将断开与wifi的连接。</string>
+    <string name="conn_wifi_title">连接Wi-Fi</string>
+    <string name="conn_wifi_desc">你确定要连接wifi吗？将断开与以太网的连接。</string>
+    <string name="wait_progress_text">请稍候…</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">激活</string>
+    <string name="activate">激活</string>
+    <string name="deactivate">禁用</string>
+    <string name="deactivating">禁用中……</string>
+    <string name="activation_method">激活方法</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">脱机</string>
+    <string name="activation_itms_mode">模式</string>
+    <string name="activation_itms_mode_auto">自动</string>
+    <string name="activation_itms_mode_manual">手动</string>
+    <string name="activation_find">查找iTMS</string>
+    <string name="activation_checkin">登录iTMS</string>
+    <string name="sitekey">站点密钥</string>
+    <string name="apikey">API密钥</string>
+    <string name="device_url">设备URL</string>
+    <string name="activate_error_empty_sitekey">请输入站点密钥密码 </string>
+    <string name="activate_error_not_find">获取ITMS地址失败</string>
+    <string name="passphrase_site_hint">站点密钥密码</string>
+    <string name="passphrase_api_hint">API密钥密码</string>
+    <string name="deactivate_dialog">您确定要禁用此设备吗？禁用此设备将导致存储在此设备中的所有数据永久丢失。</string>
+
+    <string name="pw_change1">修改密码</string>
+    <string name="pw_current1">当前密码</string>
+    <string name="pw_new1">新密码</string>
+    <string name="pw_confirm1">确认密码</string>
+
+    <string name="result_duration">结果持续时间</string>
+    <string name="admin_time_out">管理员模式超时</string>
+
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">外部设备</string>
+    <string name="thermal_camera">热像仪</string>
+    <string name="card_reader">读卡器</string>
+    <string name="error_card_reader_not_find">找不到读卡器设备</string>
+    <string name="temperature_unit">温度单位</string>
+    <string name="threshold_value">阈值</string>
+    <string name="temperature_alarm">温度报警器</string>
+    <string name="access_control">访问控制</string>
+    <string name="thermal_compensation">温度补偿</string>
+    <string name="error_thermal_not_find">找不到热摄像设备</string>
+    <string name="error_input_value">再次检查值</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">已识别</string>
+    <!--<string name="liveness_eye_fail">活性检测失败</string>
+    <string name="capture_fail_liveness_eye">检测到活跃度</string>-->
+    <!-- from v2.05.11<string name="liveness_eye_detect_fail">标识失败</string>
+    <string name="capture_fail_fake_eye">标识失败</string> -->
+    <string name="liveness_eye_detect_fail">活性检测失败</string>
+    <string name="capture_fail_fake_eye">活性检测失败</string>
+    <string name="capture_fail">捕获失败</string>
+    <string name="capture_fail_timeout">捕获超时</string>
+    <string name="capture_fail_inactive_user">未授予访问权限</string>
+    <string name="capture_fail_wrong_auth_mode">检查身份验证模式</string>
+    <string name="capture_fail_identify">标识失败</string>
+
+    <string name="go_right">向右移动</string>
+    <string name="go_left">向左移动</string>
+    <string name="go_up">上移</string>
+    <string name="go_down">下移</string>
+    <string name="go_forward">前进</string>
+    <string name="go_backward">向后移动</string>
+
+    <string name="card_verified_wait_bio">卡已验证</string>
+    <string name="card_fail_verified">卡未验证</string>
+    <string name="card_fail_mismatch">生物特征和卡不匹配</string>
+    <string name="card_fail_timeout">卡超时</string>
+    <string name="bio_fail_timeout">捕获生物特征超时</string>
+    <string name="capture_closer_camera">靠近镜头</string>
+
+    <string name="recog_success_0">已识别</string>
+    <string name="recog_success_card_verified_11091006">匹配成功</string>
+    <string name="recog_success_access_granted_11091036">Access Granted</string>
+    <string name="recog_fail_fake_eye_detected_11071010">活性检测失败</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">活性检测失败</string>
+    <string name="recog_fail_inactive_user_11091003">未授予访问权限</string>
+    <string name="recog_fail_card_not_verified_11091007">匹配失败</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">匹配失败</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">匹配失败</string>
+    <string name="recog_fail_wait_card_timeout_11091012">卡超时</string>
+    <string name="recog_fail_policy_not_granted_11091023">未授予访问权限</string>
+    <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+    <string name="recog_fail_access_not_granted_11091037">未授予访问权限</string>
+
+    <string name="recog_fail_wear_mask">请戴口罩</string>
+    <string name="recog_fail_temperature_high">温度很高</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">设置管理员密码</string>
+    <string name="init_password_guide">请在下方设置密码，然后单击“确定” </string>
+    <string name="init_password_guide2">请在下方设置密码，然后单击“确定” </string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">密码</string>
+    <string name="init_password_confirm">确认密码</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">保存</string>
+    <string name="toast_usb_mounted">已经识别USB设备</string>
+    <string name="toast_admin_login_error">凭据错误或授权失败</string>
+    <string name="toast_file_download_start">正在下载…</string>
+    <string name="toast_file_download_finish">下载成功</string>
+    <string name="toast_file_download_check">验证下载的文件</string>
+    <string name="toast_file_validate_fail">验证失败</string>
+    <string name="toast_file_installing">正在安装…</string>
+    <string name="toast_file_updating">正在更新…</string>
+    <string name="toast_port_missed">缺少端口号</string>
+    <string name="toast_thermal_connected">已经连接测温设备</string>
+    <string name="toast_cannot_find_external">找不到外部设备</string>
+
+    <string-array name="language_option">
+        <item>英语</item>
+        <item>朝鲜的</item>
+        <item>法国</item>
+        <item>中国</item>
+        <item>日语</item>
+        <item>德国</item>
+        <item>西班牙语</item>
+        <item>意大利</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">Ayarlar</string>
+
+    <!--Title-->
+    <string name="admin_login">Yönetici Girişi</string>
+    <string name="iris_recognition">iris tanıma</string>
+    <string name="biometrics">Biyometrik</string>
+    <string name="system_admin">Sistem yöneticisi</string>
+    <string name="user_management">Kullanıcı yönetimi</string>
+    <string name="settings">Ayarlar</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">Bildirim</string>
+    <string name="dlgtitle_err">Hata</string>
+    <string name="dlgtitle_waring">Uyarı</string>
+    <string name="dlgtitle_guide">klavuz</string>
+    <string name="dlgtitle_success">Başarılı</string>
+    <string name="dlgtitle_fail">Başarısız</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="delete">Sil</string>
+    <string name="update">Güncelle</string>
+    <string name="confirm">Onayla</string>
+    <string name="yes_dialog">Evet</string>
+    <string name="no_dialog">Hayır</string>
+    <string name="done">Tamam</string>
+    <string name="high">Artır</string>
+    <string name="low">Azalt</string>
+    <string name="on">Açık</string>
+    <string name="off">Kapalı</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">Kullanıcı adı &amp; parola </string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="password">parola</string>
+    <string name="sign_in">oturum aç</string>
+    <string name="error_username_or_password">Kullanıcı adı veya şifre hatalı</string>
+    <string name="error_login_attempt">Giriş limit aşıldı. \n Lütfen %d dakika sonra tekrar deneyiniz.</string>
+
+    <!-- User Management -->
+    <string name="search">Ara</string>
+    <string name="userlist_guide">&#160;&#160;&#160;Ayrıntıları görmek için bir kullanıcı seçin, veya yeni bir kullanıcı oluşturmak için + işaretine tıklayın</string>
+    <string name="user_id">Kullanıcı kodu</string>
+    <string name="title">Ünvan</string>
+    <string name="first_name">İsim</string>
+    <string name="last_name">Soyisim</string>
+    <string name="email_address">Email adresi</string>
+    <string name="phone_number">telefon numarası</string>
+    <string name="modify_bioinfo_dialog_title">Biyometrik değişimi</string>
+    <string name="add_bioinfo_dialog_title">Biyometrik ekleme</string>
+    <string name="delete_dialog">Kullanıcıyı silmek istediğinizden emin misiniz?</string>
+    <string name="re_enroll">Görüntüyü yeniden kaydetmek istediğinizden emin misiniz?</string>
+    <string name="modify_bioinfo_dialog">Biyometrik bilgiyi değiştrimek istediğinizden emin misiniz?</string>
+    <string name="add_bioinfo_dialog">Biyometrik bilgi eklemek istediğinize emin misiniz?</string>
+    <string name="enroll_error_already">Kullanıcı halihazırda kayıtlı</string>
+    <string name="enroll_error_verified">Doğrulama başarısız</string>
+    <string name="enroll_error_capture">İris görüntü yakalama başarısız</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">Lütfen kullanıcı kodu girin. </string>
+    <string name="enroll_error_duplicate_userid">Kullanıcı kodu halihazırda kullanımda.</string>
+    <string name="enroll_error_space_userid">Boşluk kabul edilmemez.</string>
+    <string name="enroll_remove_glasses_guide">Varsa, lütfen gözlüğünüzü ve maskenizi çıkarınız.</string>
+
+    <string name="all">Hepsi</string>
+    <string name="type">Tür</string>
+    <string name="auth_mode">Kimlik doğrulama\n modu</string>
+    <string name="iris_and_face">İRİS + YÜZ</string>
+    <string name="iris">İRİS</string>
+    <string name="face">YÜZ</string>
+    <string name="select_mode">Mod seçin</string>
+    <string name="select_mode_error">Kimlik doğrulama modu seçmelisiniz.</string>
+    <string name="roll">Kullanıcı türü</string>
+    <string name="user">Kullanıcı</string>
+    <string name="admin">Yönetici</string>
+    <string name="pw_change">Parolayı değiştir</string>
+    <string name="pw_current">Mevcut parola</string>
+    <string name="pw_new">Yeni  parola</string>
+    <string name="pw_confirm">Parolayı doğrula</string>
+    <string name="err_pw_invalid">Mevcut parola hatalı</string>
+    <string name="err_pw_matched">Yeni parola ve parola doğrulama eşleşmiyor.</string>
+    <string name="err_pw_4digit">Parola 4 karakterden fazla olmadılır.</string>
+    <string name="pw_changed">Parola değiştirilmiştir</string>
+
+    <string name="user_basic_info">Temel bilgiler</string>
+    <string name="user_card_info">Kart bilgisi</string>
+    <string name="user_details">Detay</string>
+    <string name="card_format">Kart formatı</string>
+    <string name="card_id">Kart ID</string>
+    <string name="card_facility_code">Tesis kodu</string>
+    <string name="card_wiegand_data">Wiegand Data</string>
+    <string name="enter_card_id">Kart ID giriniz</string>
+    <string name="enter_facility_code">Tesis kodu giriniz</string>
+    <string name="enter_card_info">Kart bilgisis giriniz</string>
+    <string name="tap_card">Kartı gösteriniz</string>
+    <string name="enroll">Kayıt</string>
+    <string name="card_manual">Manuel</string>
+    <string name="card_number">Kart numarsı</string>
+    <string name="required">Gerekli</string>
+    <string name="user_active">Aktif</string>
+    <string name="user_inactive">Aktif değil</string>
+    <string name="capture_guide">Basılı tutunuz ve \n biyometri kaydediniz</string>
+    <string name="select_type">Tür seçimi</string>
+    <string name="select_type_msg">Biyometri türünü seçiniz</string>
+    <string name="all_users">Tüm kullanıcılar</string>
+    <string name="department">Bölüm</string>
+    <string name="role">Rol</string>
+    <string name="privacy_agree_title">Gizlilik rızası</string>
+    <string name="privacy_agree_content">Iris ID\'nin biyometrik verilerimi almadığını ve bunlara erişiminin olmadığını anlıyor ve kabul ediyorum. Ayrıca, işverenimin biyometrik verilerimin toplanması, kullanımı, ifşası ve bakımından ve biyometrik verilerimle ilgili tüm geçerli yasalara uyulmasından tek başına sorumlu olduğunu anlıyor ve kabul ediyorum.</string>
+    <string name="bio_content">Biyometri kaydı</string>
+
+    <string name="privacy_agree_content_itmscloud">By selecting “I agree” below, I consent to the collection of my biometric information (face and iris) by this Iris ID Systems, Inc. (“Iris ID”) terminal. I further consent to the terminal disclosing templates of my iris and face to Iris ID, which may in turn re-disclose my biometric information to its vendors and affiliates, all for the purpose of employee time management, including my daily start and end times. I understand that this consent remains valid and continues to apply to my use of the Iris ID terminal and Iris ID’s receipt and re-disclosure of my biometric information until such time that notice of revocation of my consent is received by Iris ID. I further understand that Iris ID may store and use my biometric information for up to thirty (30) days after my employer notifies Iris ID that my employment has ended.</string>
+    <string name="agree">I agree</string>
+    <string name="disagree">I disagree</string>
+
+    <!-- Setting_General-->
+    <string name="general">Genel</string>
+    <string name="device_name">Cihaz adı</string>
+    <string name="device_type">Cihaz türü</string>
+    <string name="build_type">Derleme türü</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">Seri Numarası</string>
+    <string name="mac_address_ethernet">Ethernet MAC Adresi</string>
+    <string name="mac_address_wifi">Kablosuz MAC adresi</string>
+    <string name="kernel_version">Kernel sürümü</string>
+    <string name="android_version">Android sürümü</string>
+    <string name="hardware_version">Donanım sürümü</string>
+    <string name="software_version">Yazılım sürümü</string>
+    <string name="application_version">Uygulama sürümü</string>
+    <string name="general_error_devicename_empty">Lütfen cihaz ismini giriniz</string>
+    <string name="general_error_devicename_too_long">Cihaz adı çok uzun</string>
+    <string name="reboot">Yeniden başlat</string>
+    <string name="reboot_dialog">Cihazı yeniden başlatmak istediğinizden emin misiniz?</string>
+    <string name="factory_reset">Fabrika ayarları</string>
+    <string name="factory_reset_dialog">Bu cihazınızın dahili hafızasındaki tüm veriler silinecektir. \ n Bu işlem geri alınamaz.</string>
+    <string name="source">Kaynak</string>
+    <string name="open_source_licenses">Açık Kaynak Lisansları</string>
+    <string name="system_updates">Sistem güncellemeleri</string>
+    <string name="system_updates_dialog">Sistemi güncellemek istediğinizden eminmisiniz?</string>
+    <string name="system_updates_select_file">Lütfen *.ipk dosyası seçiniz</string>
+    <string name="system_updates_copy_verify">Sistem Güncellemesi kopyalanıyor &amp; doğrulanıyor</string>
+    <string name="system_updates_insert_usb">Lütfen bir USB diski takınız</string>
+    <string name="error_not_find_usb_device">USB cihazı tanımlanamadı</string>
+
+    <!-- Setting_Application-->
+    <string name="application">Uygulama</string>
+    <string name="authentication">Kimlik doğrulama</string>
+    <string name="authentication_type">Kimlık doğrulama türü</string>
+    <string name="operation_mode">Operasyon modu</string>
+    <string name="operation_mode_interactive">Interaktif</string>
+    <string name="operation_mode_continuous">Sürekli</string>
+    <string name="app_admin_time_out">Yönetici modu zaman aşımı</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">Doğrulama sonucu görüntülenme süresi</string> <!-- Recognition Result Duration -->
+    <string name="minutes">dakika</string>
+    <string name="seconds">saniye</string>
+
+    <string name="relay">Röle</string>
+    <string name="delay_time">Zamanlama aralığı</string>
+    <string name="door_status_monitoring">Kapı durum izleme</string>
+    <string name="door_status_monitoring_forced_open">Zorla açılmış</string>
+    <string name="door_status_monitoring_not_open">Açık değil</string>
+    <string name="door_status_monitoring_held_open">Açık bırakılmış</string>
+    <string name="position_guide">Konum kılavuzu</string>
+    <string name="voice_announce">Sesli anons</string>
+    <string name="tamper_protection">Izinsiz müdahale koruması</string>
+    <string name="tamper_protection_del_data">Kullanıcı verisini sil</string>
+    <string name="userdefine">Kullanıcı tanımı</string>
+    <string name="file_delete_detail">Delete \'%s\' file?</string>
+    <string name="app_update">Uygulama güncellemesi</string>
+    <string name="app_update_enter_idpw">Uygulama güncellemesi için ID ve Parola giriniz</string>
+    <string name="app_update_fail_connect_url">URL\'ye bağlanıldı\bağlanılamadı</string>
+    <string name="app_update_fail_file_error">İndirilmiş dosyada bir problem var</string>
+    <string name="app_update_fail_file_install">Uygulama yükleme hatası</string>
+    <string name="app_update_fail_url_empty">Lütfen URL giriniz</string>
+    <string name="enroll_guide">Kayıt önlem rehberi</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">Mod seçin</string>
+    <string name="admin_login_type">Yönetici giriş türü</string>
+    <string name="authentication_mode">Doğrulama modu</string>
+    <string name="authentication_mode_individual">Kişisel</string>
+    <string name="authentication_mode_device">Cihaz</string>
+
+    <string name="mask_detect">Maske tespiti</string>
+    <string name="mask_access">Erişim kontrolü</string>
+    <string name="mask_voice_guide">Sesli rehber</string>
+    <string name="mask_text_guide">Yazılı rehber</string>
+
+    <string name="qr_recog">QR Recognition</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">Karşı önlem</string>
+    <string name="counter_measure_eye">İris</string>
+    <string name="counter_measure_face">Yüz</string>
+    <string name="counter_measure_lens">Lens</string>
+
+    <string name="save_audit_image">Yüz denetim resmi kaydet</string>
+    <string name="saving_mode">Güç tasarrufu</string>
+    <string name="saving_screen_timeout">Ekran zaman aşımı</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">Ekran</string>
+    <string name="sound">Ses</string>
+    <string name="display_sound">Ekran ve Ses</string>
+    <string name="language">Dil</string>
+    <string name="brightness">Parlaklık</string>
+    <string name="auto_adjust">Otomatik ayar</string>
+    <string name="volume">Ses</string>
+    <string name="keyboard_manage">Klavyeleri yönet</string>
+    <string name="keyboard_and_inpumethod">Klavye ve Giriş Yöntemleri</string>
+    <string name="keyboard_android">Android klavye</string>
+    <string name="keyboard_google_korean">Google korece giriş</string>
+    <string name="sound_touch">Dokunma sesleri</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">Duvar kağıdı</string>
+    <string name="movies">Videolar</string>
+    <string name="images">Görüntüler</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">Tarih ve zaman</string>
+    <string name="time_zone">Saat dilimi</string>
+    <string name="time_server">Ntp sunucusu</string>
+    <string name="auto_date_time">Otomatik tarih ve saat</string>
+    <string name="use_24hour_format">24 saat biçimini kullan</string>
+
+    <!-- Setting_Network -->
+    <string name="network">Ağ</string>
+    <string name="ip_settings">IP Ayarları</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Statik</string>
+    <string name="ip_address">IP Adresi</string>
+    <string name="subnet_mask">Alt ağ maskesi</string>
+    <string name="prefix_length">Örnek uzunluk (Aralık: 1-31)</string>
+    <string name="default_gateway">Varsayılan ağ geçidi</string>
+    <string name="dns1">Birincil DNS</string>
+    <string name="dns2">İkincil DNS</string>
+    <string name="network_error_ipaddress">IP adresi alınamadı.</string>
+    <string name="network_error_connect">İnternet bağlantısı bulunamadı .  Bağlantınızı kontrol edin(kablo, modem ve yönlendirici)</string>
+    <string name="wifi">Kablosuz</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="conn_ethernet_title">Kablolu bağlantı</string>
+    <string name="conn_ethernet_desc">Are you sure you want to connect ethernet? Connection to Wi-Fi will be disconnected.</string>
+    <string name="conn_wifi_title">Kablosuz bağlantı</string>
+    <string name="conn_wifi_desc">Kablosuz bağlantıya geçmek istediğinize eminmisiniz? Kablolu bağlantı kopacaktır.</string>
+    <string name="wait_progress_text">Lütfen bekleyin...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">Aktivasyon</string>
+    <string name="activate">Etkinleştir</string>
+    <string name="deactivate">Devre dışı bırak</string>
+    <string name="deactivating">Devre dışı bırakılıyor.</string>
+    <string name="activation_method">Aktivasyon metodu</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">Bağımsız</string>
+    <string name="activation_itms_mode">Mod</string>
+    <string name="activation_itms_mode_auto">Oto</string>
+    <string name="activation_itms_mode_manual">Manuel</string>
+    <string name="activation_find">iTMS ara</string>
+    <string name="activation_checkin">iTMS\'e giriş yap</string>
+    <string name="sitekey">Site anahtarı</string>
+    <string name="apikey">API anahtarı</string>
+    <string name="device_url">Cihazın URL\'si</string>
+    <string name="activate_error_empty_sitekey">Lütfen site anahtarı için parola girin</string>
+    <string name="activate_error_not_find">iTMS adres bulunamıyor.</string>
+    <string name="passphrase_site_hint">Site anahtarı parolası</string>
+    <string name="passphrase_api_hint">API anahtarı parolası</string>
+    <string name="deactivate_dialog">Bu cihazı devre dışı bırakmak istediğinizden emin misiniz? Devre dışı bıraktığınızda, bu cihazda kayıtlı bütün veriler kalıcı olarak silinecektir.</string>
+
+    <string name="pw_change1">Parolayı değiştir</string>
+    <string name="pw_current1">Mevcut parola</string>
+    <string name="pw_new1">Yeni parola</string>
+    <string name="pw_confirm1">Parolayı doğrula</string>
+
+    <string name="am">ÖÖ</string>
+    <string name="pm">ÖS</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">Harici cihaz</string>
+    <string name="thermal_camera">Termal kamera</string>
+    <string name="card_reader">Kart okuyucu</string>
+    <string name="error_card_reader_not_find">Kart okuyucu cihaz bulundu\bulunamadı</string>
+    <string name="temperature_unit">Isı ünitesi</string>
+
+    <string name="threshold_value">Eşik değer</string>
+    <string name="temperature_alarm">Isı alarmı</string>
+    <string name="access_control">Erişim kontrolü</string>
+    <string name="thermal_compensation">Isı düzeltmesi</string>
+    <string name="error_thermal_not_find">Termal kamera bulundu\bulunamadı</string>
+    <string name="error_input_value">Değeri tekrar kontrol ediniz</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">Tanımlandı</string>
+    <!--  <string name="liveness_eye_fail">Liveness Detection Failure</string> -->
+    <!--  <string name="liveness_eye_detect_fail">Identification Failed</string>  from v2.05.11 -->
+    <string name="liveness_eye_detect_fail">Canlılık testi başarısız</string>
+    <string name="capture_fail_fake_eye">Canlılık testi başarısız</string>
+    <!--  <string name="capture_fail_liveness_eye">Liveness detected</string> -->
+    <!--  <string name="capture_fail_fake_eye">Fake eye detected</string> -->
+    <!--     <string name="capture_fail_fake_eye">Identification Failed</string> from v2.05.11 -->
+    <string name="capture_fail">Yakalama başarısız</string>
+    <string name="capture_fail_timeout">Yakalama zaman aşımı</string>
+    <string name="capture_fail_inactive_user">Erişim sağlanmadı</string>
+    <string name="capture_fail_wrong_auth_mode">Doğrulama modunu kontrol ediniz</string>
+    <string name="capture_fail_identify">Tanımlama başarısız</string>
+    <string name="go_right">Sağa gidiniz</string>
+    <string name="go_left">Sola gidiniz</string>
+    <string name="go_up">Yukarı</string>
+    <string name="go_down">Aşağı</string>
+    <string name="go_forward">Yaklaşınız</string>
+    <string name="go_backward">Geri gidiniz</string>
+
+    <string name="card_verified_wait_bio">Kart doğrulandı</string>
+    <string name="card_fail_verified">Kart doğrulanmadı</string>
+    <string name="card_fail_mismatch">Biyometri ve kart eşleşmedi</string>
+    <string name="card_fail_timeout">Kart zaman aşımı</string>
+    <string name="bio_fail_timeout">Biyometri yakalama zaman aşımı</string>
+    <string name="capture_closer_camera">Kameraya yaklaşınız</string>
+    <string name="capture_for_audit_image">Denetim için resim çekimi</string>
+    <string name="wait_checking_permission">İzinler kontrol ediliyor</string>
+
+    <string name="recog_success_0">Tanımlandı</string>
+    <string name="recog_success_card_verified_11091006">Doğrulandı</string>
+    <string name="recog_success_access_granted_11091036">Erişim verildi</string>
+    <string name="recog_fail_fake_eye_detected_11071010">Canlılık testi başarısız</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">Canlılık testi başarısız</string>
+    <string name="recog_fail_inactive_user_11091003">Erişim sağlanmadı</string>
+    <string name="recog_fail_card_not_verified_11091007">Doğrulama başarısız</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">Doğrulama başarısız</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">Doğrulama başarısız</string>
+    <string name="recog_fail_wait_card_timeout_11091012">Kart zaman aşımı</string>
+    <string name="recog_fail_policy_not_granted_11091023">Erişim sağlanmadı</string>
+    <string name="recog_fail_pacs_timeout_11091014">Zaman aşımı</string>
+    <string name="recog_fail_access_not_granted_11091037">Erişim sağlanmadı</string>
+
+    <string name="recog_fail_wear_mask">Lütfen maske takınız</string>
+    <string name="recog_fail_temperature_high">Yüksek sıcaklık</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">Yönetici parola ayarları</string>
+    <string name="init_password_guide">Lütfen bir parola belirleyiniz </string>
+    <string name="init_password_guide2">Please set a password below and click "OK".\nBefore you can change any settings, you need to login with a password.</string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">Parola</string>
+    <string name="init_password_confirm">Parola doğrulama</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">Kaydedildi</string>
+    <string name="toast_usb_mounted">USB cihaz tanımlandı</string>
+    <string name="toast_admin_login_error">Yanlış veya başarısız doğrulama</string>
+    <string name="toast_file_download_start">İndiriliyor...</string>
+    <string name="toast_file_download_finish">İndirme başarılı</string>
+    <string name="toast_file_download_check">İndirilen dosya doğrulanıyor</string>
+    <string name="toast_file_validate_fail">Doğrulama başarısız</string>
+    <string name="toast_file_installing">Kuruluyor</string>
+    <string name="toast_file_updating">Yükleniyor</string>
+    <string name="toast_port_missed">Port numarası eksik</string>
+    <string name="toast_thermal_connected">Termal cihaz bağlandı</string>
+    <string name="toast_cannot_find_external">Harici cihaz bulundu\bulunamadı</string>
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+</resources>

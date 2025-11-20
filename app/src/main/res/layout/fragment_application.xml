@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/settingBackground">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/setting_box_margin"
+    android:background="@color/settingBackground">
+
+    <!-- Relay on/off -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box_selector">
+
+        <LinearLayout
+            android:id="@+id/linear_relay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/relay"
+                    style="@style/SettingNextTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_relay_onoff"
+                    style="@style/SettingTextStyle"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    android:textColor="@color/settingTextSelect" />
+                <Switch
+                    android:id="@+id/sch_relay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_relay_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/setting_box_padding"
+            android:paddingBottom="@dimen/setting_box_margin_narrow"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingTop="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delay_time"
+                    style="@style/SettingSubTextStyle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  (1-75)"
+                    style="@style/SettingSubTextStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_relay_delay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txt_relay_delay_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="5"
+                    style="@style/SettingNextTextStyle"
+                    android:textSize="20sp"
+                    android:textColor="@color/settingTextSelect" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+                    android:gravity="bottom"
+                    android:text="@string/seconds"
+                    style="@style/SettingSubTextStyle" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- GPIO0 Setting NEW2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/setting_box_selector">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/setting_box_padding_narrow"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPIO0"
+                        style="@style/SettingNextTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_gpio0_spin"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/setting_box_padding"
+                    android:layout_gravity="right"
+                    android:gravity="end">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/gpio0_type_spin"
+                        android:layout_width="220dp"
+                        android:layout_height="52dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="end"
+                        android:theme="@style/Theme.AppCompat"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                    </android.support.v7.widget.AppCompatSpinner>
+
+                    <LinearLayout
+                        android:id="@+id/linear_g0_highlow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/setting_box_margin_narrow"
+                        android:layout_marginTop="4dp"
+                        android:padding="@dimen/setting_box_margin_narrow"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_g0_high"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                style="@style/SettingSubTextStyle"
+                                android:text="@string/high"
+                                android:textSize="16sp"
+                                android:textColor="@color/btn_text_network_type"
+                                android:enabled="true"
+                                android:textAllCaps="false"
+                                android:clickable="true"
+                                android:background="@drawable/btn_networktype_left"/>
+                            <LinearLayout
+                                android:id="@+id/linear_touch_g0_high"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                android:orientation="horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_g0_low"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                style="@style/SettingSubTextStyle"
+                                android:text="@string/low"
+                                android:textSize="16sp"
+                                android:textColor="@color/btn_text_network_type"
+                                android:enabled="false"
+                                android:textAllCaps="false"
+                                android:clickable="true"
+                                android:background="@drawable/btn_networktype_right"/>
+                            <LinearLayout
+                                android:id="@+id/linear_touch_g0_low"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                android:orientation="horizontal"/>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                android:background="@color/userMgrDivider"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_gpio0_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/settingTextSelect"/>
+                <Switch
+                    android:id="@+id/sch_gpio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- GPIO0 Detail setting 0 -->
+        <LinearLayout
+            android:id="@+id/linear_g0_detail0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box"
+            android:animateLayoutChanges="true"
+            android:visibility="visible">
+
+            <!-- select event -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck0_force_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/door_status_monitoring_forced_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck0_not_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/door_status_monitoring_not_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_g0_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box"
+            android:animateLayoutChanges="true"
+            android:visibility="visible">
+
+            <!-- select event -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck0_held_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="@string/door_status_monitoring_held_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <LinearLayout
+                    android:id="@+id/linear_g0_timer"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:paddingStart="@dimen/setting_box_margin_narrow"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delay_time"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  (1-300)"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txt_g0_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="5"
+                            android:singleLine="true"
+                            style="@style/SettingNextTextStyle"
+                            android:textSize="20sp"
+                            android:textColor="@color/settingTextSelect" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+                            android:gravity="bottom"
+                            android:text="@string/seconds"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- GPIO1 Setting NEW2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/setting_box_selector">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/setting_box_padding_narrow"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPIO1"
+                        style="@style/SettingNextTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_gpio1_spin"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/setting_box_padding"
+                    android:layout_gravity="right"
+                    android:gravity="end">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/gpio1_type_spin"
+                        android:layout_width="220dp"
+                        android:layout_height="52dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="end"
+                        android:theme="@style/Theme.AppCompat"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                    </android.support.v7.widget.AppCompatSpinner>
+
+                    <LinearLayout
+                        android:id="@+id/linear_g1_highlow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/setting_box_margin_narrow"
+                        android:layout_marginTop="4dp"
+                        android:padding="@dimen/setting_box_margin_narrow"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_g1_high"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                style="@style/SettingSubTextStyle"
+                                android:text="@string/high"
+                                android:textSize="16sp"
+                                android:textColor="@color/btn_text_network_type"
+                                android:enabled="true"
+                                android:textAllCaps="false"
+                                android:clickable="true"
+                                android:background="@drawable/btn_networktype_left"/>
+                            <LinearLayout
+                                android:id="@+id/linear_touch_g1_high"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                android:orientation="horizontal"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/btn_g1_low"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                style="@style/SettingSubTextStyle"
+                                android:text="@string/low"
+                                android:textSize="16sp"
+                                android:textColor="@color/btn_text_network_type"
+                                android:enabled="false"
+                                android:textAllCaps="false"
+                                android:clickable="true"
+                                android:background="@drawable/btn_networktype_right"/>
+                            <LinearLayout
+                                android:id="@+id/linear_touch_g1_low"
+                                android:layout_width="60dp"
+                                android:layout_height="28dp"
+                                android:orientation="horizontal"/>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                android:background="@color/userMgrDivider"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_gpio1_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/settingTextSelect"/>
+                <Switch
+                    android:id="@+id/sch_gpio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- GPIO1 Detail setting  -->
+        <LinearLayout
+            android:id="@+id/linear_g1_detail0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box"
+            android:animateLayoutChanges="true"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck1_force_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/door_status_monitoring_forced_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck1_not_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/door_status_monitoring_not_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_g1_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box"
+            android:animateLayoutChanges="true"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding_narrow"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/ck1_held_open"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:text="@string/door_status_monitoring_held_open"
+                    style="@style/SettingSubTextStyle"
+                    android:enabled="true"
+                    android:checked="false"
+                    android:theme="@style/Theme.AppCompat" />
+
+                <LinearLayout
+                    android:id="@+id/linear_g1_timer"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:paddingStart="@dimen/setting_box_margin_narrow"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:paddingTop="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delay_time"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  (1-300)"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/txt_g1_timer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="5"
+                            android:singleLine="true"
+                            style="@style/SettingNextTextStyle"
+                            android:textSize="20sp"
+                            android:textColor="@color/settingTextSelect" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="@dimen/setting_box_margin_narrow"
+                            android:gravity="bottom"
+                            android:text="@string/seconds"
+                            style="@style/SettingSubTextStyle"
+                            android:textSize="16px"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tamper detect of Protection setting on/off -->
+    <LinearLayout
+        android:id="@+id/linear_tamper_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/linear_tamper_onoff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/setting_box_selector">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tamper_protection"
+                    style="@style/SettingNextTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/setting_box_padding_narrow"
+                android:layout_marginBottom="@dimen/setting_box_padding_narrow"
+                android:background="@color/userMgrDivider"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_tamper_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:gravity="end"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/settingTextSelect"/>
+                <Switch
+                    android:id="@+id/sch_tamper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Tamper detail setting -->
+        <LinearLayout
+            android:id="@+id/linear_tamper_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box">
+
+            <!-- Tamper  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tamper_protection_del_data"
+                        style="@style/SettingSubTextStyle"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/setting_box_padding"
+                    android:layout_marginEnd="@dimen/setting_box_padding_narrow"
+                    android:gravity="center_vertical">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/ck_tamper_delete_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:checked="false"
+                        android:theme="@style/Theme.AppCompat"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+    <!-- Administrator mode time out layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:paddingTop="@dimen/setting_box_padding_narrow"
+        android:paddingBottom="@dimen/setting_box_padding_narrow"
+        android:paddingLeft="@dimen/setting_box_padding"
+        android:paddingRight="@dimen/setting_box_padding"
+        android:orientation="horizontal"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/app_admin_time_out"
+            android:gravity="center_vertical"
+            style="@style/SettingNextTextStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/admin_time_out_spin"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:theme="@style/Theme.AppCompat"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                </android.support.v7.widget.AppCompatSpinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/minutes"
+                    android:layout_marginLeft="15dp"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/captureIDText"
+                    android:paddingBottom="8dp"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Recognition result display timer layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:paddingTop="@dimen/setting_box_padding_narrow"
+        android:paddingBottom="@dimen/setting_box_padding_narrow"
+        android:paddingLeft="@dimen/setting_box_padding"
+        android:paddingRight="@dimen/setting_box_padding"
+        android:orientation="horizontal"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/app_result_duration"
+            style="@style/SettingNextTextStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/time_out_spin"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:theme="@style/Theme.AppCompat"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+                </android.support.v7.widget.AppCompatSpinner>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/seconds"
+                    android:layout_marginStart="15dp"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/captureIDText"
+                    android:paddingBottom="8dp"
+                    android:gravity="bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Position guide on/off -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/setting_box"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/setting_box_padding"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/position_guide"
+                style="@style/SettingNextTextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_guide_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/setting_box_padding"
+            android:padding="@dimen/setting_box_padding"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txt_guide_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/setting_box_margin"
+                android:layout_marginBottom="2dp"
+                android:text="@string/off"
+                style="@style/SettingTextStyle"
+                android:textColor="@color/disableText"/>
+
+            <Switch
+                android:id="@+id/sch_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:switchPadding="5dp"
+                android:switchMinWidth="52dp"
+                android:thumbTint="@color/switch_thumb_selector"
+                android:trackTint="@color/switch_track_selector"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Remove glasses or mask guide on/off (Enrollment guidelines) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/setting_box"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/setting_box_padding"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enroll_guide"
+                style="@style/SettingNextTextStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_enroll_guide_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/setting_box_padding"
+            android:padding="@dimen/setting_box_padding"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/txt_enroll_guide_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/setting_box_margin"
+                android:layout_marginBottom="2dp"
+                android:text="@string/off"
+                style="@style/SettingTextStyle"
+                android:textColor="@color/disableText"/>
+
+            <Switch
+                android:id="@+id/sch_enroll_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:switchPadding="5dp"
+                android:switchMinWidth="52dp"
+                android:thumbTint="@color/switch_thumb_selector"
+                android:trackTint="@color/switch_track_selector"
+                android:gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Voice Announce on/off NEW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:orientation="horizontal"
+            android:background="@drawable/setting_box"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/setting_box_padding"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voice_announce"
+                    style="@style/SettingNextTextStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_voice_onoff"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/setting_box_padding"
+                android:padding="@dimen/setting_box_padding"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/txt_voice_onoff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/setting_box_margin"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/off"
+                    style="@style/SettingTextStyle"
+                    android:textColor="@color/disableText"/>
+
+                <Switch
+                    android:id="@+id/sch_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:switchPadding="5dp"
+                    android:switchMinWidth="52dp"
+                    android:thumbTint="@color/switch_thumb_selector"
+                    android:trackTint="@color/switch_track_selector"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Voice Announce Detail setting (User Define Voice) -->
+        <LinearLayout
+            android:id="@+id/linear_voice_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/setting_box_margin"
+            android:layout_marginTop="4dp"
+            android:paddingStart="@dimen/setting_box_margin"
+            android:background="@drawable/setting_box"
+            android:animateLayoutChanges="true">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- App update -->
+    <LinearLayout
+        android:id="@+id/linear_app_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_box_margin"
+        android:padding="@dimen/setting_box_padding"
+        android:orientation="vertical"
+        android:background="@drawable/setting_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_update"
+            style="@style/SettingTextStyle"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/setting_box_margin"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/setting_box_margin"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/edit_app_update"
+                    style="@style/ListviewTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="20dp"
+                    android:background="@drawable/network_edt_selector"
+                    android:imeOptions="actionDone"
+                    android:inputType="textWebEditText"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:theme="@style/Theme.AppCompat" />
+                <LinearLayout
+                    android:id="@+id/linear_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/txt_error"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/app_update_fail_url_empty"
+                        style="@style/MyErrorText"/>
+
+                    <ImageView
+                        android:id="@+id/error_icon_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/ic_error_warning"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_app_update"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/setting_box_margin"
+                android:background="@drawable/btn_save_selector"
+                android:textAllCaps="false"
+                android:text="@string/ok"
+                style="@style/ButtonTextStyle"
+                android:textSize="14dp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

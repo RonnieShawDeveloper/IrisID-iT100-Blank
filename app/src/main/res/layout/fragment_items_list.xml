@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+        <!--
+        <EditText
+            android:id="@+id/search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            style="@style/UserMgrSearchEditTextStyle"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:hint="\uD83D\uDD0D Search"
+            android:inputType="textCapWords"
+            android:imeOptions="actionSearch" />
+-->
+        <SearchView
+            android:id="@+id/search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:iconifiedByDefault="false"
+            android:textColorHint="@color/errorText"
+            android:queryHint="@string/search"
+            android:searchIcon="@drawable/ic_icon_search"
+            android:background="@color/settingBackground"
+
+            />
+
+<!--
+        <EditText
+            android:id="@+id/search_edt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_icon_search"
+            android:drawablePadding="10dp"
+            style="@style/UserMgrSearchEditTextStyle"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:hint="\uD83D\uDD0D Search"
+            android:inputType="textCapWords"
+            android:imeOptions="actionSearch" />
+-->
+        <!--android:background="#88444444"-->
+        <LinearLayout
+            android:id="@+id/linear_total_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#88555556"
+            android:padding="4dp"
+            android:paddingStart="@dimen/setting_box_margin_narrow"
+            android:paddingTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/all_users"
+                android:textColor="@color/settingTextSubNormal"/>
+            <TextView
+                android:id="@+id/txt_total_user"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/setting_box_margin_narrow"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="#5FB5AD"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/userMgrDivider" />
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textFilterEnabled="true"
+            android:background="@color/settingBackground"
+            android:divider="@color/userMgrDivider"
+            android:dividerHeight="0.1px"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/enroll_fab"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/setting_box_margin"
+        android:layout_marginBottom="@dimen/setting_box_margin"
+        android:background="@drawable/btn_add_selector"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

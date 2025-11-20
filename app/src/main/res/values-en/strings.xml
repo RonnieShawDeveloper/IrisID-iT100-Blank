@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Title-->
+    <string name="admin_login">Admin Login</string>
+    <string name="iris_recognition">Iris Recognition</string>
+    <string name="biometrics">Biometrics</string>
+    <string name="system_admin">System Admin</string>
+    <string name="user_management">User Management</string>
+    <string name="settings">Settings</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">Notice</string>
+    <string name="dlgtitle_err">Error</string>
+    <string name="dlgtitle_waring">Warning</string>
+    <string name="dlgtitle_guide">Guide</string>
+    <string name="dlgtitle_success">Success</string>
+    <string name="dlgtitle_fail">Fail</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="yes_dialog">YES</string>
+    <string name="no_dialog">NO</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ID &amp; Password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="error_username_or_password">Username or Password is incorrect.</string>
+    <string name="error_login_attempt">Login limit exceeded.\nPlease try again in %d minutes</string>
+
+    <!-- User Management -->
+    <string name="search">Search</string>
+    <string name="userlist_guide">&#160;&#160;&#160;Select a user to see detail, or\nclick on + to create a new user.</string>
+    <string name="user_id">User ID</string>
+    <string name="title">Title</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email_address">Email address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="modify_bioinfo_dialog_title">Change Biometrics</string>
+    <string name="add_bioinfo_dialog_title">Add Biometrics</string>
+    <string name="delete_dialog">Are you sure you want to delete the user ?</string>
+    <string name="re_enroll">Are you sure you want to re-enroll the image ?</string>
+    <string name="modify_bioinfo_dialog">Are you sure you want to change Biometrics?</string>
+    <string name="add_bioinfo_dialog">Are you sure you want to add Biometrics?</string>
+    <string name="enroll_error_already">User already enrolled.</string>
+    <string name="enroll_error_verified"> Verified fail.</string>
+    <string name="enroll_error_capture"> Capture fail.</string>
+    <string name="enroll_error_capture_iris"> Capture iris fail.</string>
+    <string name="enroll_error_capture_face"> Capture face fail.</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">Please enter User ID </string>
+    <string name="enroll_error_duplicate_userid">User ID already exists </string>
+    <string name="enroll_error_space_userid">Spaces are not allowed</string>
+    <string name="all">All</string>
+    <string name="type">Type</string>
+    <string name="auth_mode">Authentication\nMode</string>
+    <string name="iris_and_face">IRIS + FACE</string>
+    <string name="iris">IRIS</string>
+    <string name="face">FACE</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="select_mode_error">You need to select authentication mode</string>
+    <string name="roll">Account Type</string>
+    <string name="user">User</string>
+    <string name="admin">Admin</string>
+    <string name="pw_change">Change Password</string>
+    <string name="pw_current">Current Password</string>
+    <string name="pw_new">New Password</string>
+    <string name="pw_confirm">Confirm Password</string>
+    <string name="err_pw_invalid">Incorrect password</string>
+    <string name="err_pw_matched">New and Confirm password did not match</string>
+    <string name="err_pw_4digit">Password must be more than 4 characters</string>
+    <string name="pw_changed">Password changed</string>
+    <string name="user_basic_info">Basic Info</string>
+    <string name="user_card_info">Card Info</string>
+    <string name="user_details">Details</string>
+    <string name="card_format">Card Format</string>
+    <string name="card_id">Card ID</string>
+    <string name="card_facility_code">Facility Code</string>
+    <string name="card_wiegand_data">Wiegand Data</string>
+    <string name="enter_card_id">Enter Card ID</string>
+    <string name="enter_facility_code">Enter Facility Code</string>
+    <string name="enter_card_info">Enter Card Info</string>
+    <string name="tap_card">Tap the card</string>
+    <string name="enroll">Enrollment</string>
+    <string name="card_manual">Manual</string>
+    <string name="card_number">Card Number</string>
+    <string name="required">*Required</string>
+    <string name="user_active">Active</string>
+    <string name="user_inactive">Inactive</string>
+    <string name="capture_guide">Long press and \n capture biometrics</string>
+    <string name="select_type">Select Type</string>
+    <string name="select_type_msg">Please select biometrics type</string>
+    <string name="all_users">All users </string>
+    <string name="department">Department</string>
+    <string name="privacy_agree_title">Privacy Consent</string>
+    <string name="privacy_agree_content">I understand and agree that Iris ID does not receive, and has no access to, my biometric data. I further understand and agree that my employer is solely responsible for the collection, use, disclosure, and maintenance of my biometric data and for compliance with all applicable laws regarding my biometric data.</string>
+    <string name="bio_content">Biometric Enrollment</string>
+
+    <!-- Setting_General-->
+    <string name="general">General</string>
+    <string name="device_name">Device Name</string>
+    <string name="device_type">Device Type</string>
+    <string name="build_type">Build Type</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">Serial Number</string>
+    <string name="mac_address_ethernet">Ethernet MAC Address</string>
+    <string name="mac_address_wifi">Wireless MAC Address</string>
+    <string name="kernel_version">Kernel Version</string>
+    <string name="android_version">Android Version</string>
+    <string name="hardware_version">Hardware Version</string>
+    <string name="software_version">Software Version</string>
+    <string name="application_version">Application Version</string>
+    <string name="general_error_devicename_empty">Please enter device name </string>
+    <string name="general_error_devicename_too_long">Device name is too long</string>
+    <string name="reboot">Reboot</string>
+    <string name="reboot_dialog">Are you sure you want to reboot device?</string>
+    <string name="factory_reset">Factory Reset</string>
+    <string name="factory_reset_dialog">This will erase all data from your device\'s internal storage.\nYou can\'t undo this action!</string>
+    <string name="system_updates">System updates</string>
+    <string name="error_not_find_usb_device">USB device not recognized</string>
+
+    <!-- Setting_Application-->
+    <string name="application">Application</string>
+    <string name="authentication">Authentication</string>
+    <string name="authentication_type">Authentication Type</string>
+    <string name="operation_mode">Operation Mode</string>
+    <string name="operation_mode_interactive">Interactive</string>
+    <string name="operation_mode_continuous">Continuous</string>
+    <string name="app_admin_time_out">Administrator Mode Timeout</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">Result Auto-dismiss Timer Interval</string> <!-- Recognition Result Duration -->
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+
+    <string name="relay">Relay</string>
+    <string name="delay_time">Timer Interval</string>
+    <string name="position_guide">Position Guide</string>
+    <string name="voice_announce">Voice Announce</string>
+    <string name="userdefine">User Define</string>
+    <string name="file_delete_detail">Delete \'%s\' file?</string>
+    <string name="app_update">App Update</string>
+    <string name="app_update_enter_idpw">Enter the ID/PW for App update</string>
+    <string name="app_update_fail_connect_url">Can\'t connect the URL</string>
+    <string name="app_update_fail_file_error">There is a problem with the downloaded file</string>
+    <string name="app_update_fail_file_install">App Install error</string>
+    <string name="app_update_fail_url_empty">Please enter a URL</string>
+    <string name="enroll_guide">Enrollment Precaution Guide</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">Mode</string>
+    <string name="admin_login_type">Admin Login Type</string>
+    <string name="authentication_mode">Authentication Mode</string>
+    <string name="authentication_mode_individual">Individual</string>
+    <string name="authentication_mode_device">Device</string>
+
+    <string name="mask_detect">Mask Detect</string>
+    <string name="mask_access">Access Control</string>
+    <string name="mask_voice_guide">Voice Guide</string>
+    <string name="mask_text_guide">Text Guide</string>
+
+    <string name="counter_measure">Countermeasure</string>
+    <string name="counter_measure_eye">Iris</string>
+    <string name="counter_measure_face">Face</string>
+    <string name="counter_measure_lens">Lens</string>
+
+    <string name="save_audit_image">Save Audit Face Image</string>
+    <string name="saving_mode">Power Saving</string>
+    <string name="saving_screen_timeout">Screen Timeout</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">Display</string>
+    <string name="sound">Sound</string>
+    <string name="display_sound">Display &amp; Sound</string>
+    <string name="language">Language</string>
+    <string name="brightness">Brightness</string>
+    <string name="auto_adjust">Auto adjust</string>
+    <string name="volume">Volume</string>
+    <string name="keyboard_manage">Manage keyboards</string>
+    <string name="keyboard_and_inpumethod">Keyboard &amp; Input Methods</string>
+    <string name="keyboard_android">Android Keyboard(AOSP)</string>
+    <string name="keyboard_google_korean">Google Korean Input</string>
+    <string name="sound_touch">Touch Sounds</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">Wallpaper</string>
+    <string name="movies">Movies</string>
+    <string name="images">Images</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">Date &amp; Time</string>
+    <string name="time_zone">Time Zone</string>
+    <string name="time_server">NTP Server</string>
+    <string name="auto_date_time">Automatic date and time</string>
+    <string name="use_24hour_format">Use 24-hour format</string>
+
+    <!-- Setting_Network -->
+    <string name="network">Network</string>
+    <string name="ip_settings">IP Settings</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">Static</string>
+    <string name="ip_address">IP Address</string>
+    <string name="subnet_mask">Subnet Mask</string>
+    <string name="prefix_length">Prefix Length (Range: 1–31)</string>
+    <string name="default_gateway">Default Gateway</string>
+    <string name="dns1">Primary DNS</string>
+    <string name="dns2">Secondary DNS</string>
+    <string name="network_error_ipaddress"> Failed to obtain IP Address. </string>
+    <string name="network_error_connect"> There is no Internet connection. \nCheck the network connection (cables, modem and router) </string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">Ethernet</string>
+    <string name="conn_ethernet_title">Connect Ethernet</string>
+    <string name="conn_ethernet_desc">Are you sure you want to connect ethernet? Connection to Wi-Fi will be disconnected.</string>
+    <string name="conn_wifi_title">Connect Wi-Fi</string>
+    <string name="conn_wifi_desc">Are you sure you want to connect Wi-Fi? Connection to ethernet will be disconnected.</string>
+    <string name="wait_progress_text">Please wait...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">Activation</string>
+    <string name="activate">Activate</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="deactivating">deactivating...</string>
+    <string name="activation_method">Activation Method</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">Standalone</string>
+    <string name="activation_itms_mode">Mode</string>
+    <string name="activation_itms_mode_auto">Auto</string>
+    <string name="activation_itms_mode_manual">Manual</string>
+    <string name="activation_find">Find iTMS</string>
+    <string name="activation_checkin">Check in iTMS</string>
+    <string name="sitekey">Site Key</string>
+    <string name="apikey">API Key</string>
+    <string name="device_url">Device URL</string>
+    <string name="activate_error_empty_sitekey">Please enter passphrase for sitekey </string>
+    <string name="activate_error_not_find">Can\'t find ITMS address</string>
+    <string name="passphrase_site_hint">Passphrase for Site Key </string>
+    <string name="passphrase_api_hint">Passphrase for API Key</string>
+    <string name="deactivate_dialog">Are you sure you want to deactivate this device? If you deactivate the device, you will permanently lose all the data stored in this device.</string>
+
+    <string name="pw_change1">Change Password</string>
+    <string name="pw_current1">Current Password</string>
+    <string name="pw_new1">New Password</string>
+    <string name="pw_confirm1">Confirm Password</string>
+
+    <string name="popupinfo_sitekey"><font color='#ffffff'>Site key </font>is made from the passphrase for Site key. It is used as a secret key when iT100 encrypts Face template  and Iris templates for the users. If you use the same passphrase for Site key (therefore the same Site key) within several iT100 devices, you can share templates over devices.</string>
+    <string name="popupinfo_apikey">API key is such a password for using REST API of the iT100 device. It is recommended to use a different passphrase for API keys (therefore different API Keys) to each iT100 devices</string>
+
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">External Device</string>
+    <string name="thermal_camera">Thermal Camera</string>
+    <string name="card_reader">Card Reader</string>
+    <string name="error_card_reader_not_find">Can\'t find card reader device</string>
+    <string name="temperature_unit">Temperature Unit</string>
+    <string name="temperature_c_unit">℃</string>
+    <string name="temperature_f_unit">℉</string>
+    <string name="threshold_value">Threshold Value</string>
+    <string name="temperature_alarm">Temperature Alarm</string>
+    <string name="access_control">Access Control</string>
+    <string name="sensor_correction">Sensor Correction (1.00 - 1.20)</string>
+    <string name="thermal_correction">Temperature Correction</string>
+    <string name="thermal_compensation">Temperature Compensation</string>
+    <string name="error_thermal_not_find">Can\'t find thermal camera device</string>
+    <string name="error_input_value">Check the value again</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">Identified</string>
+    <!--  <string name="liveness_eye_fail">Liveness Detection Failure</string> -->
+    <string name="liveness_eye_detect_fail">Identification Failed</string>
+    <!--  <string name="capture_fail_liveness_eye">Liveness detected</string> -->
+    <!--  <string name="capture_fail_fake_eye">Fake eye detected</string> -->
+    <string name="capture_fail_fake_eye">Identification Failed</string>
+    <string name="capture_fail">Capture failed</string>
+    <string name="capture_fail_timeout">Capture timed out</string>
+    <string name="capture_fail_inactive_user">Access not granted</string>
+    <string name="capture_fail_wrong_auth_mode">Check the auth mode</string>
+    <string name="capture_fail_identify">Identification Failed</string>
+    <string name="go_right">Move right</string>
+    <string name="go_left">Move left</string>
+    <string name="go_up">Move up</string>
+    <string name="go_down">Move down</string>
+    <string name="go_forward">Move forward</string>
+    <string name="go_backward">Move backward</string>
+
+    <string name="card_verified_wait_bio">Card is verified</string>
+    <string name="card_fail_verified">Card is not verified</string>
+    <string name="card_fail_mismatch">Bio and card mismatched</string>
+    <string name="card_fail_timeout">Card timed out</string>
+    <string name="bio_fail_timeout">Capture Bio timed out</string>
+    <string name="capture_closer_camera">Closer to the camera</string>
+    <string name="capture_for_audit_image">Capturing audit image</string>
+
+    <string name="recog_success_0">Identified</string>
+    <string name="recog_success_card_verified_11091006">Verified</string>
+    <string name="recog_fail_fake_eye_detected_11071010">Liveness Detection Failed</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">Liveness Detection Failed</string>
+    <string name="recog_fail_inactive_user_11091003">Access Not Granted</string>
+    <string name="recog_fail_card_not_verified_11091007">Verification Failed</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">Verification Failed</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">Verification Failed</string>
+    <string name="recog_fail_wait_card_timeout_11091012">Card Timed Out</string>
+    <string name="recog_fail_policy_not_granted_11091023">Access Not Granted</string>
+    <string name="recog_fail_wear_mask">Please wear a face mask.</string>
+    <string name="recog_fail_temperature_high">High Temperature</string>
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">Admin Password Setting</string>
+    <string name="init_password_guide">Please set a password below and click "OK". </string>
+    <string name="init_password_guide2">Please set a password below and click "OK".\nBefore you can change any settings, you need to login with a password.</string>
+    <string name="init_password_empty_guide">If you have not yet set a custom password,\nthen leave this field blank and click "OK"</string>
+    <string name="init_password_new">Password</string>
+    <string name="init_password_confirm">Confirm Password</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">Saved</string>
+    <string name="toast_usb_mounted">USB device recognized</string>
+    <string name="toast_admin_login_error">Wrong credentials or failed authorization</string>
+    <string name="toast_file_download_start">Downloading...</string>
+    <string name="toast_file_download_finish">Downloading success</string>
+    <string name="toast_file_download_check">Validating downloaded file</string>
+    <string name="toast_file_validate_fail">Validation failure</string>
+    <string name="toast_file_installing">Installing...</string>
+    <string name="toast_file_updating">Updating...</string>
+    <string name="toast_port_missed">Missing port number</string>
+    <string name="toast_thermal_connected">Thermal device connected</string>
+    <string name="toast_cannot_find_external">Can\'t find external device</string>
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>Italian</item>
+    </string-array>
+
+</resources>

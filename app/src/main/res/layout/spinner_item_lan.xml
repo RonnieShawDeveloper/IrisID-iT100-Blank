@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lang_spin_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:paddingBottom="5dp"
+    android:paddingStart="@dimen/setting_box_padding"
+    android:paddingEnd="80dp"
+    style="@style/SettingNextTextStyle"
+    android:gravity="start|center_vertical"/>

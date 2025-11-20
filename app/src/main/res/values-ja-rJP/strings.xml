@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iT100_Sample</string>
+    <string name="action_settings">設定</string>
+
+    <!--Title-->
+    <string name="admin_login">管理者ログイン</string>
+    <string name="iris_recognition">虹彩認識</string>
+    <string name="biometrics">バイオメトリクス</string>
+    <string name="system_admin">システム管理者</string>
+    <string name="user_management">ユーザー管理</string>
+    <string name="settings">設定</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">注意</string>
+    <string name="dlgtitle_err">エラー</string>
+    <string name="dlgtitle_waring">警告</string>
+    <string name="dlgtitle_guide">ガイド</string>
+    <string name="dlgtitle_success">成功</string>
+    <string name="dlgtitle_fail">失敗</string>
+    <string name="ok">OK</string>
+    <string name="cancel">キャンセル</string>
+    <string name="save">保存する</string>
+    <string name="delete">削除</string>
+    <string name="update">更新</string>
+    <string name="confirm">確認</string>
+    <string name="yes_dialog">はい</string>
+    <string name="no_dialog">いいえ</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">ユーザ名とパスワード</string>
+    <string name="username">ユーザ名</string>
+    <string name="password">パスワード</string>
+    <string name="sign_in">サインイン</string>
+    <string name="error_username_or_password">ユーザー名かパスワードが間違っています。</string>
+    <string name="error_login_attempt">ログイン制限を超えました。\n%d 分後に再試行してください。</string>
+
+    <!-- User Management -->
+    <string name="search">サーチ</string>
+    <string name="userlist_guide">&#160;&#160;&#160;詳細を表示するにはユーザーを選択するか、\nまたは+をクリックして新しいユーザーを作成します。</string>
+    <string name="user_id">ユーザーID</string>
+    <string name="title">肩書き</string>
+    <string name="first_name">名</string>
+    <string name="last_name">姓</string>
+    <string name="email_address">電子メールアドレス</string>
+    <string name="phone_number">電話番号</string>
+    <string name="modify_bioinfo_dialog_title">バイオメトリクスの変更</string>
+    <string name="add_bioinfo_dialog_title">バイオメトリクスの追加</string>
+    <string name="delete_dialog">ユーザーを削除してよろしいですか ？</string>
+    <string name="re_enroll">画像を再登録してよろしいですか？</string>
+    <string name="modify_bioinfo_dialog">バイオメトリクスを変更してもよろしいですか？</string>
+    <string name="add_bioinfo_dialog">バイオメトリクスを追加してもよろしいですか？</string>
+    <string name="enroll_error_already">ユーザーが既に登録されています。</string>
+    <string name="enroll_error_verified">認証に失敗しました。</string>
+    <string name="enroll_error_capture">虹彩の取得に失敗しました。</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">ユーザー ID を入力してください</string>
+    <string name="enroll_error_duplicate_userid">ユーザー ID が既に存在しています</string>
+    <string name="enroll_error_space_userid">スペースは使用できません</string>
+    <string name="enroll_remove_glasses_guide">メガネやマスクを外してください</string>
+
+    <string name="all">すべて</string>
+    <string name="type">タイプ</string>
+    <string name="auth_mode">認証 モード</string>
+    <string name="iris_and_face">虹彩認証 + 顔認証</string>
+    <string name="iris">虹彩認証</string>
+    <string name="face">顔認証</string>
+    <string name="select_mode">モードの選択</string>
+    <string name="select_mode_error">認証モードを選択する必要があります</string>
+    <string name="roll">アカウント・タイプ</string>
+    <string name="user">ユーザー</string>
+    <string name="admin">管理者</string>
+    <string name="pw_change">パスワードの変更</string>
+    <string name="pw_current">現在のパスワード</string>
+    <string name="pw_new">新規パスワード</string>
+    <string name="pw_confirm">確認用パスワード</string>
+    <string name="err_pw_invalid">現在のパスワードは無効です</string>
+    <string name="err_pw_matched">新規パスワードと確認用パスワードが一致しません</string>
+    <string name="err_pw_4digit">パスワードは 4 文字以上必要です</string>
+    <string name="pw_changed">パスワードが変更されました</string>
+
+    <string name="user_basic_info">基本情報</string>
+    <string name="user_card_info">カード情報</string>
+    <string name="user_details">詳細</string>
+    <string name="card_format">カードフォーマット</string>
+    <string name="card_id">カードID</string>
+    <string name="card_facility_code">ファシリティコード</string>
+    <string name="card_wiegand_data">Wiegandデータ</string>
+    <string name="enter_card_id">カードIDを入力してください。</string>
+    <string name="enter_facility_code">ファシリティコードを入力してください。</string>
+    <string name="enter_card_info">カード情報を入力してください。</string>
+    <string name="tap_card">カードを認識させてください。</string>
+
+    <string name="enroll">登録</string>
+    <string name="card_manual">マニュアル</string>
+
+    <string name="card_number">カード番号</string>
+    <string name="required">*必須入力</string>
+    <string name="user_active">有効</string>
+    <string name="user_inactive">無効</string>
+    <string name="capture_guide">長押しして、\n生体情報を登録</string>
+    <string name="select_type">種類を選択</string>
+    <string name="select_type_msg">生体の種類を選択してください。</string>
+    <string name="all_users">全ユーザー</string>
+    <string name="department">所属</string>
+    <string name="privacy_agree_title">個人情報保護の同意</string>
+    <string name="privacy_agree_content">Iris IDが、収集した生体情報（虹彩、顔）を身分確認のためにアクセスして使用しないことを理解し同意します。また生体情報の収集、使用、開示、維持、および本人の生体情報に対して適用されるすべての法律の遵守に関しては、運営者がすべて責任を負うことを理解し同意します。</string>
+    <string name="bio_content">生体認証の登録</string>
+
+    <!-- Setting_General-->
+    <string name="general">一般</string>
+    <string name="device_name">装置名</string>
+    <string name="device_type">装置タイプ</string>
+    <string name="build_type">ビルドタイプ</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">シリアル番号</string>
+    <string name="mac_address_ethernet">イーサネット MAC アドレス</string>
+    <string name="mac_address_wifi">ワイヤレス MAC アドレス</string>
+    <string name="kernel_version">カーネル・バージョン</string>
+    <string name="android_version">Android バージョン</string>
+    <string name="hardware_version">ハードウェア・バージョン</string>
+    <string name="software_version">ソフトウェア・バージョン</string>
+    <string name="application_version">アプリケーションのバージョン</string>
+    <string name="general_error_devicename_empty">デバイス名を入力してください</string>
+    <string name="general_error_devicename_too_long">デバイス名が長すぎます</string>
+    <string name="reboot">再起動</string>
+    <string name="reboot_dialog">デバイスを再起動してもよろしいですか？</string>
+    <string name="factory_reset">出荷時設定リセット</string>
+    <string name="factory_reset_dialog">Tこれはデバイスの内部ストレージのすべてのデータを消去することになります。\nこの操作を取り消すことはできません！</string>
+    <string name="open_source_licenses">オープンソースライセンス</string>
+    <string name="system_updates">システムアップデート</string>
+    <string name="error_not_find_usb_device">USBデバイスが見つかりません</string>
+
+    <!-- Setting_Application-->
+    <string name="application">アプリケーション</string>
+    <string name="authentication">認証</string>
+    <string name="authentication_type">認証タイプ</string>
+    <string name="operation_mode">操作モード</string>
+    <string name="operation_mode_interactive">選択モード</string>
+    <string name="operation_mode_continuous">連続モード</string>
+    <string name="app_admin_time_out">管理者モードのタイムアウト</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">結果の自動廃棄のタイマー間隔</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+
+    <string name="relay">リレー</string>
+    <string name="delay_time">タイマー間隔</string>
+    <string name="position_guide">ポジションガイド</string>
+    <string name="voice_announce">音声案内</string>
+    <string name="userdefine">ユーザー定義</string>
+    <string name="app_update">アプリケーションアップデート</string>
+    <string name="app_update_enter_idpw">アプリケーションアップデートするにはID/PWを入力してください</string>
+    <string name="app_update_fail_connect_url">URLにアクセスできません</string>
+    <string name="app_update_fail_file_error">ダウンロードファイルに問題があります</string>
+    <string name="app_update_fail_file_install">アプリケーションインストレーションエラー</string>
+    <string name="app_update_fail_url_empty">URLを入力してください</string>
+    <string name="enroll_guide">登録時の注意事項</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">モード</string>
+    <string name="admin_login_type">管理者のログインタイプ</string>
+    <string name="authentication_mode">認証モード</string>
+    <string name="authentication_mode_individual">個人</string>
+    <string name="authentication_mode_device">デバイス</string>
+
+    <string name="mask_detect">マスク検出</string>
+    <string name="mask_access">アクセス制御</string>
+    <string name="mask_voice_guide">音声ガイド</string>
+    <string name="mask_text_guide">テキストガイド</string>
+
+    <string name="counter_measure">不正対策</string>
+    <string name="counter_measure_eye">虹彩</string>
+    <string name="counter_measure_face">顔</string>
+    <string name="counter_measure_lens">レンズ</string>
+
+    <string name="save_audit_image">顔画像の保存</string>
+
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">表示</string>
+    <string name="sound">音</string>
+    <string name="display_sound">ディスプレイと明るさ</string>
+    <string name="language">言語</string>
+    <string name="brightness">輝度</string>
+    <string name="auto_adjust">自動調整</string>
+    <string name="volume">ボリューム</string>
+    <string name="keyboard_manage">キーボードを管理</string>
+    <string name="keyboard_and_inpumethod">キーボードおよび入力方式</string>
+    <string name="keyboard_android">Android キーボード（AOSP)</string>
+    <string name="keyboard_google_korean">Google 韓国語入力</string>
+    <string name="sound_touch">タッチ操作音</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">壁紙</string>
+    <string name="movies">動画</string>
+    <string name="images">画像</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">日付と時刻</string>
+    <string name="time_zone">タイムゾーン</string>
+    <string name="time_server">NTP サーバー</string>
+    <string name="auto_date_time">自動設定の日付と時刻</string>
+    <string name="use_24hour_format">24時間表示</string>
+
+    <!-- Setting_Source-->
+    <string name="source">ソース</string>
+
+    <!-- Setting_Network -->
+    <string name="network">ネットワーク</string>
+    <string name="ip_settings">IP 設定</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">スタティック</string>
+    <string name="ip_address">IPアドレス</string>
+    <string name="subnet_mask">サブネットマスク</string>
+    <string name="prefix_length">プリフィックス長（範囲外：1–31)</string>
+    <string name="default_gateway">デフォルトゲートウェイ</string>
+    <string name="dns1">プライマリ DNS</string>
+    <string name="dns2">セカンダリ DNS</string>
+    <string name="network_error_ipaddress">IP アドレスの取得に失敗しました。</string>
+    <string name="network_error_connect">インターネット接続が存在しません。\nネットワーク接続（ケーブル、モデルおよびルーター）の確認</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="ethernet">イーサネット</string>
+    <string name="conn_ethernet_title">イーサネット接続</string>
+    <string name="conn_ethernet_desc">イーサネットに接続しますか？接続されたWi-Fiはオフになります。</string>
+    <string name="conn_wifi_title">Wi-Fi接続</string>
+    <string name="conn_wifi_desc">Wi-Fiに接続しますか？接続されたイーサネットはオフになります。</string>
+    <string name="wait_progress_text">お待ちください...</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">アクティベーション</string>
+    <string name="activate">有効化</string>
+    <string name="deactivate">無効化</string>
+    <string name="deactivating">無効化中…</string>
+    <string name="activation_method">アクティベーション方式</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">スタンドアロン型</string>
+    <string name="activation_itms_mode">モード</string>
+    <string name="activation_itms_mode_auto">自動設定</string>
+    <string name="activation_itms_mode_manual">手動</string>
+    <string name="activation_find">iTMS の検索</string>
+    <string name="activation_checkin">iTMS のチェックイン</string>
+    <string name="sitekey">サイトキー</string>
+    <string name="apikey">API キー</string>
+    <string name="device_url">デバイス URL</string>
+    <string name="activate_error_empty_sitekey">サイトキーのパスフレーズを入力してください</string>
+    <string name="activate_error_not_find">ITMS アドレスを見つけることができません</string>
+    <string name="passphrase_site_hint">サイトキーのパスフレーズ</string>
+    <string name="passphrase_api_hint">API キーのパスフレーズ</string>
+    <string name="deactivate_dialog">このデバイスを無効にしてもよろしいですか？このデバイスを無効にすると、このデバイスに保管されているすべてのデータが永久に失われることになります。</string>
+
+    <string name="pw_change1">パスワードの変更</string>
+    <string name="pw_current1">現在のパスワード</string>
+    <string name="pw_new1">新規パスワード</string>
+    <string name="pw_confirm1">確認用パスワード</string>
+
+    <string name="result_duration">結果期間</string>
+    <string name="admin_time_out">管理者モードのタイムアウト</string>
+
+    <string name="am">午前</string>
+    <string name="pm">午後</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">外部デバイス</string>
+    <string name="thermal_camera">サーマルカメラ</string>
+    <string name="card_reader">カードリーダー</string>
+    <string name="error_card_reader_not_find">カードリーダー機器を見つけることができません。</string>
+    <string name="temperature_unit">温度の単位</string>
+    <string name="threshold_value">しきい値</string>
+    <string name="temperature_alarm">温度アラーム</string>
+    <string name="access_control">アクセスコントロール</string>
+    <string name="thermal_compensation">温度補償</string>
+    <string name="error_thermal_not_find">サーマルカメラ機器を見つけることができませんでした</string>
+    <string name="error_input_value">値を再確認してください</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">認証完了</string>
+    <!--<string name="liveness_eye_fail">生体の検出に失敗</string>
+    <string name="capture_fail_liveness_eye">生体が検出されました</string>-->
+    <!-- from v2.05.11 <string name="liveness_eye_detect_fail">ユーザー認証に失敗</string>
+    <string name="capture_fail_fake_eye">ユーザー認証に失敗</string> -->
+    <string name="liveness_eye_detect_fail">生体の検出に失敗</string>
+    <string name="capture_fail_fake_eye">生体の検出に失敗</string>
+    <string name="capture_fail">キャプチャに失敗しました</string>
+    <string name="capture_fail_timeout">キャプチャがタイムアウトしました</string>
+    <string name="capture_fail_inactive_user">アクセスが許可されていません</string>
+    <string name="capture_fail_wrong_auth_mode">認証モードを確認</string>
+    <string name="capture_fail_identify">ユーザー認証に失敗</string>
+
+    <string name="go_right">右に移動</string>
+    <string name="go_left">左に移動</string>
+    <string name="go_up">上に移動</string>
+    <string name="go_down">下に移動</string>
+    <string name="go_forward">前に移動</string>
+    <string name="go_backward">後ろに移動</string>
+
+    <string name="card_verified_wait_bio">カードが確認されました</string>
+    <string name="card_fail_verified">カードが無効されていません</string>
+    <string name="card_fail_mismatch">生体とカードが一致しません</string>
+    <string name="card_fail_timeout">カードタイムアウト</string>
+    <string name="bio_fail_timeout">生体タイムアウト</string>
+    <string name="capture_closer_camera">カメラに近づいてください</string>
+
+    <string name="recog_success_0">認証完了</string>
+    <string name="recog_success_card_verified_11091006">照合完了</string>
+    <string name="recog_success_access_granted_11091036">Access Granted</string>
+    <string name="recog_fail_fake_eye_detected_11071010">生体の検出に失敗</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">生体の検出に失敗</string>
+    <string name="recog_fail_inactive_user_11091003">アクセスが許可されていません</string>
+    <string name="recog_fail_card_not_verified_11091007">照合失敗</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">照合失敗</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">照合失敗</string>
+    <string name="recog_fail_wait_card_timeout_11091012">カードタイムアウト</string>
+    <string name="recog_fail_policy_not_granted_11091023">アクセスが許可されていません</string>
+    <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+    <string name="recog_fail_access_not_granted_11091037">アクセスが許可されていません</string>
+
+    <string name="recog_fail_wear_mask">マスクを着用してください</string>
+    <string name="recog_fail_temperature_high">体温が高いです</string>
+
+    <!-- Initial Password Setting -->
+    <string name="init_password_setting">管理者パスワード設定</string>
+    <string name="init_password_guide">パスワードを設定してOKボタンを押してください</string>
+    <string name="init_password_new">パスワード</string>
+    <string name="init_password_confirm">確認用パスワード</string>
+
+    <!-- Toast message -->
+    <string name="toast_saved">保存しました</string>
+    <string name="toast_usb_mounted">USB デバイスが認識されました</string>
+    <string name="toast_admin_login_error">資格情報が間違っているか、認証に失敗しました</string>
+    <string name="toast_file_download_start">ダウンロード中...</string>
+    <string name="toast_file_download_finish">ダウンロード成功</string>
+    <string name="toast_file_download_check">ダウンロードしたファイルを検証しています</string>
+    <string name="toast_file_validate_fail">検証の失敗</string>
+    <string name="toast_file_installing">インストール中...</string>
+    <string name="toast_file_updating">更新中...</string>
+    <string name="toast_port_missed">ポート番号がありません</string>
+    <string name="toast_thermal_connected">サーマルデバイスが接続されました</string>
+    <string name="toast_cannot_find_external">外部デバイスが見つかりません</string>
+
+    <string-array name="language_option">
+        <item>英語</item>
+        <item>韓国語</item>
+        <item>フランス語</item>
+        <item>中国語</item>
+        <item>日本人</item>
+        <item>ドイツ</item>
+        <item>スペイン</item>
+        <item>イタリア</item>
+    </string-array>
+
+</resources>

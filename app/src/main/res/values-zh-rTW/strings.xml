@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">设置</string>
+
+    <!--Title-->
+    <string name="admin_login">管理者登入</string>
+    <string name="iris_recognition">虹膜辨識</string>
+    <string name="biometrics">生物辨識</string>
+    <string name="system_admin">系統管理者</string>
+    <string name="user_management">使用者管理</string>
+    <string name="settings">設定</string>
+
+    <!--Basic-->
+    <string name="dlgtitle_notice">提醒</string>
+    <string name="dlgtitle_err">錯誤</string>
+    <string name="dlgtitle_waring">警告</string>
+    <string name="dlgtitle_guide">說明</string>
+    <string name="dlgtitle_success">成功</string>
+    <string name="dlgtitle_fail">失敗</string>
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="delete">刪除</string>
+    <string name="update">更新</string>
+    <string name="confirm">確認</string>
+    <string name="yes_dialog">是</string>
+    <string name="no_dialog">否</string>
+    <string name="on">開啟</string>
+    <string name="off">關閉</string>
+
+    <!-- ID_Password-->
+    <string name="id_password">帳號和密碼</string>
+    <string name="username">使用者名稱</string>
+    <string name="password">密碼</string>
+    <string name="sign_in">登入</string>
+    <string name="error_username_or_password">使用者名稱或密碼不正確</string>
+    <string name="error_login_attempt">登入鎖定，請在 %d 分鐘後重試。</string>
+
+    <!-- User Management -->
+    <string name="search">搜尋</string>
+    <string name="userlist_guide">&#160;&#160;&#160;欲查詢詳細資料，請選擇使用者，或按+建立新使用者.</string>
+    <string name="user_id">使用者帳號</string>
+    <string name="title">職稱</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓氏</string>
+    <string name="email_address">電子信箱</string>
+    <string name="phone_number">電話</string>
+    <string name="modify_bioinfo_dialog_title">修改生物特徵</string>
+    <string name="add_bioinfo_dialog_title">新增生物特徵</string>
+    <string name="delete_dialog">您確定要刪除該使用者嗎?</string>
+    <string name="re_enroll">您確定要重新建檔照片嗎?</string>
+    <string name="modify_bioinfo_dialog">您確定要修改生物特徵嗎?</string>
+    <string name="add_bioinfo_dialog">您確定要新增生物特徵嗎?</string>
+    <string name="enroll_error_already">使用者已建立。</string>
+    <string name="enroll_error_verified">驗證失敗。</string>
+    <string name="enroll_error_capture">擷取虹膜失敗。</string>
+    <string name="enroll_error_capture_iris"> 虹膜擷取失敗。</string>
+    <string name="error_occluded_eyes">Open your eyes wider and retry</string>
+    <string name="enroll_error_empty_userid">請輸入使用者帳號</string>
+    <string name="enroll_error_duplicate_userid">使用者帳號已存在</string>
+    <string name="enroll_error_space_userid">不允許有空白鍵。</string>
+    <string name="enroll_remove_glasses_guide">請取下您的眼鏡及口罩。</string>
+
+    <string name="all">全部</string>
+    <string name="type">類別</string>
+    <string name="auth_mode">驗證模式</string>
+    <string name="iris_and_face">虹膜+人臉辨識</string>
+    <string name="iris">虹膜辨識</string>
+    <string name="face">人臉辨識</string>
+    <string name="select_mode">選擇模式</string>
+    <string name="select_mode_error">您需要選擇辨識模式</string>
+    <string name="roll">帳戶類型</string>
+    <string name="user">使用者</string>
+    <string name="admin">系統管理員</string>
+    <string name="pw_change">修改密碼</string>
+    <string name="pw_current">原來密碼</string>
+    <string name="pw_new">新密碼</string>
+    <string name="pw_confirm">確認密碼</string>
+    <string name="err_pw_invalid">原來密碼無效</string>
+    <string name="err_pw_matched">新密碼與確認密碼不一致</string>
+    <string name="err_pw_4digit">密碼必須超過 4 個字元</string>
+    <string name="pw_changed">密碼已修改</string>
+
+    <string name="user_basic_info">基本資料</string>
+    <string name="user_card_info">卡片資料</string>
+    <string name="user_details">詳細資料</string>
+    <string name="card_format">卡片格式</string>
+    <string name="card_id">卡號</string>
+    <string name="card_facility_code">設備代碼</string>
+    <string name="card_wiegand_data">韋根資料</string>
+    <string name="enter_card_id">輸入卡號</string>
+    <string name="enter_facility_code">輸入設備代碼</string>
+    <string name="enter_card_info">輸入卡片資訊</string>
+    <string name="tap_card">感應卡片</string>
+
+    <string name="enroll">登錄</string>
+    <string name="card_manual">手冊</string>
+
+    <string name="card_number">卡號</string>
+    <string name="required">要求</string>
+    <string name="user_active">啟用</string>
+    <string name="user_inactive">停用</string>
+    <string name="capture_guide">長按擷取生物特徵</string>
+    <string name="select_type">選擇類別</string>
+    <string name="select_type_msg">請選擇生物辨識類別</string>
+    <string name="all_users">所有使用者 </string>
+    <string name="department">部門</string>
+    <string name="role">角色</string>
+    <string name="privacy_agree_title">隱私授權</string>
+    <string name="privacy_agree_content">我瞭解並同意 Iris ID 不會收集也無法存取我的生物特徵資料。 我進一步瞭解並同意，我的雇主全權負責收集、利用、揭露和維護我的生物特徵資料，並遵守有關生物特徵資料的所有適用法律。</string>
+    <string name="bio_content">登入生物特徵</string>
+
+
+    <!-- Setting_General-->
+    <string name="general">一般</string>
+    <string name="device_name">設備名稱</string>
+    <string name="device_type">設備型別</string>
+    <string name="build_type">Build Type</string>
+    <string name="tribeca">Tribeca</string>
+    <string name="serial_num">序號</string>
+    <string name="mac_address_ethernet">網卡MAC</string>
+    <string name="mac_address_wifi">無線MAC</string>
+    <string name="kernel_version">Kernel版本</string>
+    <string name="android_version">Android版本</string>
+    <string name="hardware_version">HW版本</string>
+    <string name="software_version">SW版本</string>
+    <string name="application_version">AP版本</string>
+    <string name="general_error_devicename_empty">請輸入設備名稱</string>
+    <string name="general_error_devicename_too_long">設備名稱過長</string>
+    <string name="reboot">重新啟動</string>
+    <string name="reboot_dialog">是否確定要重新啟動設備?</string>
+    <string name="factory_reset">恢復出廠設定</string>
+    <string name="factory_reset_dialog">此動作將刪除設備內的所有資料。\n刪除後將無法回復！</string>
+    <string name="source">資料來源</string>
+    <string name="open_source_licenses">資料來源授權</string>
+    <string name="system_updates">系統更新</string>
+    <string name="error_not_find_usb_device">USB裝置無法辨識</string>
+
+    <!-- Setting_Application-->
+    <string name="application">進階設定</string>
+    <string name="authentication">辨識</string>
+    <string name="authentication_type">辨識類型</string>
+    <string name="operation_mode">運作模式</string>
+    <string name="operation_mode_interactive">互動驗證模式</string>
+    <string name="operation_mode_continuous">連續驗證模式</string>
+    <string name="app_admin_time_out">管理模式逾時</string> <!--  Administrator Mode Time Out -->
+    <string name="app_result_duration">辨識結果停留時間</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+
+    <string name="relay">繼電器</string>
+    <string name="delay_time">訊息停留時間</string>
+    <string name="position_guide">位置提示</string>
+    <string name="voice_announce">語音提示</string>
+    <string name="userdefine">使用者定義</string>
+    <string name="app_update">程式更新</string>
+    <string name="app_update_enter_idpw">輸入使用者代號及密碼進行程式更新</string>
+    <string name="app_update_fail_connect_url">無法連接到這個URL</string>
+    <string name="app_update_fail_file_error">下載檔案遇到問題</string>
+    <string name="app_update_fail_file_install">程式安裝錯誤</string>
+    <string name="app_update_fail_url_empty">請輸入URL</string>
+    <string name="enroll_guide">生物特徵建立須知</string>
+
+    <!-- Setting_Mode-->
+    <string name="mode">模式</string>
+    <string name="admin_login_type">管理者登入類型</string>
+    <string name="authentication_mode">驗證模式</string>
+    <string name="authentication_mode_individual">Individual</string>
+    <string name="authentication_mode_device">Device</string>
+
+    <string name="mask_detect">口罩偵測</string>
+    <string name="mask_access">門禁管致</string>
+    <string name="mask_voice_guide">語音導引</string>
+    <string name="mask_text_guide">文字導引</string>
+
+    <string name="qr_recog">QR Recognition</string>
+    <string name="qr_recog_only">QR only</string>
+
+    <string name="counter_measure">Countermeasure</string>
+    <string name="counter_measure_eye">Iris</string>
+    <string name="counter_measure_face">Face</string>
+    <string name="counter_measure_lens">Lens</string>
+
+    <string name="save_audit_image">審核已儲存之照片</string>
+
+    <!-- Setting_Display&Sound-->
+    <string name="display">顯示</string>
+    <string name="sound">聲音</string>
+    <string name="display_sound">顯示和聲音</string>
+    <string name="language">語言</string>
+    <string name="brightness">亮度</string>
+    <string name="auto_adjust">自動調整</string>
+    <string name="volume">音量大小</string>
+    <string name="keyboard_manage">虛擬鍵盤管理</string>
+    <string name="keyboard_and_inpumethod">鍵盤；輸入法</string>
+    <string name="keyboard_android">Android鍵盤(AOSP)</string>
+    <string name="keyboard_google_korean">Google韓文輸入法</string>
+    <string name="sound_touch">觸碰提示音</string>
+
+    <!-- Setting_Wallpaper-->
+    <string name="wallpaper">背景</string>
+    <string name="movies">影片</string>
+    <string name="images">圖片</string>
+
+    <!-- Setting_Date&Time-->
+    <string name="date_time">日期與時間</string>
+    <string name="time_zone">時區</string>
+    <string name="time_server">NTP Server</string>
+    <string name="auto_date_time">自動更新時間日期</string>
+    <string name="use_24hour_format">使用24小時制</string>
+
+    <!-- Setting_Network -->
+    <string name="network">網路</string>
+    <string name="ip_settings">IP設定</string>
+    <string name="ip_settings_dhcp">DHCP</string>
+    <string name="ip_settings_static">固定</string>
+    <string name="ip_address">IP位址</string>
+    <string name="subnet_mask">子網遮罩</string>
+    <string name="prefix_length">前置位元長度（範圍：1-31）</string>
+    <string name="default_gateway">預設閘道器</string>
+    <string name="dns1">DNS1</string>
+    <string name="dns2">DNS2</string>
+    <string name="network_error_ipaddress">取得IP位址失敗</string>
+    <string name="network_error_connect">網路無法連接。\n檢查網路連接狀況（網路線、數據機及路由器）</string>
+    <string name="wifi">無線網路</string>
+    <string name="ethernet">有線網路</string>
+    <string name="conn_ethernet_title">連接有線網路</string>
+    <string name="conn_ethernet_desc">確定要連接有線網路媽？將斷開與無線網路連接。</string>
+    <string name="conn_wifi_title">連接無線網路</string>
+    <string name="conn_wifi_desc">確定要連接有線網路媽？將斷開與無線網路連接。</string>
+    <string name="wait_progress_text">請稍候…</string>
+
+    <!-- Setting_Activation -->
+    <string name="activation">啟用</string>
+    <string name="activate">啟用</string>
+    <string name="deactivate">取消啟用</string>
+    <string name="deactivating">取消啟用中...</string>
+    <string name="activation_method">啟用方法</string>
+    <string name="activation_method_itms">iTMS</string>
+    <string name="activation_method_standalone">獨立使用</string>
+    <string name="activation_itms_mode">模式</string>
+    <string name="activation_itms_mode_auto">自動</string>
+    <string name="activation_itms_mode_manual">手動</string>
+    <string name="activation_find">尋找iTMS</string>
+    <string name="activation_checkin">註冊iTMS</string>
+    <string name="sitekey">Site Key</string>
+    <string name="apikey">API Key</string>
+    <string name="device_url">設備URL</string>
+    <string name="activate_error_empty_sitekey">請輸入Site Key密碼</string>
+    <string name="activate_error_not_find">無法連線到iTMS IP位址</string>
+    <string name="passphrase_site_hint">Site Key密碼</string>
+    <string name="passphrase_api_hint">API Key密碼</string>
+    <string name="deactivate_dialog">您需要取消啟用此設備嗎？取消啟用此設備將導致現有所有資料清空。</string>
+
+    <string name="pw_change1">修改密碼</string>
+    <string name="pw_current1">原來密碼</string>
+    <string name="pw_new1">新密碼</string>
+    <string name="pw_confirm1">確認密碼</string>
+
+    <string name="result_duration">辨識結果停留時間</string>
+    <string name="admin_time_out">管理模式逾時</string>
+
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+
+    <!-- Setting_External Devices -->
+    <string name="external_device">外部設備</string>
+    <string name="thermal_camera">測溫模組</string>
+    <string name="card_reader">讀卡機</string>
+    <string name="error_card_reader_not_find">找不到讀卡機</string>
+    <string name="temperature_unit">溫度單位</string>
+    <string name="threshold_value">罰值</string>
+    <string name="temperature_alarm">溫度警報</string>
+    <string name="access_control">門禁管制</string>
+    <string name="thermal_compensation">溫度補償</string>
+    <string name="error_thermal_not_find">找不到測溫模組</string>
+    <string name="error_input_value">再次檢查數值</string>
+
+    <!-- Capture -->
+    <string name="capture_identify">辨識成功</string>
+    <!--<string name="liveness_eye_fail">活性检测失败</string>
+    <string name="capture_fail_liveness_eye">检测到活跃度</string>-->
+    <!-- from v2.05.11<string name="liveness_eye_detect_fail">辨識失敗</string>
+    <string name="capture_fail_fake_eye">辨識失敗</string> -->
+    <string name="liveness_eye_detect_fail">偵測到非一般生物特徵</string>
+    <string name="capture_fail_fake_eye">偵測到非一般生物特徵</string>
+    <string name="capture_fail">擷取失敗</string>
+    <string name="capture_fail_timeout">擷取逾時</string>
+    <string name="capture_fail_inactive_user">無權限通行</string>
+    <string name="capture_fail_wrong_auth_mode">檢查辨識模式</string>
+    <string name="capture_fail_identify">辨識失敗</string>
+
+    <string name="go_right">向右一點</string>
+    <string name="go_left">向左一點</string>
+    <string name="go_up">向上一點</string>
+    <string name="go_down">向下一點</string>
+    <string name="go_forward">前進一點</string>
+    <string name="go_backward">後退一點</string>
+
+    <string name="card_verified_wait_bio">卡片驗證通過</string>
+    <string name="card_fail_verified">卡片驗證失敗</string>
+    <string name="card_fail_mismatch">生物特徵和卡片不匹配</string>
+    <string name="card_fail_timeout">卡片逾時</string>
+    <string name="bio_fail_timeout">擷取生物特徵逾時</string>
+    <string name="capture_closer_camera">靠近鏡頭一點</string>
+
+    <string name="recog_success_0">辨識成功</string>
+    <string name="recog_success_card_verified_11091006">驗證通過</string>
+    <string name="recog_success_access_granted_11091036">Access Granted</string>
+    <string name="recog_fail_fake_eye_detected_11071010">偵測到非一般生物特徵</string>
+    <string name="recog_fail_fake_eye_detect_fail_11071011">偵測到非一般眼睛</string>
+    <string name="recog_fail_inactive_user_11091003">無權限通行</string>
+    <string name="recog_fail_card_not_verified_11091007">驗證失敗</string>
+    <string name="recog_fail_bio_card_mismatch_11091010">驗證失敗</string>
+    <string name="recog_fail_wait_bio_timeout_11091011">驗證失敗</string>
+    <string name="recog_fail_wait_card_timeout_11091012">卡超时</string>
+    <string name="recog_fail_policy_not_granted_11091023">無權限通行</string>
+    <string name="recog_fail_pacs_timeout_11091014">Timed Out</string>
+    <string name="recog_fail_access_not_granted_11091037">無權限通行</string>
+
+    <string name="recog_fail_wear_mask">請戴口罩</string>
+    <string name="recog_fail_temperature_high">體溫過高</string>
+
+    <string-array name="language_option">
+        <item>英语</item>
+        <item>朝鲜的</item>
+        <item>法国</item>
+        <item>中国</item>
+        <item>日语</item>
+        <item>德国</item>
+        <item>西班牙语</item>
+        <item>意大利</item>
+    </string-array>
+
+</resources>
